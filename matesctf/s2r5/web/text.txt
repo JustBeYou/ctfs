@@ -1,0 +1,10 @@
+POST /scandomain.php HTTP/1.1
+Host: 13.251.43.244
+User-Agent: python-requests/2.18.4
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 48
+Content-Type: application/x-www-form-urlencoded
+
+action=docheck&domainName=google.com&coin=btc
