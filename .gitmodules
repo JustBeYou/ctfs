@@ -1,3 +1,6 @@
 [submodule "timctf2018finals"]
 	path = timctf2018finals
 	url = https://github.com/JustBeYou/timctf2018finals
+[submodule "timctf2018writeups"]
+	path = timctf2018writeups
+	url = https://github.com/andreigasparovici/timctf2018writeups
