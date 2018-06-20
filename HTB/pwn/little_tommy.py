@@ -5,7 +5,7 @@
 from pwn import *
 
 # Set up pwntools for the correct architecture
-exe = context.binary = ELF('little_tommy')
+exe = context.binary = ELF('./exe/little_tommy')
 
 # Many built-in settings can be controlled on the command-line and show up
 # in "args".  For example, to dump all data sent/received, and disable ASLR
