@@ -107,25 +107,6 @@ def brute_force_cookie(logging = False):
             log.error("Cookie not found")
     return cookie
 
-# load saved data
-def load_vars():
-    global config
-    if not args.LOCAL:
-        with open("oldbridge_remote.json") as f:
-            config = load(f)
-    else:
-        with open("oldbridge_local.json") as f:
-            config = load(f)
-
-# save state
-def save_vars():
-    if not args.LOCAL:
-        with open("oldbridge_remote.json", "w") as f:
-            dump(config, f)
-    else:
-        with open("oldbridge_local.json", "w") as f:
-            dump(config, f)
-
 # load session
 if args.LOAD:
     load_vars()
