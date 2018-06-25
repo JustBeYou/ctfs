@@ -69,4 +69,101 @@ I: Copying unknown files...
 I: Copying original files...
 ```
 
-The files of interest will be in the same path, but this time we see that their extension is `smali`. `smali` it's the intermediary format for Java `dex` (dalvik executables) files. A good reference for the opcodes is here http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
+The files of interest will be almost in the same path (`app_opcodes/smali/com/google/ctf/shallweplayagame`), but this time we see that their extension is `smali`. `smali` it's the intermediary format for Java `dex` (dalvik executables) files. A good reference for the opcodes is here http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
+
+`onClick` method is still here, but it look a lot more different. If we take a close look, we can see the same elements, conditions:
+```
+902| if-eqz v0, :cond_0
+889| if-eqz v0, :cond_1
+...
+944| if-eqz v1, :cond_4
+...
+```
+method calls and variables (you won't see variables as usual, instead it uses `vXX` registers to manipulate instances addresses, values and so on):
+```
+896|    iget-object v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->m:Ljava/util/Queue; // get an object refernce into the v0 register
+897|
+898|    invoke-interface {v0}, Ljava/util/Queue;->isEmpty()Z // call the method isEmpty on it
+899|
+900|    move-result v0 // get the result
+...
+```
+
+If we take a look at the Java source code, we see that after the third condition we have a call to the method that increment the winning conter, so it should be the third condition in the `smali` too.
+```
+931| invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->n()V // p0 is the first parameter of current method, in this case, 'this' reference
+```
+And looking at this method, we see the value `0xf4240` stored as a constant and that's 1 million in decimal, so we are in the right place.
+```
+.method n()V
+    .locals 10
+
+    const v9, 0xf4240
+
+    const/4 v8, 0x1
+
+    const/4 v7, 0x3
+
+    const/4 v1, 0x0
+
+    const/4 v6, 0x2
+
+    move v2, v1
+    ...
+```
+After those declarations, we have the code for the first two nested loops:
+```
+    :goto_0
+    if-ge v2, v7, :cond_1
+
+    move v0, v1
+
+    :goto_1
+    if-ge v0, v7, :cond_0
+
+    iget-object v3, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->l:[[Lcom/google/ctf/shallweplayagame/a;
+
+    aget-object v3, v3, v0
+
+    aget-object v3, v3, v2
+
+    sget-object v4, Lcom/google/ctf/shallweplayagame/a$a;->a:Lcom/google/ctf/shallweplayagame/a$a;
+
+    const/16 v5, 0x19
+
+    invoke-virtual {v3, v4, v5}, Lcom/google/ctf/shallweplayagame/a;->a(Lcom/google/ctf/shallweplayagame/a$a;I)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v0, v2, 0x1
+
+    move v2, v0
+
+    goto :goto_0
+```
+Then, the magic begins:
+```
+    :cond_1
+    // play animations, sounds, etc
+    invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->k()V
+
+    // get the reference to the winning counter and increase its value by 1
+    iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    ... some strange calculations on the flag I think ...
+
+    // get the reference again
+    iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
+
+    // compare the counter with v9 (1 million constant)
+    if-ne v0, v9, :cond_2
+
+    // call the method that display the flag
+    invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->m()V
+```
+
