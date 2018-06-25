@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AlertDialogLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@c0406f/parentPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@c0407g/abc_alert_dialog_title_material" />
+    <FrameLayout android:id="@c0406f/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@c0406f/scrollIndicatorUp" android:background="?attr/colorControlHighlight" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+        <android.support.v4.widget.NestedScrollView android:id="@c0406f/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v4.widget.Space android:id="@c0406f/textSpacerNoTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f050024" />
+                <TextView android:id="0x102000b" android:paddingLeft="?attr/dialogPreferredPadding" android:paddingRight="?attr/dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@c0409i/TextAppearance_AppCompat_Subhead" />
+                <android.support.v4.widget.Space android:id="@c0406f/textSpacerNoButtons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f050024" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@c0406f/scrollIndicatorDown" android:background="?attr/colorControlHighlight" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+    </FrameLayout>
+    <FrameLayout android:id="@c0406f/customPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp"
+        <FrameLayout android:id="@c0406f/custom" android:layout_width="match_parent" android:layout_height="wrap_content" /> />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@c0407g/abc_alert_dialog_button_bar_material" />
+</android.support.v7.widget.AlertDialogLayout>
