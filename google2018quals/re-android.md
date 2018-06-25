@@ -1,9 +1,9 @@
 Shall we play a game?
 ===
 
-The challenge is pretty straightforward, but a write-up could be appreciated by some too, so let's go. We have an APK file and a simple description: "Win the game 1,000,000 times to get the flag.". 
+The challenge is pretty straightforward, but a write-up could be appreciated by some people too, so let's go. We have an APK file and a simple description: "Win the game 1,000,000 times to get the flag.". 
 
-OK, so we should run this app somehow, the simplest it to install it on an Android phone, but maybe you haven't one (Google it's up upset on you now :disappointed:), so I will list some other possibilities:
+OK, so we should run this app somehow, the simplest way is to install it on an Android phone, but maybe you haven't one (Google it's up upset on you now :disappointed:), so I will list some other possibilities:
 * Bluestacks/Genymotion Emulator
 * QEMU-arm
 * Shashlik
@@ -21,10 +21,9 @@ Hoping that there are no obfuscation techniques or anything like that, let's try
 ```bash
 [littlewho@sweetHome google2018quals]$ ls app/com/google/ctf/shallweplayagame/
 C0644N.java  C0649a.java  C0652b.java  GameActivity.java
-[littlewho@sweetHome google2018quals]$
 ```
 
-`GameActivity.java` seems to be the most obvious place where all the events happen. Here, we see in the method `public void onClick(View view)` checks for X won, draw or O won. The method that is called when X win, it's the following (I added few comments to explain things):
+`GameActivity.java` seems to be the most obvious place where all the events happen. In the method `public void onClick(View view)` we can see checkings for X won, draw or O won. The method that is called when X wins, it's the following (I added few comments to explain things):
 ```java
     void m3215n() {
         // empty the board
@@ -71,7 +70,7 @@ I: Copying original files...
 
 The files of interest will be almost in the same path (`app_opcodes/smali/com/google/ctf/shallweplayagame`), but this time we see that their extension is `smali`. `smali` it's the intermediary format for Java `dex` (dalvik executables) files. A good reference for the opcodes is here http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
 
-`onClick` method is still here, but it look a lot more different. If we take a close look, we can see the same elements, conditions:
+`onClick` method is still here, but it looks a lot more different. If we take a close look, we can see the same elements,  we have conditions:
 ```
 902| if-eqz v0, :cond_0
 889| if-eqz v0, :cond_1
@@ -144,7 +143,7 @@ After those declarations, we have the code for the first two nested loops:
 
     goto :goto_0
 ```
-Then, the magic begins:
+Then, the magic begins here:
 ```
     :cond_1
     // play animations, sounds, etc
@@ -166,12 +165,16 @@ Then, the magic begins:
     // call the method that display the flag
     invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->m()V
 ```
-We could try to change the incrementation from 0x1 to 0xf4240 and win, but if we read the opcode docs for `add-int/lit8` we see that it won't support such a great value. In that case we could create a constant and move it to the counter, or use another `add-int` instruction, or we could use a loop, etc, but there are other calculations made with the flag. So, let's make a loop that includes the flag calculations too.
+We could try to change the incrementation from 0x1 to 0xf4240 and win, but if we read the opcode docs for `add-int/lit8` we see that it won't support such a great value. In that case we could create a constant and move it to the counter, or use another `add-int` instruction that supports greater values, or we could use a loop, etc, but there are other calculations made with the flag that are probably decryption operations, as it would be too easy if the flag was in plain text in memory. So, let's make a loop that includes the flag calculations too, but before that we need to figure out how to use registers as our variables, how to perform comparasions and how to increment values. For that we can take a look at the Dalvik opcodes documentation (you have a link earlier in this doc) and the actual opcode of the game.
 
-First, at the beginning of the method we see the statement `.locals 10`, this tells to the compiler how many registers should reserve for this method. We'll need 1 more register for storing another counter, so let's change from `.locals 10` to `.locals 11`. Then, let's study the docs a little bit and we will know that we need the folling opcodes to do our job:
+First, at the beginning of the method we see the statement `.locals 10`, this tells to the compiler how many registers should reserve for this method. We'll need 1 more register for storing another counter, so let's change from `.locals 10` to `.locals 11`. 
+
+Second, let's study the docs a little bit and we will know that we need the folling opcodes to do our job:
 * `move <to>, <from>` - move the value stored in register <from> to <to>, simple; we will use this to get the 0 constant into our counter
 * `add-int/lit8 <to>, <arg1>, <arg2>` - as mention earlier, it's a addition instruction, it adds the 8-bit literal value <arg2> to value from register <arg1> and stores in <to>
 * `if-ne <arg1>, <arg2>, <label>` - conditional instruction, if <arg1> is not equal with <arg2>, jump to the <label>
+    
+    
 And the code:
 ```
     .locals 11 
@@ -209,7 +212,7 @@ And the code:
     invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->m()V
     ...
 ```
-We could use the winning counter for the loop too, but I prefered to have my own variable for that. Now, let's buid back:
+We could use the winning counter for the loop too, but I prefered to have my own variable for that. Now, let's build the APK:
 ```bash
 [littlewho@sweetHome google2018quals]$ apktool b app_opcodes -o hacked.apk
 I: Using Apktool 2.3.3
@@ -232,7 +235,7 @@ I: Building apk file...
 I: Copying unknown files/dir...
 I: Built apk...
 ```
-OK, let's run. I beaten the computer and it just freezed, I think it is inside the loop. 
+OK, let's run. I beaten the computer one time and it just freezed, I think it is inside the loop and our flag is being decrypted.
 It's running, let's wait, running..... running... wait... OK, wait..... wait...... Oh, it's done! It took about two minutes on my phone, so be patient.
 ![We got the flag](2.png)
 
