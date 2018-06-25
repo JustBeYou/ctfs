@@ -664,7 +664,7 @@
 .end method
 
 .method n()V
-    .locals 10
+    .locals 11
 
     const v9, 0xf4240
 
@@ -712,9 +712,14 @@
     :cond_1
     invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->k()V
 
+##############
+    move v10, v1
+    :cond_10
+
     iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
 
     add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v10, v10, 0x1
 
     iput v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
 
@@ -785,6 +790,9 @@
     check-cast v0, [B
 
     iput-object v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->q:[B
+
+    if-ne v10, v9, :cond_10
+#############
 
     iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
 

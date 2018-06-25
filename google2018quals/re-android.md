@@ -52,7 +52,7 @@ C0644N.java  C0649a.java  C0652b.java  GameActivity.java
 ```
 
 I think that if we simply modify the wins counter by 1 million, we've got the flag. But we can't just modify this code and recompile, we'll need to use apktool to decompile to Java opcodes, change the opcode and build again.
-```
+```bash
 [littlewho@sweetHome google2018quals]$ apktool d app.apk -o app_opcodes
 I: Using Apktool 2.3.3 on app.apk
 I: Loading resource table...
@@ -166,4 +166,74 @@ Then, the magic begins:
     // call the method that display the flag
     invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->m()V
 ```
+We could try to change the incrementation from 0x1 to 0xf4240 and win, but if we read the opcode docs for `add-int/lit8` we see that it won't support such a great value. In that case we could create a constant and move it to the counter, or use another `add-int` instruction, or we could use a loop, etc, but there are other calculations made with the flag. So, let's make a loop that includes the flag calculations too.
 
+First, at the beginning of the method we see the statement `.locals 10`, this tells to the compiler how many registers should reserve for this method. We'll need 1 more register for storing another counter, so let's change from `.locals 10` to `.locals 11`. Then, let's study the docs a little bit and we will know that we need the folling opcodes to do our job:
+* `move <to>, <from>` - move the value stored in register <from> to <to>, simple; we will use this to get the 0 constant into our counter
+* `add-int/lit8 <to>, <arg1>, <arg2>` - as mention earlier, it's a addition instruction, it adds the 8-bit literal value <arg2> to value from register <arg1> and stores in <to>
+* `if-ne <arg1>, <arg2>, <label>` - conditional instruction, if <arg1> is not equal with <arg2>, jump to the <label>
+And the code:
+```
+    .locals 11 
+    
+    ... not relevant code ...
+
+    move v10, v1 
+    // v1 stores the constant value 0 as you can see at the beginning of the method
+    // so we move it into our counter
+
+    // --- loop start ---
+    :cond_10 // label for our loop
+
+    // we put our loop start before the incrementation of winning counter
+    // note that we did not include the call to animation/sound play as it would take too long
+    // and maybe it will burn your phone :stuck_out_tongue_winking_eye:
+    iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
+    
+    // increment our counter too
+    add-int/lit8 v10, v10, 0x1
+
+    add-int/lit8 v0, v0, 0x1
+
+    ... other actions performed on the flag ...
+
+    // just before the comparasion between counter and 1 million we put our jump to loop start
+    if-ne v10, v9, :cond_10
+    // --- loop end ---
+
+    // comparasion of the counter and the rest of code
+    iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
+
+    if-ne v0, v9, :cond_2
+
+    invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->m()V
+    ...
+```
+We could use the winning counter for the loop too, but I prefered to have my own variable for that. Now, let's buid back:
+```bash
+[littlewho@sweetHome google2018quals]$ apktool b app_opcodes -o hacked.apk
+I: Using Apktool 2.3.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+S: WARNING: Could not write to (/home/littlewho/.local/share/apktool/framework), using /tmp instead...
+S: Please be aware this is a volatile directory and frameworks could go missing, please utilize --frame-path if the default storage directory is unavailable
+I: Copying libs... (/lib)
+I: Building apk file...
+I: Copying unknown files/dir...
+I: Built apk...
+[littlewho@sweetHome google2018quals]$ apktool b app_opcodes -o hacked.apk
+I: Using Apktool 2.3.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+I: Built apk...
+```
+OK, let's run. I beaten the computer and it just freezed, I think it is inside the loop. 
+It's running, let's wait, running..... running... wait... OK, wait..... wait...... Oh, it's done! It took about two minutes on my phone, so be patient.
+!()[]
+And the flag is: ``
+*Ba dum tss!*
