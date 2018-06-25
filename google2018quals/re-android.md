@@ -13,7 +13,7 @@ Some of them could be true pain to configure on some systems. In my case I have 
 
 NOTE: On most devices/emulators we will need to sign the APK in order to install it. We can use ZipSigner from Google Play or generate manually a key and sign with something like jarsigner or apktool.
 
-![](images/1.png)
+![Pretty game](1.png)
 
 So, we have a Tic-Tac-Toe game and we need to win it 1 million times. If you are a pro player I think you could give it a try, but let's have a different approach here. Probably there is some counter for won games, we could modify the app to increase it by a big number and win in only one round.
 
@@ -187,7 +187,7 @@ And the code:
 
     // we put our loop start before the incrementation of winning counter
     // note that we did not include the call to animation/sound play as it would take too long
-    // and maybe it will burn your phone :stuck_out_tongue_winking_eye:
+    // and maybe it will burn your phone :P
     iget v0, p0, Lcom/google/ctf/shallweplayagame/GameActivity;->o:I
     
     // increment our counter too
@@ -234,6 +234,8 @@ I: Built apk...
 ```
 OK, let's run. I beaten the computer and it just freezed, I think it is inside the loop. 
 It's running, let's wait, running..... running... wait... OK, wait..... wait...... Oh, it's done! It took about two minutes on my phone, so be patient.
-!()[]
-And the flag is: ``
+![We got the flag](2.png)
+
+Dear ladies and gentelmen, the flag is: `CTF{ThLssOfInncncIsThPrcOfAppls}`
+
 *Ba dum tss!*
