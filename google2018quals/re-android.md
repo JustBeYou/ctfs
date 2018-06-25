@@ -9,13 +9,13 @@ OK, so we should run this app somehow, the simplest way is to install it on an A
 * Shashlik
 * ARC Welder on Google Chrome
 
-Some of them could be true pain to configure on some systems. In my case I have a Genymotion Emulator configured and an Android phone. 
+Some of them could be real struggle to configure on some systems. In my case I have a Genymotion Emulator configured and an Android phone. 
 
 NOTE: On most devices/emulators we will need to sign the APK in order to install it. We can use ZipSigner from Google Play or generate manually a key and sign with something like jarsigner or apktool.
 
 ![Pretty game](1.png)
 
-So, we have a Tic-Tac-Toe game and we need to win it 1 million times. If you are a pro player I think you could give it a try, but let's have a different approach here. Probably there is some counter for won games, we could modify the app to increase it by a big number and win in only one round.
+So, we have a Tic-Tac-Toe game and we need to win it 1 million times. If you are a pro player I think you could give it a try, but let's have a different approach here. Probably there is some counter for the won games, we could modify the app to increase it by a big number and win in only one round.
 
 Hoping that there are no obfuscation techniques or anything like that, let's try to get the source code using a great online Java decompiler I like to use: http://www.javadecompilers.com/apk . After exploring a little bit, we see that the interesting things for us are in  `app/com/google/ctf/shallweplayagame/`:
 ```bash
@@ -70,7 +70,7 @@ I: Copying original files...
 
 The files of interest will be almost in the same path (`app_opcodes/smali/com/google/ctf/shallweplayagame`), but this time we see that their extension is `smali`. `smali` it's the intermediary format for Java `dex` (dalvik executables) files. A good reference for the opcodes is here http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
 
-`onClick` method is still here, but it looks a lot more different. If we take a close look, we can see the same elements,  we have conditions:
+`onClick` method is still here, but it looks a lot more different. If we take a closer look, we can see the same elements,  we have conditions:
 ```
 902| if-eqz v0, :cond_0
 889| if-eqz v0, :cond_1
@@ -167,11 +167,11 @@ Then, the magic begins here:
 ```
 We could try to change the incrementation from 0x1 to 0xf4240 and win, but if we read the opcode docs for `add-int/lit8` we see that it won't support such a great value. In that case we could create a constant and move it to the counter, or use another `add-int` instruction that supports greater values, or we could use a loop, etc, but there are other calculations made with the flag that are probably decryption operations, as it would be too easy if the flag was in plain text in memory. So, let's make a loop that includes the flag calculations too, but before that we need to figure out how to use registers as our variables, how to perform comparasions and how to increment values. For that we can take a look at the Dalvik opcodes documentation (you have a link earlier in this doc) and the actual opcode of the game.
 
-First, at the beginning of the method we see the statement `.locals 10`, this tells to the compiler how many registers should reserve for this method. We'll need 1 more register for storing another counter, so let's change from `.locals 10` to `.locals 11`. 
+Firstly, at the beginning of the method we see the statement `.locals 10`, this tells the compiler how many registers should reserve for this method. We'll need 1 more register for storing another counter, so let's change from `.locals 10` to `.locals 11`. 
 
-Second, let's study the docs a little bit and we will know that we need the folling opcodes to do our job:
+Secondly, let's study the docs a little bit and we will know that we need the folling opcodes to do our job:
 * `move <to>, <from>` - move the value stored in register <from> to <to>, simple; we will use this to get the 0 constant into our counter
-* `add-int/lit8 <to>, <arg1>, <arg2>` - as mention earlier, it's a addition instruction, it adds the 8-bit literal value <arg2> to value from register <arg1> and stores in <to>
+* `add-int/lit8 <to>, <arg1>, <arg2>` - as mentioned earlier, it's an addition instruction, it adds the 8-bit literal value <arg2> to value from register <arg1> and stores the result in <to>
 * `if-ne <arg1>, <arg2>, <label>` - conditional instruction, if <arg1> is not equal with <arg2>, jump to the <label>
     
     
@@ -212,7 +212,7 @@ And the code:
     invoke-virtual {p0}, Lcom/google/ctf/shallweplayagame/GameActivity;->m()V
     ...
 ```
-We could use the winning counter for the loop too, but I prefered to have my own variable for that. Now, let's build the APK:
+We could use the winning counter for our loop too, but I prefered to have my own variable for that. Now, save the file and let's build the APK:
 ```bash
 [littlewho@sweetHome google2018quals]$ apktool b app_opcodes -o hacked.apk
 I: Using Apktool 2.3.3
