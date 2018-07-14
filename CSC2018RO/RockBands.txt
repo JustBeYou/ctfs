@@ -1,0 +1,671 @@
+ABBA
+AC/DC
+The Band
+The Beach Boys
+The Beatles
+The Bee Gees
+Chuck Berry
+David Bowie
+Jackson Browne
+Buzzcocks
+The Byrds
+The Clash
+Eddie Cochran
+Elvis Costello
+Creedence Clearwater Revival
+Crosby, Stills & Nash
+Bo Diddley
+The Doors
+Bob Dylan
+The Eagles
+The Everly Brothers
+Faces
+Fleetwood Mac
+The Flying Burrito Brothers
+Genesis
+The Grateful Dead
+Jimi Hendrix
+The Hollies
+Buddy Holly
+Hüsker Dü
+The Jam
+Billy Joel
+Elton John
+The Kinks
+Led Zeppelin
+Jerry Lee Lewis
+Little Richard
+Lynyrd Skynyrd
+Madonna
+Metallica
+Joni Mitchell
+The Monkees
+Van Morrison
+Nirvana
+Roy Orbison
+Gram Parsons
+Carl Perkins
+Tom Petty
+Pink Floyd
+Elvis Presley
+Prince
+Queen
+The Ramones
+R.E.M.
+The Rolling Stones
+Simon & Garfunkel
+The Smiths
+Phil Spector
+Bruce Springsteen
+Steely Dan
+Rod Stewart
+U2
+The Velvet Underground
+The Who
+The Yardbirds
+Neil Young
+ABC
+Aerosmith
+The Allman Brothers Band
+The Animals
+Adam Ant
+Anthrax
+The B-52's
+Burt Bacharach
+Badfinger
+Bauhaus
+The Beau Brummels
+The Beautiful South
+Jeff Beck
+Beck
+Big Brother & the Holding Company
+Big Star
+Björk
+Black Flag
+Black Sabbath
+Blondie
+Blood, Sweat & Tears
+Blue Öyster Cult
+Blur
+Boston
+The Box Tops
+Billy Bragg
+Bread
+Brinsley Schwarz
+Tim Buckley
+Buffalo Springfield (Revisited)
+Buffalo Springfield
+Jimmy Buffett
+Kate Bush
+Butthole Surfers
+John Cale
+Camper Van Beethoven
+Can
+Captain Beefheart
+The Carpenters
+The Cars
+Cheap Trick
+Chicago
+Eric Clapton
+The Dave Clark Five
+Petula Clark
+Cocteau Twins
+Leonard Cohen
+Phil Collins
+Ry Cooder
+Alice Cooper
+The Count Five
+Cowboy Junkies
+Cream
+The Creation
+Marshall Crenshaw
+Jim Croce
+Sheryl Crow
+Crowded House
+Culture Club
+The Cure
+Dick Dale
+The Damned
+Bobby Darin
+The Spencer Davis Group
+Dead Kennedys
+Deep Purple
+Def Leppard
+John Denver
+Depeche Mode
+Derek & the Dominos
+Jackie DeShannon
+Devo
+Dexys Midnight Runners
+Neil Diamond
+Ani DiFranco
+Dinosaur Jr.
+Celine Dion
+Dion
+Dire Straits
+Dr. Feelgood
+Dr. John
+Thomas Dolby
+Donovan
+The Doobie Brothers
+Nick Drake
+Duran Duran
+Ian Dury
+Echo & the Bunnymen
+Eddie & the Hot Rods
+Duane Eddy
+Dave Edmunds
+Electric Light Orchestra
+Emerson, Lake & Palmer
+Brian Eno
+Erasure
+Eurythmics
+The Fabulous Thunderbirds
+Fairport Convention
+Faith No More
+Marianne Faithfull
+The Fall
+The Falling Leaves
+The Feelies
+The Flamin' Groovies
+Foreigner
+The Four Seasons
+Peter Frampton
+Free
+Fugazi
+Bobby Fuller Four
+Bobby Fuller
+Peter Gabriel
+Galaxie 500
+Gang of Four
+J. Geils Band
+Geils
+Gerry & the Pacemakers
+Gary Glitter
+The Go-Go's
+Grand Funk Railroad
+The Grass Roots
+Green Day
+The Guess Who
+Guided by Voices
+Guns N' Roses
+Bill Haley
+Hall & Oates
+Happy Mondays
+Tim Hardin
+George Harrison
+PJ Harvey
+Heart
+Don Henley
+John Hiatt
+Robyn Hitchcock
+Hole
+Hootie & the Blowfish
+Bruce Hornsby
+The Housemartins
+The Human League
+Humble Pie
+Janis Ian
+Indigo Girls
+INXS
+Iron Butterfly
+Iron Maiden
+Joe Jackson
+Wanda Jackson
+Tommy James & the Shondells
+Jan & Dean
+Jane's Addiction
+Jefferson Airplane
+Jefferson Starship
+The Jesus and Mary Chain
+Jethro Tull
+Joan Jett
+Janis Joplin
+Journey
+Joy Division
+Judas Priest
+Dietrich Kammer
+King Crimson
+Carole King
+The Kingsmen
+Kiss
+Kittyhawk
+Korn
+The La's
+Cyndi Lauper
+The Left Banke
+John Lennon
+Let's Active
+Huey Lewis
+Little Feat
+Little River Band
+Loggins & Messina
+Los Lobos
+Love and Rockets
+Love
+Lyle Lovett
+The Lovin' Spoonful
+Nick Lowe
+Kirsty MacColl
+Madness
+The Mamas & the Papas
+Manfred Mann
+Manic Street Preachers
+Barry Manilow
+Aimee Mann
+Marilyn Manson
+The Marshall Tucker Band
+Dave Matthews
+John Mayall
+MC5
+Paul McCartney
+Michael McDonald
+Sarah McLachlan
+Meat Loaf
+Meat Puppets
+Joe Meek
+Megadeth
+The Mekons
+John Mellencamp
+Men at Work
+Mercury Rev
+Normann Mertig
+George Michael
+Midnight Oil
+Steve Miller
+Ministry
+Minor Threat
+Minutemen
+Mission of Burma
+Moby Grape
+The Moody Blues
+Alanis Morissette
+Morrissey
+Mötley Crüe
+Motörhead
+Mott the Hoople
+The Move
+Mudhoney
+Felix Mühle
+My Bloody Valentine
+Rick Nelson
+New Kids on the Block
+New Order
+New York Dolls
+Randy Newman
+Stevie Nicks
+Harry Nilsson
+Nine Inch Nails
+No Doubt
+NRBQ
+Gary Numan
+Laura Nyro
+Oasis
+Sinéad O'Connor
+The Offspring
+Ozzy Osbourne
+Robert Palmer
+Graham Parker
+Alan Parsons
+Pavement
+Pearl Jam
+Pere Ubu
+Pet Shop Boys
+Liz Phair
+Phish
+Gene Pitney
+Pixies
+Poco
+The Pogues
+The Police
+Iggy Pop
+Portishead
+The Pretenders
+The Pretty Things
+Primal Scream
+Primus
+John Prine
+Procol Harum
+The Psychedelic Furs
+Public Image Ltd.
+Pulp
+Pure Prairie League
+Radiohead
+Rage Against the Machine
+Bonnie Raitt
+Rancid
+The Rascals
+Karsten Rasim
+The Raspberries
+The Red Hot Chili Peppers
+Lou Reed
+REO Speedwagon
+The Replacements
+Paul Revere & the Raiders
+Cliff Richard
+Jonathan Richman
+The Righteous Brothers
+Johnny Rivers
+The Rivieras
+Rockpile
+Linda Ronstadt
+Roxy Music
+Todd Rundgren
+Rush
+Leon Russell
+Mitch Ryder
+Doug Sahm
+Saint Etienne
+Santana
+Boz Scaggs
+Maria Schumann
+Seals & Crofts
+The Searchers
+Sebadoh
+Neil Sedaka
+Bob Seger
+Selby Tigers
+The Sex Pistols
+Del Shannon
+Carly Simon
+Paul Simon
+Simply Red
+Siouxsie and the Banshees
+The Sir Douglas Quintet
+Slade
+Slayer
+Slint
+The Slits
+The Small Faces
+The Smashing Pumpkins
+Patti Smith
+The Smithereens
+The Soft Boys
+The Soft Machine
+Sonic Youth
+Sonny & Cher
+Soundgarden
+Spacemen 3
+Britney Spears
+The Specials
+Spice Girls
+Spiritualized
+Split Enz
+Dusty Springfield
+Rick Springfield
+Squeeze
+The Standells
+Status Quo
+Steppenwolf
+Stereolab
+Cat Stevens
+Al Stewart
+Sting
+The Stone Roses
+Stone Temple Pilots
+The Stooges
+Styx
+Sublime
+Suede
+Sugar
+The Sugarcubes
+Suicide
+The Sundays
+Super Furry Animals
+Supergrass
+Supertramp
+The Surfaris
+Sweet
+Matthew Sweet
+T. Rex
+Talking Heads
+James Taylor
+The Teardrop Explodes
+Tears for Fears
+Television
+10,000 Maniacs
+They Might Be Giants
+Thin Lizzy
+13th Floor Elevators
+Richard Thompson
+Three Dog Night
+Pete Townshend
+Traffic
+The Trashmen
+The Turtles
+Uncle Tupelo
+Urge Overkill
+Ritchie Valens
+Van Halen
+Stevie Ray Vaughan
+The Ventures
+The Verve
+Gene Vincent
+Violent Femmes
+Tom Waits
+The Walker Brothers
+Scott Walker
+Jimmy Webb
+Ween
+Weezer
+Paul Weller
+Wham!
+Steve Winwood
+Wire
+Link Wray
+X-Ray Spex
+X
+XTC
+Yes
+Yo La Tengo
+Frank Zappa
+Warren Zevon
+The Zombies
+ZZ Top
+Alice in Chains
+The Amazing Rhythm Aces
+America
+American Music Club
+Tori Amos
+The Angels
+The Art of Noise
+Bachman-Turner Overdrive
+Backstreet Boys
+Bad Company
+Bad Religion
+The Bangles
+Syd Barrett
+Be Bop Deluxe
+Beat Happening
+Chris Bell
+Belle & Sebastian
+Pat Benatar
+Big Black
+The Birthday Party
+The Black Crowes
+The Blasters
+Blue Cheer
+The Blues Project
+Blues Traveler
+Curt Boettcher
+Michael Bolton
+Bon Jovi
+Gary "U.S." Bonds
+The Bonzo Dog Band
+The Boo Radleys
+The Breeders
+Bronski Beat
+Lindsey Buckingham
+Jeff Buckley
+Johnny Burnette
+Cabaret Voltaire
+J.J. Cale
+Nick Cave
+The Celibate Rifles
+The Chantays
+Tracy Chapman
+The Charlatans
+The Charlatans UK
+The Chiffons
+The Chocolate Watchband
+The Church
+Gene Clark
+The Clean
+Joe Cocker
+Lloyd Cole
+Shawn Colvin
+Commander Cody
+Julian Cope
+Country Joe & the Fish
+The Cramps
+David Crosby
+Danzig
+The dB's
+Deee-Lite
+Diamond Head
+The Dictators
+Lonnie Donegan
+Dream Syndicate
+The Durutti Column
+Einstürzende Neubauten
+The English Beat
+Gloria Estefan
+Everything But the Girl
+Fabian
+Donald Fagen
+Georgie Fame
+Faust
+Bryan Ferry
+Fishbone
+The Flaming Lips
+Robert Fripp
+Front Line Assembly
+Front 242
+Billy Fury
+Serge Gainsbourg
+Garbage
+Gentle Giant
+The Germs
+Lesley Gore
+Half Japanese
+Terry Hall
+Hanson
+Ronnie Hawkins
+Hawkwind
+Allan Holdsworth
+Horslips
+Ian Hunter
+Japan
+Jason & the Scorchers
+The Jayhawks
+David Johansen
+Rickie Lee Jones
+Tom Jones
+Kid Rock
+Johnny Kidd
+Killing Joke
+KMFDM
+Al Kooper
+Kyuss
+L7
+The Last Poets
+Live
+The Lively Ones
+Melvins
+The Mighty Mighty Bosstones
+Bob Mould
+Mountain
+Peter Murphy
+The Music Machine
+Napalm Death
+Olivia Newton-John
+Nico
+1910 Fruitgum Company
+Nitzer Ebb
+Ted Nugent
+The Only Ones
+Operation Ivy
+Orange Juice
+Jim O'Rourke
+Palace
+Pantera
+Van Dyke Parks
+ Pezband
+Poison
+The Posies
+Pussy Galore
+Pylon
+Queensrÿche
+? & the Mysterians
+Quiet Riot
+The Raincoats
+Ratt
+Ride
+Billy Lee Riley
+Rocket From the Tombs
+Henry Rollins
+The Ronettes
+The Runaways
+The Rutles
+The Saints
+Joe Satriani
+Scorpions
+Screaming Trees
+The Seeds
+The Seekers
+Shadows of Knight
+The Shangri-Las
+Sandie Shaw
+Jules Shear
+Michelle Shocked
+Shoes
+Skinny Puppy
+P.F. Sloan
+Warren Smith
+Chris Smither
+The Sneakers
+Phoebe Snow
+Soft Cell
+The Sonics
+Joe South
+Southside Johnny
+Spandau Ballet
+Sparks
+Jon Spencer Blues Explosion
+Spin Doctors
+Spirit
+Stiff Little Fingers
+Stephen Stills
+The Strawbs
+Stray Cats
+The Style Council
+Suicidal Tendencies
+Sunny Day Real Estate
+Superchunk
+Swell Maps
+David Sylvian
+Take That
+Talk Talk
+Teenage Fanclub
+Them
+Throbbing Gristle
+Throwing Muses
+Johnny Thunders
+The Toasters
+Tool
+Tortoise
+The Troggs
+Dwight Twilley
+UB40
+Ultravox
+Unrest
+The Vaselines
+Bobby Vee
+Suzanne Vega
+White Zombie
+Tony Joe White
+Whitesnake
+Wilco
+Jesse Winchester
+Johnny Winter
+Robert Wyatt
