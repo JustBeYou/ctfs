@@ -1,0 +1,3 @@
+break *0x80485ed
+break *0x804864f
+
