@@ -1,0 +1,4 @@
+Underhanded Storage (350pts)
+
+[Task author: amadan]
+Despite our best efforts to neutralize the backdoors found on that router, no matter how we try to remove them they keep popping up again. Something is ensuring those backdoors stay there. Find that rootkit!

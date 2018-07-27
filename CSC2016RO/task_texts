@@ -1,0 +1,87 @@
+
+==================== Operation M.E.M.
+
+Task 1: keylogger (150p)
+	[Task author: wayrick] We managed to seize the laptop of an enemy agent and by analyzing it thoroughly our [url=https://www.youtube.com/watch?v=yoy4_h7Pb3M]Top Men[/url] found a keylogger on it. We saved the log file first but when we realized that it was encrypted, the engineers proceeded to create a memory dump ([url]https://ctf.cybersecuritychallenge.ro/static/deddd1670d3e07ede00b0993a2110cc6.raw[/url]) of it before the laptop self-destructed so we need your crypto and reversing skills to find a way to recover the text encrypted in the separate file we entrust you with. The format of the flag you will find is csc{...}
+	Hint: This task and all the other in Operation M.E.M. are mainly reverse engineering tasks but they also involve a little bit of forensics / crypto.
+	Associated file: log_2016_05_06_02_35_17 and the memory dump
+
+Task 2: mess (250p)
+	[Task author: wayrick] We took a second look at that same laptop where there seemed to be a suspicious program related to one of our missing agents. Luckily, we managed to capture the chief interogator who "took care" of our agent. We've found a file sent from this laptop that may give us the location where he's been taken. Unfortunately, this one also seems to be encrypted using a highly effective military grade algorithm and the enemy agent isn't talking. Decrypt the given file and give us the location.
+	Associated file: secret_location.enc and the memory dump
+
+
+
+==================== Operation N.E.T. 
+
+Task 1: Bootleg Iodine (200p)
+	[Task author: amadan] Our state-of-the-art-machine-learning-big-data-buzzword-friendly IPS has detected some covert communication on one of our monitored networks. The automated analysis describes the whole thing as being a custom, simplified version of an existing tunneling solution. We need your skills to investigate what actually happened. Flag format is csc2016{<flag>}
+	Associated file: bootleg_iodine_b462e0e66e87e07b9fe15ec03b51dd321547e386.pcap
+
+Task 2: Vault Command and Control Server (350p)
+	[Task author: icernica] The previous task has unexpectedly led you to the C&C server of a ransomware. Can you infiltrate the server and provide us with all the sensitive information you can find there?
+
+
+
+
+
+ ==================== Operation H.W.C.
+
+ Task 1: Scribbler (100p)
+ 	[Task author: amadan] It seems that one of the groups we are investigating has managed to infiltrate our organization in order to look into the progress we've made so far. We apprehended him while he was jotting down sensitive information using doodles in some IM app. The IM app uses HTTPS so we can't peek there, but we have some other data from the device the perpetrator was using. Can you tell us how much he found out? Flag format is csc2016{<flag>}
+ 	Associated file: scribbler_8106354a720016e5e30a1674fb7ba1e6a67ab84a.tar.bz2
+
+ Task 2: ransom6 (50p)
+ 	[Task author: icernica] The data he was exfiltrating was then relayed through Tor to the address you found when solving Scribbler. This hidden service is coincidentally the payment page for a well-known ransomware. If you can hack it we can prove a definite link between the H.W.C. group and this particular ransomware. Use your security expertise to investigate the case and give us more information.
+ 	Hint: You are allowed to use the sqlmap tool on verify wallet request! 
+
+ Task 3: Homework (401p)
+ 	[Task author: icernica] We need access to the admin panel. we suspect the admin has no access to the internet, ca you find a way to provide us the information inside the admin panel?
+
+
+
+
+
+
+
+
+
+==================== Operation S.M.O.K.E.
+
+Task 1: Global Warming (10p)
+	[Task author: Sin__] During our operations we came across the work of a reclusive scientist known for dabbling in cryptographic mystique, oracles, smoke screens, crystal balls and who knows what else. Help us make sense of what we found. The first system is a free trial service meant to be operated behind the scenes in a ransomware payment site. To avoid automated crawlers and ill-intended people he planted a safeguard that requires a so-called "Proof of Work". You will burn some CPU cycles to pass it but it will surely be worth it. Connect using "nc 108.61.170.199 8080"
+	Associated file: 3abc257f6822ef489e3dbba17d9f12f0.py
+
+Task 2: Trial and Error (150p)
+	[Task author: Sin__] Having passed the PoW you analyze the service: a victim user is allowed to encrypt anything but decryption is not fully available (unless they pay). Encrypting and then decrypting a number of your choice proves that they have the private key that the victim so badly needs. Use this trial service against itself to decrypt the given ciphertext that the mad doctor placed at the beginning of the communication.
+	Hint: First you need to query the service in some way so that you can deduce the modulus value, N.
+	Associated file: 3abc257f6822ef489e3dbba17d9f12f0.py
+
+Task 3: Tamago (250p)
+	[Task author: Sin__] The scientist is also known to be an avid gadget hoarder. Some of his devices entered our labs but being tamper-proof they exploded when our engineers tried to dissect them. Our only hope is to investigate the HTTPS traffic that these small devices produce. We captured such traffic and immediately afterwards we froze the device and dumped its flash memory which is completely encrypted as well but we have reasons to suspect the symmetric encryption parameters of the TLS conversation are the only ones still present in clear in the dump! Decrypt the TLS traffic and tell us what the device transmits to the mothership. [url]https://ctf.cybersecuritychallenge.ro/static/83f363ccbded917bac6133d197a7ad88.zip[/url] Enter the following flag: CSC2016{md5sum of the transmitted file}
+	Hint: for all intents and purposes you can view the "memory dump" as random data but at some random offsets the keys were just copied over the initial random data
+
+Task 4: Crimes Against X86 (350p)
+	[Task author: Sin__] The mad doctor did it again: in a crazy coding frenzy he built a software that he describes as a "time-travel grade encryption algorithm". We obtained this software and a highly-sensitive document encrypted using his techniques. Can you prove that you don't need a TARDIS to decrypt the file? [url]https://ctf.cybersecuritychallenge.ro/static/a7f8d48e2b9edf7d381a6e3b396fbae5.zip[/url]
+	Hint: forget the binary, you will only need it as a last resort. This task can be solved through basic cryptanalysis alone: investigate the patterns and statistical properties in the given file. 	
+
+
+
+
+
+
+
+==================== Operation Bad F.S.
+
+Task 1: Framed (50p)
+	[Task author: amadan] One of our router honeypots has been compromised and we think that the attacker planted a "backdoor" in a seemingly innocuous place on the filesystem. You must figure out what changes he made. 	Flag format is csc2016{<flag>}
+	Associated file: bad_fs_8276f981875db5e121623f925f518b838a4596b3.tar.bz2
+
+Task 2: Reading Between the Lines (300p)
+	[Task author: amadan] The attack vector for that router was something our state-of-the-art-machine-learning-big-data-buzzword-friendly IPS failed to catch. Someone that good probably planted a secondary "backdoor", shadowed by the first, just to make sure he has persistent access. We need you to find it. Flag format is csc2016{<flag>}
+	Hint:  	https://www.w3.org/Graphics/GIF/spec-gif89a.txt
+	Associated file: bad_fs_8276f981875db5e121623f925f518b838a4596b3.tar.bz2
+
+Task 3: Underhanded Storage (350p)
+	[Task author: amadan] Despite our best efforts to neutralize the backdoors found on that router, no matter how we try to remove them they keep popping up again. Something is ensuring those backdoors stay there. Find that rootkit! Flag format is csc2016{<flag>}
+	Associated file: bad_fs_8276f981875db5e121623f925f518b838a4596b3.tar.bz2

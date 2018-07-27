@@ -1,0 +1,4 @@
+Homework (401pts)
+
+[Task author: icernica]
+We need access to the admin panel. we suspect the admin has no access to the internet, ca you find a way to provide us the information inside the admin panel?

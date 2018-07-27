@@ -1,0 +1,4 @@
+Vault Command and Control Server (350pts)
+
+[Task author: icernica]
+The previous task has unexpectedly led you to the C&C server of a ransomware. Can you infiltrate the server and provide us with all the sensitive information you can find there?

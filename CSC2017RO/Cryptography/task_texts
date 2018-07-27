@@ -1,0 +1,29 @@
+Censorship part 1: Proof of Work
+This is your first task. In this challenge you will have to figure out how to programatically interact with a service running on 45.76.89.32:1234 and pass the check (first you obtain the string, then append a valid suffix and send it back to the server) to get the first flag.
+
+
+We recommend you use pwntools and test it locally first!
+
+
+
+Censorship part 2: RSA ownage
+Ok, now let's test your understanding of RSA. You will be presented with a ciphertext (that contains the flag) and you can also do exactly two decryptions (although not on the initial ciphertext).
+Docs: [list]
+[*] https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
+[/list]
+
+
+Bricks were MD*
+In this challenge, you have to provide two different inputs that hash to the same output. How hard can that be?
+The attached Linux binary is running at  45.76.89.32:2345
+Test the 2 inputs on your system and then send them remote to get your flag.
+Docs: [list]
+			[*] https://en.wikipedia.org/wiki/MD5
+[/list]
+
+
+
+Base64 "encryption"
+
+Some trolls^W people will argue that base64 encoding is encryption (and military grade too) if you only change a few things here and there. Are they correct? Prove'em wrong and score the points!
+

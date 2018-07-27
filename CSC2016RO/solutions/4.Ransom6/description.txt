@@ -1,0 +1,6 @@
+ransom6 (50pts):
+
+[Task author: icernica]
+The data he was exfiltrating was then relayed through Tor to the address you found when solving Scribbler. This hidden service is coincidentally the payment page for a well-known ransomware. If you can hack it we can prove a definite link between the H.W.C. group and this particular ransomware. Use your security expertise to investigate the case and give us more information.
+
+Hint! You are allowed to use the sqlmap tool on verify wallet request!

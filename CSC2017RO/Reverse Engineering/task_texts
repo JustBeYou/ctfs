@@ -1,0 +1,22 @@
+The Tiny Horror
+We found some files encrypted with the "Tiny Horror" Ransomware so we tried analyzing it but even our top men have given up on it. Are you up to the challenge?
+Docs: [list]
+[*] https://www.youtube.com/watch?v=2VF_wPkiBJY
+[/list]
+
+
+Crimes Against X86
+Upon much consideration, we decided to reintroduce this task. The idea is simple: you have a "slow" decrypter and an encrypted file. You just need to run ./Crimes_Against_X86 ./proof.enc and read the result (after a few months of computation)
+Some stats: [list]
+[*] It was not solved in the CSC 2016 quals
+[*] It was not solved in the CSC 2016 bootcamp
+[*] To my knowledge it was only ever solved by one person so far
+[/list]
+
+Since you could have worked on the task since last year, we are adjusting its points from 500 to 350.
+
+
+Strategic Patience
+
+Here's one last RE task for you, just a classic crackme. You feed it an input and it prints Correct or Wrong. Is there more you need to know?
+

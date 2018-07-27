@@ -1,0 +1,7 @@
+Pentest Noise
+
+Our state of the art Data Leakage Prevention solution has detected that a very crucial piece of information has been exfiltrated from our network. We have that traffic capture for you to analyze and see exactly what that information was. There's just one problem, though. There were also some pentesters running automated tools on our server, so the capture will be a bit... noisy :) Good luck and don't give up. 
+
+Download the file from:  https://ctf.cybersecuritychallenge.ro/files/pentest_noise.pcap
+
+[b] Note that you only have TEN tries to get the flag correct. Do not waste your chances[/b]

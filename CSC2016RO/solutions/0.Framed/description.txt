@@ -1,0 +1,4 @@
+Framed (50pts)
+
+[Task author: amadan]
+One of our router honeypots has been compromised and we think that the attacker planted a backdoor in a seemingly innocuous place on the filesystem. You must figure out what changes he made.
