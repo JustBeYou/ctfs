@@ -1,0 +1,66 @@
+[m   dep:02 [m=> 0x565558e0 <main+17>:[;32m	call   0x56555840 <INIT>[0m[0m[0m
+[m          |-- arg[0]: 0x1 [0m
+[m          |-- arg[1]: [;34m0xffffc734[0m --> [;34m0xffffc900[0m ("/home/littlewho/Downloads/babyformat")[0m
+[m          |-- arg[2]: [;34m0xffffc73c[0m --> [;34m0xffffc925[0m ("LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;19"...)[0m
+[m    dep:03 [m=> 0x56555851 <INIT+17>:[;32m	call   0xf7e710c0 <setbuf>[0m[0m[0m
+[m           |-- arg[0]: [;34m0xf7fa15c0[0m --> 0xfbad2088 [0m
+[m           |-- arg[1]: 0x0 [0m
+[m           |-- arg[2]: 0x0 [0m
+[m    dep:03 [m=> 0x56555864 <INIT+36>:[;32m	call   0xf7e710c0 <setbuf>[0m[0m[0m
+[m           |-- arg[0]: [;34m0xf7fa1d80[0m --> 0xfbad2084 [0m
+[m           |-- arg[1]: 0x0 [0m
+[m    dep:03 [m=> 0x56555876 <INIT+54>:[;32m	call   0xf7e2fdc0 <ssignal>[0m[0m[0m
+[m           |-- arg[0]: 0xe [0m
+[m           |-- arg[1]: [;31m0x56555820[0m (<ALARMhandler>:	push   ebp)[0m
+[m    dep:03 [m=> 0x56555883 <INIT+67>:[;32m	call   0xf7eae080 <alarm>[0m[0m[0m
+[m           |-- arg[0]: 0x0 [0m
+[m    dep:03 [m=> 0x565558ed <main+30>:[;32m	call   0xf7e6a8e0 <puts>[0m[0m[0m
+[m           |-- arg[0]: [;32m0x565559cc[0m ("==== Baby Format - Echo system ====")[0m
+[m   dep:02 [m=> 0x565558fe <main+47>:[;32m	call   0x5655588e <exploit_me>[0m[0m[0m
+[m    dep:03 [m=> 0x565558a0 <exploit_me+18>:[;32m	call   0xf7e828c0 <memset>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[1]: 0x0 [0m
+[m           |-- arg[2]: 0xd ('\r')[0m
+[m           |-- arg[3]: [;31m0x565558f2[0m (<main+35>:	add    esp,0x10)[0m
+[m    dep:03 [m=> 0x565558b4 <exploit_me+38>:[;1;4;31m	call   0xf7ed6bc0 <read>[0m[0m[0m
+[m           |-- arg[0]: 0x0 [0m
+[m           |-- arg[1]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[2]: 0xd ('\r')[0m
+[m    dep:03 [m=> 0x565558c4 <exploit_me+54>:[;1;4;31m	call   0xf7e53ef0 <printf>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m    dep:03 [m=> 0x56555912 <main+67>:[;32m	call   0xf7e81280 <strncmp>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[1]: [;32m0x565559f0[0m ("EXIT")[0m
+[m           |-- arg[2]: 0x4 [0m
+[m   dep:02 [m=> 0x565558fe <main+47>:[;32m	call   0x5655588e <exploit_me>[0m[0m[0m
+[m    dep:03 [m=> 0x565558a0 <exploit_me+18>:[;32m	call   0xf7e828c0 <memset>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[1]: 0x0 [0m
+[m           |-- arg[2]: 0xd ('\r')[0m
+[m           |-- arg[3]: [;31m0x56555917[0m (<main+72>:	add    esp,0x10)[0m
+[m    dep:03 [m=> 0x565558b4 <exploit_me+38>:[;1;4;31m	call   0xf7ed6bc0 <read>[0m[0m[0m
+[m           |-- arg[0]: 0x0 [0m
+[m           |-- arg[1]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[2]: 0xd ('\r')[0m
+[m    dep:03 [m=> 0x565558c4 <exploit_me+54>:[;1;4;31m	call   0xf7e53ef0 <printf>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m    dep:03 [m=> 0x56555912 <main+67>:[;32m	call   0xf7e81280 <strncmp>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[1]: [;32m0x565559f0[0m ("EXIT")[0m
+[m           |-- arg[2]: 0x4 [0m
+[m   dep:02 [m=> 0x565558fe <main+47>:[;32m	call   0x5655588e <exploit_me>[0m[0m[0m
+[m    dep:03 [m=> 0x565558a0 <exploit_me+18>:[;32m	call   0xf7e828c0 <memset>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[1]: 0x0 [0m
+[m           |-- arg[2]: 0xd ('\r')[0m
+[m           |-- arg[3]: [;31m0x56555917[0m (<main+72>:	add    esp,0x10)[0m
+[m    dep:03 [m=> 0x565558b4 <exploit_me+38>:[;1;4;31m	call   0xf7ed6bc0 <read>[0m[0m[0m
+[m           |-- arg[0]: 0x0 [0m
+[m           |-- arg[1]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[2]: 0xd ('\r')[0m
+[m    dep:03 [m=> 0x565558c4 <exploit_me+54>:[;1;4;31m	call   0xf7e53ef0 <printf>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m    dep:03 [m=> 0x56555912 <main+67>:[;32m	call   0xf7e81280 <strncmp>[0m[0m[0m
+[m           |-- arg[0]: [;34m0x5655702c[0m --> 0x0 [0m
+[m           |-- arg[1]: [;32m0x565559f0[0m ("EXIT")[0m
+[m           |-- arg[2]: 0x4 [0m
