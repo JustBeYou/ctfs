@@ -32,7 +32,7 @@ This is a short guide for learning pwning.
 
 4. Watch this https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 
-5. Read those articles: https://ctf101.org/binary-exploitation/overview/
+5. Read those articles: https://ctf101.org/binary-exploitation/overview/ , https://0x00sec.org/t/heap-exploitation-abusing-use-after-free/3580
 
 6. Practice on:
     - pwnable.kr
