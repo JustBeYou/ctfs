@@ -68,3 +68,4 @@ def exploit(ret_offset):
     io.close()
 
 exploit(-152)
+# noxCTF{%N3ver_%7rust_%4h3_%F0rmat}
