@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="camera_loader">false</item>
+    <item type="id" name="camera_loader_spinner">false</item>
+    <item type="id" name="frame_camera_cont">false</item>
+    <item type="id" name="frame_container">false</item>
+    <item type="id" name="frame_view">false</item>
+    <item type="id" name="picture_view">false</item>
+    <item type="id" name="video_view">false</item>
+</resources>

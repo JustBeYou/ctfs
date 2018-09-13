@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/frame_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.7">
+    <RelativeLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/frame_camera_cont" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="top" android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/picture_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/frame_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" android:adjustViewBounds="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@+id/camera_loader" android:background="#ff000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_alignParentBottom="false" android:layout_alignWithParentIfMissing="false">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/camera_loader_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" android:indeterminateOnly="true" android:indeterminateBehavior="cycle"/>
+    </FrameLayout>
+</FrameLayout>

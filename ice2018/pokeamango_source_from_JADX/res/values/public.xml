@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="screen" id="0x7f010000" />
+    <public type="id" name="camera_loader" id="0x7f020000" />
+    <public type="id" name="camera_loader_spinner" id="0x7f020001" />
+    <public type="id" name="frame_camera_cont" id="0x7f020002" />
+    <public type="id" name="frame_container" id="0x7f020003" />
+    <public type="id" name="frame_view" id="0x7f020004" />
+    <public type="id" name="picture_view" id="0x7f020005" />
+    <public type="id" name="video_view" id="0x7f020006" />
+    <public type="layout" name="camera_activity" id="0x7f030000" />
+    <public type="mipmap" name="icon" id="0x7f040000" />
+    <public type="string" name="activity_name" id="0x7f050000" />
+    <public type="string" name="app_name" id="0x7f050001" />
+    <public type="string" name="launcher_name" id="0x7f050002" />
+    <public type="style" name="CameraPreviewTheme" id="0x7f060000" />
+    <public type="xml" name="config" id="0x7f070000" />
+</resources>

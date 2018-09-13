@@ -1,0 +1,251 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: C0qfihUlkwsGTZOMfJZp3hVkOKE=
+SHA1-Digest-Manifest: 1ej8LWuHDog/FWMz99/fp7t5AWM=
+Created-By: 1.8.0_172 (Oracle Corporation)
+
+Name: res/layout/camera_activity.xml
+SHA1-Digest: pxhhbOdwskXJcb/HTTxX+EfNzEQ=
+
+Name: assets/www/cordova-js-src/platform.js
+SHA1-Digest: WMSkc0u+fBApAiUe86W9D5KufB4=
+
+Name: res/drawable-port-ldpi-v4/screen.png
+SHA1-Digest: rb1392Q6g+SxJIUMViaVEFQ6K2g=
+
+Name: assets/www/css/images/marker-icon-2x.png
+SHA1-Digest: TcOiZ8/fjvb/W8lxPdh+27t3BSk=
+
+Name: res/drawable-port-xxxhdpi-v4/screen.png
+SHA1-Digest: 4BT970vbpxKnjkbRMP1grSdZQn8=
+
+Name: assets/www/cordova.js
+SHA1-Digest: sPGwe3ZcQLf9gcDf2BYAjE6law8=
+
+Name: assets/www/js/jquery.js
+SHA1-Digest: Alp8CSwP5mYeJgIJ/BgfjNysnWY=
+
+Name: assets/www/plugins/com.mbppower.camerapreview/www/CameraPreview.
+ js
+SHA1-Digest: Jgv8273Mz5zkf7X72YYt4pI55O8=
+
+Name: assets/www/fonts/roboto/Roboto-Medium.woff2
+SHA1-Digest: S4mUI0RcnWlthngp53aLeeDEg+4=
+
+Name: res/drawable-land-xhdpi-v4/screen.png
+SHA1-Digest: wwmjp15gr7Sd6+xktuxkiP0Cdq4=
+
+Name: assets/www/css/map.css
+SHA1-Digest: VJLY6qkMQoP6zsqIp9BwbMaEUpE=
+
+Name: assets/www/fonts/roboto/Roboto-Medium.eot
+SHA1-Digest: 4PeTw3LuGPuImKyzBXGlsKsfRJ4=
+
+Name: assets/www/fonts/roboto/Roboto-Light.eot
+SHA1-Digest: +UOjvyXKpQz8GKxb9536rtM59K8=
+
+Name: assets/www/js/waves.min.js
+SHA1-Digest: G74oAOsashj+2CcEks2WfEfPwR8=
+
+Name: assets/www/img/mangie_marker.png
+SHA1-Digest: ezW50d6rCQad+MqaMHW1ACbo2V0=
+
+Name: assets/www/plugins/cordova-plugin-geolocation/www/android/geoloc
+ ation.js
+SHA1-Digest: 4jv2uS6xdLTM0aK/vV09jzlg7U4=
+
+Name: res/drawable-land-xxxhdpi-v4/screen.png
+SHA1-Digest: Tu/3X0y8iz6yGK4k/ZixBK0g4Q4=
+
+Name: assets/www/css/images/layers-2x.png
+SHA1-Digest: uyptnBGL1VID2oq8pVR5ef3/18E=
+
+Name: assets/www/css/leaflet.css
+SHA1-Digest: UnHqbmj4FfucD9836IMuU5spHoM=
+
+Name: assets/www/map.html
+SHA1-Digest: MK1WA3GARiOH3Je10Hb/2O9MNIk=
+
+Name: assets/www/cordova-js-src/plugin/android/app.js
+SHA1-Digest: DyNoltEL4yj1M0KRnp7t1ESe+Fo=
+
+Name: res/drawable-land-xxhdpi-v4/screen.png
+SHA1-Digest: HdcVnlBnzzhIxst6I6KRfPwPLv4=
+
+Name: assets/www/cordova-js-src/android/promptbasednativeapi.js
+SHA1-Digest: JIRUfP79NI5t078vJIq/tww/QEA=
+
+Name: assets/www/fonts/roboto/Roboto-Medium.ttf
+SHA1-Digest: PYJ+umoWpFvLLaHifw8hahJYR6s=
+
+Name: assets/www/fonts/roboto/Roboto-Thin.ttf
+SHA1-Digest: tN2Y/GI+ORkHvitN5G2cZLYxufo=
+
+Name: assets/www/fonts/roboto/Roboto-Light.ttf
+SHA1-Digest: FQ/s/8B2tw6p9ULSKpfTA1fqS44=
+
+Name: assets/www/js/sidemenu.js
+SHA1-Digest: JQ2bRFL4FHrZ2+poME878c2ZoSA=
+
+Name: assets/www/fonts/roboto/Roboto-Light.woff
+SHA1-Digest: QG81PvaJmxXHK0MxH38ivcXd3S4=
+
+Name: assets/www/fonts/roboto/Roboto-Bold.ttf
+SHA1-Digest: aZ/dhWq/EDBsL7AOX3DNrq1Bp80=
+
+Name: assets/www/fonts/roboto/Roboto-Regular.woff
+SHA1-Digest: aygyXy2v/WSs657Mu+GfdhkBwDE=
+
+Name: res/drawable-land-mdpi-v4/screen.png
+SHA1-Digest: n3k8uV5oRZro2RDVem34wkY0tA8=
+
+Name: res/drawable-port-xxhdpi-v4/screen.png
+SHA1-Digest: y/+FCTeDf8/3t0YyT52AGPzxdu8=
+
+Name: resources.arsc
+SHA1-Digest: dNaqZzORFBSQS62FTgTMgjX3yT8=
+
+Name: assets/www/cordova_plugins.js
+SHA1-Digest: 8Lj42FBBp1FxJUY8WSyFiPIJXy8=
+
+Name: assets/www/css/shop.css
+SHA1-Digest: F9Me44RgSTvuX6SIMPGE1mvYqwg=
+
+Name: assets/www/plugins/cordova-plugin-device/www/device.js
+SHA1-Digest: px3MV6AYWn9rdTxcFkfk+kwIZEM=
+
+Name: assets/www/js/camera.js
+SHA1-Digest: VQO0DJfU2aH/rX/QT58os3x7Cf0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: fOTLXm8SFbQ6LkxtwmtAdT8eJcU=
+
+Name: assets/www/js/map.js
+SHA1-Digest: ZROHQVLhGTRIugWmFqj7CX6ibcQ=
+
+Name: assets/www/plugins/cordova-plugin-x-toast/www/Toast.js
+SHA1-Digest: I7r5/n/yTi5QtPMpWaLnrNDYweE=
+
+Name: assets/www/img/mangie_shadow.png
+SHA1-Digest: FgTLIozkZV4952x7E0tPDqXMDlA=
+
+Name: assets/www/img/logo.png
+SHA1-Digest: YK5vVHXnrWkBUKYiYlRwAZZ/zWU=
+
+Name: assets/www/js/materialize.min.js
+SHA1-Digest: tpWJT8J0rZbJ3lrfq1nH0e/Wg54=
+
+Name: assets/www/css/sidemenu.css
+SHA1-Digest: pcadAd/BOjboZ4B7r+y8WK+e8As=
+
+Name: assets/www/cordova-js-src/android/nativeapiprovider.js
+SHA1-Digest: 38WtpiAj5vmsHOuyTUe8kYOXH14=
+
+Name: res/drawable-land-hdpi-v4/screen.png
+SHA1-Digest: Qq/CiatHEOqCY0KU6lqNLH4RIM8=
+
+Name: assets/www/store.html
+SHA1-Digest: JMFWfTUnt7AoMdpYzXMZA5OWL34=
+
+Name: res/xml/config.xml
+SHA1-Digest: YKV8I07+yDppk2VTYBr3iuPur8w=
+
+Name: assets/www/img/background.png
+SHA1-Digest: 1zQUjILGfhvTwLhRfS4hkym5NNc=
+
+Name: assets/www/js/store.js
+SHA1-Digest: 6yI3ujSFijiu0TvSeERqNssoQTQ=
+
+Name: res/drawable-port-hdpi-v4/screen.png
+SHA1-Digest: 3zFTCok5Xr4daQjIIjcQJoOBG2o=
+
+Name: assets/www/camera.html
+SHA1-Digest: 32feo2i52Ibu8Kct8ByRYrIyzyA=
+
+Name: assets/www/fonts/roboto/Roboto-Bold.eot
+SHA1-Digest: EHuEMNFNNEc/jIIaHPgaEyQ0ncI=
+
+Name: assets/www/plugins/cordova-plugin-x-toast/test/tests.js
+SHA1-Digest: 08HX/byzrHrIgn2ezih3zVHuI7w=
+
+Name: assets/www/css/waves.min.css
+SHA1-Digest: sHlv9mkNQ2Vws9gkPaPAV0A81BU=
+
+Name: assets/www/css/images/layers.png
+SHA1-Digest: Nl5+J9UycPGkhLlX+SLbz5KMfGE=
+
+Name: assets/www/img/user_marker.png
+SHA1-Digest: 4p6N6YM2VeJEbnPGyJ/gk6xGpR0=
+
+Name: assets/www/css/camera.css
+SHA1-Digest: ydS6VU7fAx8+8x4wmH0nxXQ3xZ0=
+
+Name: res/mipmap-mdpi-v4/icon.png
+SHA1-Digest: 9VdTHdVMzMrslvYmMKnOv1U5E9I=
+
+Name: assets/www/fonts/roboto/Roboto-Thin.woff2
+SHA1-Digest: YjQy+lYi5QBEhdhl+W+e7TUuiyg=
+
+Name: assets/www/fonts/roboto/Roboto-Bold.woff2
+SHA1-Digest: 329mZRZINCLnU83bzqSEPrCGDYE=
+
+Name: assets/www/fonts/roboto/Roboto-Regular.eot
+SHA1-Digest: FO9bBgldq0OHSPkFfm+3sReqPz8=
+
+Name: assets/www/css/animate.css
+SHA1-Digest: uTf04mSPsCNQKwydSWeSGQhpYfM=
+
+Name: assets/www/fonts/roboto/Roboto-Bold.woff
+SHA1-Digest: qvZrSWd5dnwcTB1kbglvpo/ZoZ4=
+
+Name: assets/www/css/images/marker-icon.png
+SHA1-Digest: /THkCVLFd8HJ0sdrorS6zi8u9X0=
+
+Name: assets/www/img/mangie.png
+SHA1-Digest: CBztob8BHKbMlihJLts9w4t6B6A=
+
+Name: assets/www/fonts/roboto/Roboto-Light.woff2
+SHA1-Digest: Sq9I0K9F5ktx+BsOqhdV4ATQVfU=
+
+Name: res/drawable-land-ldpi-v4/screen.png
+SHA1-Digest: 3z7FsXWT1Bn2gFiLy1TqOr9S8QM=
+
+Name: res/drawable-port-xhdpi-v4/screen.png
+SHA1-Digest: MOOk42wrzWEcX8yNubcTGNSpY0o=
+
+Name: assets/www/css/images/marker-shadow.png
+SHA1-Digest: Rz6/Qvcz9d10G033SjuSkK6PimQ=
+
+Name: assets/www/fonts/roboto/Roboto-Medium.woff
+SHA1-Digest: yW5l0EqpoQWiuA3/OL7nbO52oYU=
+
+Name: assets/www/fonts/roboto/Roboto-Regular.ttf
+SHA1-Digest: 0rIay38zlwZcH/vQLA/muMCmgrY=
+
+Name: assets/www/fonts/roboto/Roboto-Thin.eot
+SHA1-Digest: ySyr0SP1z1xxg7zNyfsIyiV9j3Q=
+
+Name: assets/www/plugins/cordova-plugin-geolocation/www/PositionError.
+ js
+SHA1-Digest: 4z4szFwrCNKQdgtCNDGGMrTD2d0=
+
+Name: assets/www/css/materialize.min.css
+SHA1-Digest: khRy+5lfc9Drzd/IiSx8N4deqrY=
+
+Name: assets/www/fonts/roboto/Roboto-Regular.woff2
+SHA1-Digest: yDUbZEBRHjxTULOO1m8NaUsoKO8=
+
+Name: assets/www/cordova-js-src/exec.js
+SHA1-Digest: aQoFWERyto3dl5kdyl5DhdiZOk8=
+
+Name: assets/www/fonts/roboto/Roboto-Thin.woff
+SHA1-Digest: sfCsMIZo5p78UFk+BZgea5Ju6sE=
+
+Name: assets/www/js/mango.js
+SHA1-Digest: Ziw3ejSf7a5GrHI5eTzu+tt8i5k=
+
+Name: classes.dex
+SHA1-Digest: 68anZc3oiO4SFVvsfhPiXyjIJdU=
+
+Name: res/drawable-port-mdpi-v4/screen.png
+SHA1-Digest: 5MLviTOUWce9uO50iv/gtkOyWv0=
+

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Poke-A-Mango</title>
+        <link rel="stylesheet" type="text/css" href="css/map.css" />
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/sidemenu.css" />
+        <link rel="stylesheet" type="text/css" href="css/shop.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+            <ul id="slide-out" class="side-nav">
+                    <li><a href="map.html"><i class="material-icons red-text">place</i>Map</a></li>
+                    <li><a href="store.html"><i class="material-icons teal-text">shopping_cart</i>Shop</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel teal">
+                    <div class="row" style="margin: 0;">
+                        <div class="col s6">
+                            <h4 class="white-text">Shop</h4>
+                        </div>
+                        <div class="col s6">
+                            <h5 class="right white-text" style="margin-top: 22px;">Mangoes: <span id="mango-count">0</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">flag</i>
+                <span class="title">Flag</span>
+                <p>151 Mangoes</p>
+                <a href="#!" id="buyFlag" class="secondary-content right"><i class="material-icons">lock</i></a>
+            </li>
+        </ul>
+
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/sidemenu.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/store.js"></script>
+    </body>
+</html>

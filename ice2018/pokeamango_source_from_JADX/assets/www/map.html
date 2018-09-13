@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Poke-A-Mango</title>
+        <link rel="stylesheet" type="text/css" href="css/map.css" />
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/sidemenu.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+            <ul id="slide-out" class="side-nav">
+                    <li><a href="map.html"><i class="material-icons red-text">place</i>Map</a></li>
+                    <li><a href="store.html"><i class="material-icons teal-text">shopping_cart</i>Shop</a></li>
+            </ul>
+        </nav>
+
+        <div id="map"></div>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/sidemenu.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE4vpaZHZdgkG_vNNOSGqZDg5dD0Ko_Tg&libraries=places&callback=initMap"
+                                       async defer></script>
+        <script type="text/javascript" src="js/map.js"></script>
+    </body>
+</html>

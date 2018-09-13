@@ -1,0 +1,10 @@
+body {
+  background: #eeeeee;
+}
+#buyFlag {
+  width: 24px;
+}
+
+.collection .collection-item.avatar {
+  min-height: 65px;
+}
