@@ -1,0 +1,8 @@
+./chat-client 198.13.45.44 3425
+
+one of secret key:
+   + id: manh
+   + key: 0x7f6949db22eeada0
+
+Can you get the secret?
+

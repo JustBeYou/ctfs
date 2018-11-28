@@ -1,0 +1,21 @@
+{
+    "name": "whitehatctf/web",
+    "type": "project",
+    "description": "CTF Challenge",
+    "keywords": ["application"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mov",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+    },
+    "require": {
+        "php": ">=7",
+        "gregwar/image": "2.0.22",
+        "gregwar/captcha": "1.1.6",
+        "defuse/php-encryption" : "2.2.1"
+    }
+}

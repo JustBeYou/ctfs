@@ -1,0 +1,6 @@
+DirectoryIndex index.php index.htm index.html index.png
+ErrorDocument 404 <img/src=/app/img/imagik.jpg>
+ErrorDocument 502 <img/src=/app/img/pepe.jpg>
+<Files ~ "^(fakeflag.txt|m0vr3ment|r0bots)$">
+Require all denied
+</Files>

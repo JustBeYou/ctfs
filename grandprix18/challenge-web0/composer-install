@@ -1,0 +1,29 @@
+#!/bin/sh
+
+COMPOSER_SIG_URL="https://composer.github.io/installer.sha384sum"
+COMPOSER_INSTALL_URL="https://getcomposer.org/installer"
+COMPOSER_INSTALL_FILE="composer-setup.php"
+SIG_FILE="installer.sha384"
+
+download_files () {
+    curl "$COMPOSER_SIG_URL" > "$SIG_FILE"
+    curl "$COMPOSER_INSTALL_URL" > "$COMPOSER_INSTALL_FILE"
+}
+
+compare_sigs () {
+    IS_OK=$(sha384sum -c "$SIG_FILE" 2>&1 | grep -o OK)
+    if [ "$IS_OK" != "OK" ]; then
+        echo Invalid signature: "$IS_OK"
+    fi
+    echo ''
+}
+
+download_files
+RESULT=$(compare_sigs)
+    
+if [ -z "$RESULT" ]; then
+    php composer-setup.php --quiet --install-dir=/usr/bin --filename=composer
+    RESULT=$?
+fi
+rm "$COMPOSER_INSTALL_FILE" "$SIG_FILE"
+echo $RESULT

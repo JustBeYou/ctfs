@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build: .
+    privileged: true
+    volumes:
+      - ./src/:/app-org
+      - ./init.sh:/init.sh
+      - ./db:/db
+    ports:
+      - "80:80"
+    entrypoint: /bin/bash
+    command: "/init.sh"
+
