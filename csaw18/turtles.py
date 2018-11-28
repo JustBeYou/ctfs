@@ -54,7 +54,6 @@ class Turtle(object):
 
     def get_object(self):
         self.fields['Heap'] = self.base + offset1
-
         s = ""
         for k in self.fields:
             if type(self.fields[k]) is list:
