@@ -1,0 +1,11 @@
+bits 32
+global _start
+
+_start:
+	mov eax, 0x1e
+	aam 0x12
+	aad 0xf6
+
+	mov eax, 0x1
+	mov ebx, 0x0
+	int 0x80

