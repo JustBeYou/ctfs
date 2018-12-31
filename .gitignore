@@ -1,5 +1,6 @@
 *.i64
 *.idb
+*.idb*
 *.i32
 build
 debug

