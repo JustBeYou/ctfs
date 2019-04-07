@@ -33,7 +33,7 @@ cell_id: 1106
 gcell_id: 208f2075ee4025
 ```
 According to the research paper found in the dump, this must be enough for identifying the location of the user. I used this online service https://cellidfinder.com/
-![]('./gsm2.png')
-![]('./gsm3.png')
+![](./gsm2.png)
+![](./gsm3.png)
 
 So, the city where the call was made is Lanton and it's area code is `33229`.
