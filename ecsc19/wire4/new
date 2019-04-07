@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+	<!-- (C) Copyright OROCTFStuff, all rights reserved - Copy, abuse, illegal re-use of code, design, or any proprietary element will be prosecuted. Contact us for your projects: some of the licensing options are free and are encouraged by OROCTFStuff. http://www.orange.com.com/ -->
+  <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="distribution" content="all" />
+  <meta name="robots" content="all" />
+  <meta name="resource-type" content="document" />
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <!-- jQuery: Start -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/redmond/jquery-ui-1.10.2.custom.min.css">
+  <link rel="stylesheet" type="text/css" href="/js/lou-multi-select/css/multi-select.css">
+  <script type="text/javascript" src="/javascripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery-ui-1.10.2.custom.min.js"></script>
+  <!-- jQuery: End -->
+  <!-- YUI2: Start -->
+  <!-- Combo-handled YUI CSS files: -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/yui-skin.css">
+  <!-- Combo-handled YUI JS files: -->
+  <script type="text/javascript" src="/yui2-local/combo-all.js"></script>
+  <script type="text/javascript" src="/javascripts/toggle.js"></script>
+  <script src="/yui2-local/yahoo-min.js"></script>
+  <script src="/yui2-local/cookie-min.js"></script>
+	<!-- YUI2: End -->
+  <script src="/javascripts/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="/javascripts/additional-methods.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="/yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css">
+	<link href="/stylesheets/p1.css" media="screen" rel="stylesheet" type="text/css" />
+	
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="IGjVwfsfcaufZQHJsGJfgOPA69O744VdHcGDQhMNCoi6iNhBhj/Ba0Wc0GUWLlBc+jX045oTGNfoqNvHI5cMGQ==" />
+
+	<style>
+		#productsandservices2 {
+			position: static;
+		}
+
+		/*
+			For IE 6: trigger "haslayout" for the anchor elements in the root Menu by
+			setting the "zoom" property to 1.  This ensures that the selected state of
+			MenuItems doesn't get dropped when the user mouses off of the text node of
+			the anchor element that represents a MenuItem's text label.
+		*/
+
+		#productsandservices2 .yuimenuitemlabel {
+			_zoom: 1;
+		}
+
+		#productsandservices2 .yuimenu .yuimenuitemlabel {
+			_zoom: normal;
+		}
+		/*
+			Turn off the border on the top unit since Menu has it's own border
+		*/
+		.yui-skin-sam .yui-layout .yui-layout-unit-top div.yui-layout-bd {
+			border: none;
+		}
+		/*
+			Change some of the Menu colors
+		*/
+		.yui-skin-sam .yuimenu .bd {
+			background-color: #F2F2F2;
+		}
+		#productsandservices2 .bd {
+			border: none;
+		}
+		#productsandservices2 .bd .first-of-type .bd {
+			border: 1px solid #808080;
+		}
+	</style>
+</head>
+
+<body class="yui-skin-sam">
+<div id="top1">
+    <a href="/" title="orange.com" id="p1logo"></a>
+    <div id="topmenu">
+    <div id="productsandservices" class="yuimenubar yuimenubarnav">
+        <div class="bd">
+            <ul class="first-of-type">
+                <li class="yuimenubaritem first-of-type">
+                    <a class="yuimenubaritemlabel" href="#home">Home</a>
+                </li>
+
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#pta">
+                        PTA
+                    </a>
+                </li>
+                    <li class="yuimenubaritem">
+                        <a class="yuimenubaritemlabel" href="#ptf">
+                            PTF
+                         </a>
+                     </li>
+                    <li class="yuimenubaritem">
+                        <a class="yuimenubaritemlabel" href="#fwa">
+                            FWA
+                        </a>
+                    </li>
+
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#tasks">Tasks</a>
+                </li>
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#report">Report</a>
+                </li>
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#vkb">VKB</a>
+                </li>
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#support">Support</a>
+                </li>
+                <li class="yuimenubaritem">
+                    <a class="yuimenubaritemlabel" href="#admin">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+	</div>
+
+</div>
+
+<div id="bottom1">
+    Status: Ready. All probes running and online.
+</div>
+
+<div id="right1" >
+	<p>P1 Products Features:</p>
+	<p>&nbsp; </p>
+	<p><a href="http://www.ornge.com/corp/products/p1-telecom-auditor/">P1 Telecom Auditor (PTA)</a></p>
+    <p><a href="http://www.ornge.com/corp/products/p1-telecom-monitor-ptm/">P1 Telecom Monitor (PTM)</a></p>
+	<p><a href="http://www.ornge.com/corp/products/p1-telecom-fuzzer-ptf/">P1 Telecom Fuzzer (PTF)</a></p>
+	<p>&nbsp; </p>
+  <p>Vulnerability Knowledge Base (VKB):</p>
+  <p><a href="/vulns">VKB Vulnerability List</a></p>
+  <p><a href="/vulns/maps">VKB Maps</a></p>
+  <p><a href="/vulns/overview">VKB Overview</a></p>
+	<p>&nbsp; </p>
+  <p>VKB Quick Search:</p>
+  <form method="get" action="/vulns">
+    <fieldset>
+      <input id="application_tags" class="ui-autocomplete-input" type="text"  name="query" autocomplete="off"></input><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span><input id="search_submit" type="submit" value="Search" name="commit"></input>
+    </fieldset>
+  </form>
+</div>
+
+<div id="left1" >
+		<!-- Tree view (using controller Tree from YUI) -->
+		<!-- Access (using controller Tree from YUI) -->
+		<p>Tasks:</p>
+    <p>&nbsp; </p>
+		<ul>
+			<li><a href="/ispc_assets/search_map">Run Discovery</a> </li>
+			<li><a href="/sigtran/fwa/tasks/new">Run SS7 Audit</a> </li>
+      <li><a href="/sigtran/pta/tasks/poc_scan">Run SS7 PoC Scan</a> </li>
+			<li><a href="/diameter/pta/tasks/new">Run Diameter Audit</a> </li>
+		</ul>
+    <p>&nbsp; </p>
+    <ul>
+      <li><a href="/reports">List reports</a> </li>
+    </ul>
+</div>
+
+<div id="center1">
+	<!-- Home: Dashboard (by default). -->
+	<!-- Otherwise, main display: Lists, Content (Report, ...), edit window (edit account, run audit, ...),. -->
+	<!-- Dashboard: Panels, SimpleDialog, http://developer.yahoo.com/yui/examples/container/panel.html http://developer.yahoo.com/yui/examples/container/overlaymanager.html -->
+	<section id="main-content">
+    <script type="text/javascript" src="/js/quicksearch/jquery.quicksearch.js"></script>
+<script type="text/javascript" src="/js/lou-multi-select/js/jquery.multi-select.js"></script>
+
+<style type="text/css">
+  #productsandservices2 {        
+    position: static;
+  }
+
+  /*
+  For IE 6: trigger "haslayout" for the anchor elements in the root Menu by 
+  setting the "zoom" property to 1.  This ensures that the selected state of 
+  MenuItems doesn't get dropped when the user mouses off of the text node of 
+  the anchor element that represents a MenuItem's text label.
+  */
+  #productsandservices2 .yuimenuitemlabel {
+    _zoom: 1;
+  }
+
+  #productsandservices2 .yuimenu .yuimenuitemlabel {
+    _zoom: normal;
+  }
+
+  /*
+  Turn off the border on the top unit since Menu has it's own border
+  */
+  .yui-skin-sam .yui-layout .yui-layout-unit-top div.yui-layout-bd {
+    border: none;
+  }
+
+  /*
+  Change some of the Menu colors
+  */
+  .yui-skin-sam .yuimenu .bd {
+    background-color: #F2F2F2;
+  }
+
+  #productsandservices2 .bd {
+    border: none;
+  }
+
+  #productsandservices2 .bd .first-of-type .bd {
+    border: 1px solid #808080;
+  }
+
+  .yui-button#pushbutton2 button,
+  .yui-button#pushbutton5 button, 
+  .yui-button#pushbutton8 button {
+
+    background: url(../button/assets/add.gif) center center no-repeat;
+    text-indent: -4em;
+    overflow: hidden;
+    padding: 0 .75em;
+    width: 2em;
+    *margin-left: 4em;   /* IE only */
+    *padding: 0 1.75em;  /* IE only */
+
+  }
+
+  .yui-button#pushbutton3 button,
+  .yui-button#pushbutton6 button, 
+  .yui-button#pushbutton9 button {
+
+    padding-left: 2em;
+    background: url(../button/assets/add.gif) 10% 50% no-repeat;
+
+  }
+</style>
+
+<p class="app_location_indicator">Tasks > Run SS7 Audit</p>
+
+<form class="new_task" id="new_task" action="/sigtran/pta/tasks/new" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="biMUqKb0j5MHrM/wA5U53i03dU0wPuqasMmljnYw5QKHdTfqVCpwZfn/8Y/Rmfn6UWZ54hxHSTeyRunu0R2c7w==" />
+  
+
+  <fieldset class="fieldset_surround">
+
+  <fieldset id="interconnection_list">
+
+    <label for="interconnection_id">Interconnection:</label>
+    <select name="interconnection_id" id="interconnection_id">
+        <option value="37">37: SIGTRAN MODULES TEST (international:SIGTRAN)</option>
+    </select>
+
+  </fieldset>
+
+  <fieldset id="targets">
+
+    <h4>Scan targets</h4>
+    <table>
+        <tr>
+            <td>
+                <label for="target_pc_range">Target Point Code Range: </label>
+            </td>
+            <td>
+                <input type="text" id="target_pc_range" name="target_pc_range" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="target_gt_range">Target Global Title Range: </label>
+            </td>
+            <td>
+                <input type="text" id="target_gt_range" name="target_gt_range" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="target_msisdn_range">
+                    <abbr title="Those MSISDNs are used for information gathering only.">Tests MSISDN List</abbr> : 
+                </label>
+            </td>
+            <td>
+                <input type="text" id="target_msisdn_range" name="target_msisdn_range"/>
+            </tr>
+        </tr>
+        <tr>
+            <td>
+                <label for="target_msisdn">Target Subscriber MSISDN: </label>
+            </td>
+            <td>
+                <input type="text" id="target_msisdn" name="target_msisdn" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="target_imsi_range">Target Subscriber IMSI: </label>
+            </td>
+            <td>
+                <input type="text" id="target_imsi_range" name="target_imsi_range" />
+            </td>
+        </tr>
+    </table>
+
+  </fieldset>
+
+  <fieldset id="interconnection_settings">
+
+    <h4>Interconnection settings</h4>
+    <table>
+        <TR>
+            <td>
+                <label for="interconnection_ni">Network Indicator: </label></TD><td><input type="text" id="interconnection_ni" name="interconnection_ni">
+                <a class="toggle" rel="interconnection_ni_help" href="#">Help</a>
+                <div id="interconnection_ni_help" class="hide">
+                Network Indicator can be 0, 2 or 3.<br>
+                NI=0 for International (INAT0),
+                NI=2 for National (NAT1),
+                and usually NI=3 (or NI=2) for Internal (NAT0)<br><br>
+          </div>
+            </TD>
+        </TR>
+        <TR><td><label for="interconnection_rc">Routing Context: </label></TD><td><input type="text" id="interconnection_rc" name="interconnection_rc">
+          <a class="toggle" rel="interconnection_rc_help" href="#">Help</a>
+          <div id="interconnection_rc_help" class="hide">
+            Put 0 to disable the use of M3UA Routing Context.<br>
+          </div>
+        </TD></TR>
+    </table>
+    <div class="separator"></div>
+
+    <h4>Remote side of interconnection</h4>
+    <table>
+      <TR><td><label for="remote_ip">Remote IP address: </label></TD><td><input type="text" id="remote_ip" name="remote_ip"></TD></TR>
+      <TR><td><label for="remote_port">Remote SCTP port: </label></TD><td><input type="text" id="remote_port" name="remote_port"></TD></TR>
+      <TR><td><label for="remote_pc">Remote Point Code (Destination PC): </label></TD><td><input type="text" id="remote_pc" name="remote_pc"></TD></TR>
+    </table>
+    <div class="separator"></div>
+
+    <h4>PTA side of interconnection</h4>
+    <table>
+      <TR><td><label for="source_ip">Source IP Address: </label></TD><td><input type="text" id="source_ip" name="source_ip"></TD></TR>
+      <TR><td><label for="source_port">Source SCTP Port: </label></TD><td><input type="text" id="source_port" name="source_port"></TD></TR>
+      <TR><td><label for="source_pc">Source Point Code (Originating PC): </label></TD><td><input type="text" id="source_pc" name="source_pc"></TD></TR>
+      <TR><td><label for="source_gt">Source Global Title (Calling GT): </label></TD><td><input type="text" id="source_gt" name="source_gt"></TD></TR>
+    </table>
+
+  </fieldset>
+
+  <fieldset id="harshness">
+    Harshness factor:
+    <select name="harshness_factor">
+      <option value="1">1 - Slow</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9 - Fast</option>
+      <option value="10">10 - Dev</option>
+    </select>
+  </fieldset>
+
+  <fieldset id="modules">
+    Scan mode:
+    <select name="scanmode" id="scanmode-select">
+      <option value="pta-ss7-high-level">Hight Level</option>
+
+      <option value="pta-discovery">Discovery (Light scan)</option>
+      <option value="pta-production">Production (Vulnerability, Confidentiality tests)</option>
+      <option value="pta-complete">Complete (Vulnerability, Confidentiality, Availability and Integrity tests)</option>
+      <option value="pta-remote-SS7">Remote SS7 (No spoofing)</option>
+  </select>
+
+  <!-- Optional fields for pta-high-level -->
+  <div class="pta-ss7-high-level-optn" style="display:none">
+      <br />
+      <table>
+        <tr>
+            <td> Probe Types: </td>
+            <td>
+                <select name="high_level_probes[]" id="high-level-probes" multiple=true>
+                    <optGroup label="MAP">
+                        <option value="INFO_PROBE_SRISM"> MAP - SendRoutingInfo For ShortMessage (SRISM)</option>
+                        <option value="INFO_PROBE_SRI"> MAP - SendRoutingInfo (SRI)</option>
+                        <option value="INFO_PROBE_ATI"> MAP - AnyTimeInterrogation (ATI)</option>
+                        <option value="INFO_PROBE_SENDIMSI"> MAP - SendIMSI</option>
+                        <option value="INFO_PROBE_SAI"> MAP - SendAuthenticationInfo (SAI)</option>
+                        <option value="INFO_PROBE_INTSS"> MAP - InsertSubcriberData (INTSS)</option>
+                        <option value="INFO_PROBE_PSI"> MAP - ProvideSubscriberInfo (PSI)</option>
+                    </optGroup>
+                    <!--
+                    <optGroup label="TCAP">
+                        <option value="INFO_PROBE_TCAPEMPTY"> TCAP - Empty</option>
+                    </optGroup>
+                    -->
+                </select>
+            </td>
+        </tr>
+      </table>
+  </div>
+  </fieldset>
+
+  <fieldset id="comments">
+    <label for="task_comment">Enter your comment here as free text: </label><br />
+    <textarea rows="3" cols="40" name="task[comment]" id="task_comment">
+</textarea>
+    <div class="separator"></div>
+
+    <label for="task_audit_name">Audit name: </label><br />
+    <input value="Audit of 2018-10-11 17:54:25" type="text" name="task[audit_name]" id="task_audit_name" />
+  </fieldset>
+
+  <fieldset>
+    <input type="hidden" name="authenticity_token" value="0vzzZOXXaUpDV8JBz08OyVphLbcrs3uTh49ar7zPXSZIHP7kmPfZipmuE+1pAwEVQ5QyhwpD5hly5gIqjFVbtw==" />
+    <input type="submit" name="commit" value="Run SS7 Audit" data-disable-with="Run SS7 Audit" />
+  </fieldset>
+
+  </fieldset>
+</form>
+<a href="/tasks">Back</a>
+
+<script type="text/javascript">
+
+    var interco_data = {"37":{"interconnection_ni":0,"interconnection_rc":0,"remote_ip":"127.0.0.1","remote_port":2905,"remote_pc":8889,"source_ip":"127.0.0.1","source_port":2906,"source_pc":8888,"source_gt":"123456789012542","target_pc_range":null,"target_gt_range":null,"target_msisdn":"123456789011111","target_msisdn_range":null,"target_imsi_range":"123456789011122"}}
+
+    // Update interconnection fields when another license is selected
+    document.getElementById("interconnection_id").onchange = function() {
+        for (var k in interco_data) { // Get the list of field names
+            for (var field in interco_data[k]) {
+                if (document.getElementById(field)) {
+                    document.getElementById(field).value = interco_data[this.value][field];
+                }
+            }
+            break;
+        }
+    };
+
+    // Fill fields with default params on page load
+    document.getElementById("interconnection_id").onchange();
+
+    jQuery(function ($) {
+
+        /* BEGIN: SCAN MODE OPTN custom beahior */
+        changeOptnView(jQuery('#scanmode-select').val()) // init
+
+        jQuery('#scanmode-select').bind('change', function() {
+            changeOptnView($(this).val());
+        });
+
+        function changeOptnView(scanmode) {
+            resetOptnViews();
+            jQuery('.'+scanmode+'-optn').show();
+            if (scanmode === 'pta-ss7-high-level') {
+                jQuery('form#new_task').attr('action', '/sigtran/pta/tasks/new_hl');
+            }
+            else {
+                jQuery('form#new_task').attr('action', '/sigtran/pta/tasks/new_full');
+            }
+        }
+
+        function resetOptnViews() {
+            jQuery('#scanmode-select option').each(function(idx, elm) {
+                jQuery('.'+elm.value+'-optn').hide();
+            });
+        }
+        /* END: SCAN MODE OPTN custom beahior */
+
+        // Form validation rules
+        jQuery("#new_task")
+            .validate({
+                rules: {
+                    "high_level_probes[]": {
+                        required: true,
+                        depends: function(element) {
+                            return jQuery('#scanmode-select').val() === 'pta-ss7-high-level';
+                        }
+                    },
+                    "target_imsi_range": "required",
+                    "target_msisdn": "required",
+                    "interconnection_ni": "required",
+                    "interconnection_rc": "required",
+                    "remote_ip": {
+                        required: true,
+                        ipv4: true
+                    },
+                    "remote_port": "required",
+                    "remote_pc": "required",
+                    "source_ip": {
+                        required: true,
+                        ipv4: true
+                    },
+                    "source_port": "required",
+                    "source_pc": "required",
+                    "source_gt": "required",
+                },
+                messages: {
+                    "high_level_probes[]": "Please, select at least one probe type."
+                }
+        });
+
+    // Form submit hook
+    jQuery('#task_submit')
+        .on('click', function() {
+
+            // Set msisdn as default range if not defined
+            var msisdn_input = jQuery('#target_msisdn'),
+                msisdn_range_input = jQuery('#target_msisdn_range');
+
+            if (!msisdn_range_input.val()) {
+                msisdn_range_input.val(msisdn_input.val());
+            }
+
+            return true;
+        });
+    });
+
+    // Use Subscriber MSISDN as default MSISDN range
+    var msisdn_input = jQuery('#target_msisdn'),
+        msisdn_range_input = jQuery('#target_msisdn_range');
+    msisdn_range_input.attr('placeholder', msisdn_input.val());
+    msisdn_input.bind('change', function() {
+        msisdn_range_input.attr('placeholder', this.value);
+    });
+
+/* Scan mode high-level optn view multiselect */
+    function setTitleAttributeForEach(titleValue, elems) {
+        elems.each(function(idx, elm) {
+            jQuery(elm).attr('title', titleValue);
+        });
+    }
+
+    jQuery("#high-level-probes").multiSelect({
+        selectableHeader: "<label class='multiselect-selectable-header'>Available</label><br /><input type='text' class='search-input' autocomplete='off' placeholder='Search ...'>",
+        selectionHeader: "<label class='multiselect-selection-header'>Selected</label><br /><input type='text' class='search-input' autocomplete='off' placeholder='Search ...'>",
+        afterInit: function(ms){
+            msContext = ms;
+            setTitleAttributeForEach('Click to select all group items', jQuery(msContext).find('.ms-selectable li.ms-optgroup-label'));
+            setTitleAttributeForEach('Click to select', jQuery(msContext).find('li.ms-elem-selectable'));
+            setTitleAttributeForEach('Click to deselect all group items', jQuery(msContext).find('.ms-selection li.ms-optgroup-label'));
+            setTitleAttributeForEach('Click to deselect', jQuery(msContext).find('li.ms-elem.selection'));
+
+            var that = this,
+            $selectableSearch = that.$selectableUl.prev(),
+            $selectionSearch = that.$selectionUl.prev(),
+            selectableSearchString = '#'+that.$container.attr('id')+' .ms-elem-selectable:not(.ms-selected)',
+            selectionSearchString = '#'+that.$container.attr('id')+' .ms-elem-selection.ms-selected';
+
+            that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                .on('keydown', function(e){
+                    if (e.which === 40){
+                        that.$selectableUl.focus();
+                        return false;
+                    }
+            });
+            that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                .on('keydown', function(e){
+                    if (e.which == 40){
+                        that.$selectionUl.focus();
+                        return false;
+                    }
+            });
+        },
+        afterSelect: function(selectedElms){
+            this.qs1.cache();
+            this.qs2.cache();
+            setTitleAttributeForEach('Click to deselect all group items', jQuery(msContext).find('.ms-selection li.ms-optgroup-label'));
+            setTitleAttributeForEach('Click to deselect', jQuery(msContext).find('li.ms-elem-selection'));
+        },
+        afterDeselect: function(removedElms){
+            this.qs1.cache();
+            this.qs2.cache();
+            setTitleAttributeForEach('Click to select all group items', jQuery(msContext).find('.ms-selectable li.ms-optgroup-label'));
+            setTitleAttributeForEach('Click to select', jQuery(msContext).find('li.ms-elem-selectable'));
+        },
+        selectableOptgroup: true
+    });
+</script>
+
+	</section>
+</div>
+<script>
+  
+  var availableTags =  ["","AFFECTS_5G-CN","AFFECTS_5G_NEF","AFFECTS_AAA","AFFECTS_AGCF","AFFECTS_AGW","AFFECTS_AS","AFFECTS_AUC","AFFECTS_BACKUP","AFFECTS_BAMS","AFFECTS_BGCF","AFFECTS_BGW","AFFECTS_BILLING","AFFECTS_BMSC","AFFECTS_BRAS","AFFECTS_BSC","AFFECTS_BTS","AFFECTS_CCF","AFFECTS_CDF","AFFECTS_CEM","AFFECTS_CG","AFFECTS_CGF","AFFECTS_CGP","AFFECTS_CPE","AFFECTS_CS","AFFECTS_CSCF","AFFECTS_CSS","AFFECTS_CWDM","AFFECTS_DHCP","AFFECTS_DNS","AFFECTS_DOCREADER","AFFECTS_DPI","AFFECTS_DRA","AFFECTS_DRF","AFFECTS_DSLAM","AFFECTS_DSR","AFFECTS_DWDM","AFFECTS_EIR","AFFECTS_EMS","AFFECTS_ENODEB","AFFECTS_ENUM","AFFECTS_EPC","AFFECTS_EPDG","AFFECTS_EPG","AFFECTS_FEMTO","AFFECTS_FIREWALL","AFFECTS_GANC","AFFECTS_GCS_AS","AFFECTS_GGSN","AFFECTS_GMLC","AFFECTS_GMSC","AFFECTS_GPRS","AFFECTS_GRX","AFFECTS_GSMSCF","AFFECTS_GSMSSF","AFFECTS_HA","AFFECTS_HA-GW","AFFECTS_HLR","AFFECTS_HS-GW","AFFECTS_HSM","AFFECTS_HSS","AFFECTS_HYPERVISOR","AFFECTS_ICSCF","AFFECTS_IGW","AFFECTS_ILO","AFFECTS_IN","AFFECTS_IPBX","AFFECTS_IPCORE","AFFECTS_IPX","AFFECTS_JASS","AFFECTS_LBS","AFFECTS_LCS","AFFECTS_LIG","AFFECTS_LOADBALANCER","AFFECTS_MANO","AFFECTS_MCPTT","AFFECTS_MGC","AFFECTS_MGW","AFFECTS_MME","AFFECTS_MMSC","AFFECTS_MONITORING","AFFECTS_MRF","AFFECTS_MSAN","AFFECTS_MSC","AFFECTS_MSS","AFFECTS_MTC_IWF","AFFECTS_NFV","AFFECTS_NMS","AFFECTS_NODEB","AFFECTS_OCS","AFFECTS_OFCS","AFFECTS_OPENFLOW","AFFECTS_ORCHESTRATOR","AFFECTS_OSS","AFFECTS_OTA","AFFECTS_PABX","AFFECTS_PCEF","AFFECTS_PCRF","AFFECTS_PCSCF","AFFECTS_PDSN","AFFECTS_PGW","AFFECTS_PM","AFFECTS_PROSE","AFFECTS_PROSE_AS","AFFECTS_PROVISIONING","AFFECTS_RADIO","AFFECTS_RADIUS_AAA","AFFECTS_RADIUS_CLIENT","AFFECTS_RCAF","AFFECTS_RNC","AFFECTS_ROUTER","AFFECTS_SAE-GW","AFFECTS_SBC","AFFECTS_SCEF","AFFECTS_SCS","AFFECTS_SDM","AFFECTS_SDR","AFFECTS_SEG","AFFECTS_SEGW","AFFECTS_SGSN","AFFECTS_SGW","AFFECTS_SIGNALING","AFFECTS_SIM","AFFECTS_SIWF","AFFECTS_SIWFS","AFFECTS_SMSC","AFFECTS_SMS_FIREWALL","AFFECTS_SMS_WELCOME","AFFECTS_SOFTSWITCH","AFFECTS_SR","AFFECTS_SS7FIREWALL","AFFECTS_STP","AFFECTS_SUBSCRIBER","AFFECTS_SWITCH","AFFECTS_TDF","AFFECTS_TECH_SDN","AFFECTS_TRANSMISSION","AFFECTS_TRX","AFFECTS_TSSF","AFFECTS_TX","AFFECTS_UE","AFFECTS_UGW","AFFECTS_UTPS","AFFECTS_VAS","AFFECTS_VLR","AFFECTS_VMS","AFFECTS_VPN","AFFECTS_VVM","AFFECTS_WEB_SERVER","AFFECTS_WIFIAP","AFFECTS_WIFI_NAS","AFFECTS_WORKSTATION","AFFECT_LOAD_BALANCER","AFFECT_SBC","DEFAULT_CREDS","DOMAIN_IT","DOMAIN_OT","GROUP_BAD_CONDITIONS","GROUP_SIP_FP_URN","GSMA_IR2","GSMA_IR21","GSM_SMS","IMPACT_INTERCEPTION_METADATA","INTERFACE_A","INTERFACE_Abis","INTERFACE_DIAMETER","INTERFACE_DIAMETER_ANY","INTERFACE_DIAMETER_CSC_13","INTERFACE_DIAMETER_Cx","INTERFACE_DIAMETER_Dx","INTERFACE_DIAMETER_Gx","INTERFACE_DIAMETER_MB2","INTERFACE_DIAMETER_MCPTT_2","INTERFACE_DIAMETER_Np","INTERFACE_DIAMETER_Ns","INTERFACE_DIAMETER_Nt","INTERFACE_DIAMETER_PC2","INTERFACE_DIAMETER_PC4a","INTERFACE_DIAMETER_PC6_PC7","INTERFACE_DIAMETER_Rx","INTERFACE_DIAMETER_S13","INTERFACE_DIAMETER_S6a","INTERFACE_DIAMETER_S6c","INTERFACE_DIAMETER_S6m","INTERFACE_DIAMETER_S6n","INTERFACE_DIAMETER_S6t","INTERFACE_DIAMETER_S7a","INTERFACE_DIAMETER_S9","INTERFACE_DIAMETER_SGd","INTERFACE_DIAMETER_SLg","INTERFACE_DIAMETER_SLh","INTERFACE_DIAMETER_Sd","INTERFACE_DIAMETER_Sh","INTERFACE_DIAMETER_St","INTERFACE_DIAMETER_Sy","INTERFACE_DIAMETER_T4","INTERFACE_DIAMETER_T6","INTERFACE_DIAMETER_Tsp","INTERFACE_DIAMETER_V6","INTERFACE_DIAMETER_Wx","INTERFACE_DIAMETER_Zh","INTERFACE_GB","INTERFACE_Ga","INTERFACE_Gi","INTERFACE_Gm","INTERFACE_Gn","INTERFACE_Gp","INTERFACE_Gy","INTERFACE_Gz","INTERFACE_IMS_SWN","INTERFACE_ISC","INTERFACE_Iu_CS","INTERFACE_Iub","INTERFACE_Mw","INTERFACE_NASREQ","INTERFACE_RADIUS_Gi_SGi","INTERFACE_S1","INTERFACE_S11","INTERFACE_S5","INTERFACE_S8","INTERFACE_SLh","INTERFACE_X2","INTERNAL_NEED_CONTENT_REWORK","INTERNAL_NEED_TITLE_REWORK","INTERNAL_PBM_BAD_CVSS","INTERNAL_PBM_BAD_ENGLISH","INTERNAL_PBM_BAD_FCIA","INTERNAL_PBM_BAD_FORMAT","INTERNAL_PBM_DUPLICATE","INTERNAL_PBM_DUPLICATE_415","INTERNAL_PBM_NEED_IMPROVEMENT","INTERNAL_PBM_NEED_RAW_TECH","INTERNAL_PBM_NEED_WRITE_UP","INTERNAL_PBM_ON_HOLD_BY_CREATOR","INTERNAL_PBM_TAGS_INCOMPLETE","INTERNAL_PBM_TITLE_ONLY_DRAFT_EMPTY","INTERNAL_TAG_PROPOSAL_3GPP_R4","MSU_CAP_INITIALDP","MSU_CAP_INITIALDPSMS","MSU_CAP_INITIATE_CALL_ATTEMPT","MSU_DIAMETER_AAR","MSU_DIAMETER_AIR","MSU_DIAMETER_ALR","MSU_DIAMETER_ARR","MSU_DIAMETER_ASR","MSU_DIAMETER_BTR","MSU_DIAMETER_CCR","MSU_DIAMETER_CER","MSU_DIAMETER_CIR","MSU_DIAMETER_CLR","MSU_DIAMETER_CMR","MSU_DIAMETER_CVR","MSU_DIAMETER_DAR","MSU_DIAMETER_DMR","MSU_DIAMETER_DNR","MSU_DIAMETER_DPR","MSU_DIAMETER_DRR","MSU_DIAMETER_DSR","MSU_DIAMETER_DTR","MSU_DIAMETER_DWR","MSU_DIAMETER_ECR","MSU_DIAMETER_GAR","MSU_DIAMETER_GNR","MSU_DIAMETER_IDR","MSU_DIAMETER_LIR","MSU_DIAMETER_LRR","MSU_DIAMETER_MAR","MSU_DIAMETER_MUR","MSU_DIAMETER_NCR","MSU_DIAMETER_NDR","MSU_DIAMETER_NIR","MSU_DIAMETER_NOR","MSU_DIAMETER_NRR","MSU_DIAMETER_NSR","MSU_DIAMETER_ODR","MSU_DIAMETER_OFR","MSU_DIAMETER_PAR","MSU_DIAMETER_PCR","MSU_DIAMETER_PDR","MSU_DIAMETER_PIR","MSU_DIAMETER_PLR","MSU_DIAMETER_PMR","MSU_DIAMETER_PNR","MSU_DIAMETER_PPR","MSU_DIAMETER_PRR","MSU_DIAMETER_PSR","MSU_DIAMETER_PUR","MSU_DIAMETER_PXR","MSU_DIAMETER_RAR","MSU_DIAMETER_RDR","MSU_DIAMETER_RIR","MSU_DIAMETER_RSR","MSU_DIAMETER_RTR","MSU_DIAMETER_SAR","MSU_DIAMETER_SIR","MSU_DIAMETER_SLR","MSU_DIAMETER_SNR","MSU_DIAMETER_SRR","MSU_DIAMETER_STR","MSU_DIAMETER_TDR","MSU_DIAMETER_TER","MSU_DIAMETER_TFR","MSU_DIAMETER_TNR","MSU_DIAMETER_TSR","MSU_DIAMETER_UAR","MSU_DIAMETER_UDR","MSU_DIAMETER_ULR","MSU_DIAMETER_UPR","MSU_DIAMETER_UVR","MSU_DIAMETER_XAR","MSU_GTP_BEARER_RESOURCE_COMMAND","MSU_GTP_CHANGE_NOTIFICATION_REQ","MSU_GTP_CREATE_AA_PDP_CONTEXT_REQ","MSU_GTP_CREATE_BEARER_REQ","MSU_GTP_CREATE_INDIRECT_DATA_FORWARDING_TUNNEL_REQ","MSU_GTP_CREATE_PDP_CONTEXT_REQ","MSU_GTP_CREATE_SESSION_REQ","MSU_GTP_DELETE_AA_PDP_CONTEXT_REQ","MSU_GTP_DELETE_BEARER_COMMAND","MSU_GTP_DELETE_BEARER_REQ","MSU_GTP_DELETE_INDIRECT_DATA_FORWARDING_TUNNEL_REQ","MSU_GTP_DELETE_PDN_CONNECTION_SET_REQ","MSU_GTP_DELETE_PDP_CONTEXT_REQ","MSU_GTP_DELETE_SESSION_REQ","MSU_GTP_DOWNLINK_DATA_NOTIFICATION_FAILURE_INDICATION","MSU_GTP_ECHO_REQUEST","MSU_GTP_ERROR_INDICATION","MSU_GTP_FORWARD_RELOCATION_REQ","MSU_GTP_IDENTIFICATION_REQ","MSU_GTP_INIT_PDP_CONTEXT_ACTIVATION_REQ","MSU_GTP_MBMS_SESSION_START_REQ","MSU_GTP_MBMS_SESSION_STOP_REQ","MSU_GTP_MBMS_SESSION_UPDATE_REQ","MSU_GTP_MODIFY_BEARER_COMMAND","MSU_GTP_MODIFY_BEARER_REQ","MSU_GTP_MS_INFO_CHANGE_REQ","MSU_GTP_PDU_NOTE_MS_PRESENT_REQ","MSU_GTP_PDU_NOTIFICATION_REJECT_REQ","MSU_GTP_PDU_NOTIFICATION_REQ","MSU_GTP_RAN_INFO_RELAY","MSU_GTP_RELOCATION_CANCEL_REQ","MSU_GTP_REMOTE_UE_REPORT_NOTIFICATION","MSU_GTP_RESUME_NOTIFICATION","MSU_GTP_SGSN_CONTEXT_REQ","MSU_GTP_SRI_FOR_GPRS_REQ","MSU_GTP_SUSPEND_NOTIFICATION","MSU_GTP_TRACE_SESSION_ACTIVATION","MSU_GTP_TRACE_SESSION_DEACTIVATION","MSU_GTP_UNKNOWN","MSU_GTP_UPDATE_BEARER_REQ","MSU_GTP_UPDATE_PDN_CONNECTION_SET_REQ","MSU_GTP_UPDATE_PDP_CONTEXT_REQ","MSU_ISUP_BLO","MSU_ISUP_CGB","MSU_ISUP_CRS","MSU_ISUP_IAM","MSU_ISUP_REL","MSU_ISUP_RSC","MSU_MAP_ACTIVATE_SS","MSU_MAP_ACTIVATE_TRACE_MODE","MSU_MAP_ALERT_SERVICE_CENTER","MSU_MAP_ALERT_SERVICE_CENTER_WITHOUT_RESULT","MSU_MAP_ATI","MSU_MAP_ATM","MSU_MAP_ATSI","MSU_MAP_AUTHENTICATE","MSU_MAP_AUTHENTICATION_FAILURE_REPORT","MSU_MAP_BEGIN_SUBSCRIBER_ACTIVITY","MSU_MAP_CANCEL_LOCATION","MSU_MAP_CANCEL_VCSG_LOCATION","MSU_MAP_CHECK_IMEI","MSU_MAP_DEACTIVATE_SS","MSU_MAP_DEACTIVATE_TRACE_MODE","MSU_MAP_DSD","MSU_MAP_ERASE_CC_ENTRY","MSU_MAP_ERASE_SS","MSU_MAP_FAILURE_REPORT","MSU_MAP_FORWARD_ACCESS_SIGNALLING","MSU_MAP_FORWARD_CHECK_SS_INDICATION","MSU_MAP_FORWARD_GROUP_CALL_SIGNALLING","MSU_MAP_GET_PASSWORD","MSU_MAP_INFORM_SERVICE_CENTRE","MSU_MAP_INTSS","MSU_MAP_ISD","MSU_MAP_IST_ALERT","MSU_MAP_IST_COMMAND","MSU_MAP_MO_FORWARDSM","MSU_MAP_MT_FORWARDSM","MSU_MAP_MT_FORWARD_SM_FOR_VGCS","MSU_MAP_NOTE_INTERNAL_HANDOVER","MSU_MAP_NOTE_MM_EVENT","MSU_MAP_NOTE_MS_PRESENT_FOR_GPRS","MSU_MAP_NOTE_SUBSCRIBER_DATA_MODIFIED","MSU_MAP_NOTE_SUBSCRIBER_PRESENT","MSU_MAP_PERFORM_HANDOVER","MSU_MAP_PERFORM_SUBSEQUENT_HANDOVER","MSU_MAP_PREPARE_GROUP_CALL","MSU_MAP_PREPARE_HANDOVER","MSU_MAP_PREPARE_SUBSEQUENT_HANDOVER","MSU_MAP_PRN","MSU_MAP_PROCESS_ACCESS_SIGNALLING","MSU_MAP_PROCESS_GROUP_CALL_SIGNALLING","MSU_MAP_PROCESS_UNSTRUCTURED_SS_DATA","MSU_MAP_PROCESS_UNSTRUCTURED_SS_REQUEST","MSU_MAP_PROVIDE_SIWFS_NUMBER","MSU_MAP_PSI","MSU_MAP_PSL","MSU_MAP_PURGEMS","MSU_MAP_READY_FOR_SM","MSU_MAP_REGISTER_CC_ENTRY","MSU_MAP_REGISTER_PASSWORD","MSU_MAP_REGISTER_SS","MSU_MAP_RELEASE_RESOURCES","MSU_MAP_REMOTE_USER_FREE","MSU_MAP_REPORT_SM_DELIVERY_STATUS","MSU_MAP_RESET","MSU_MAP_RESTORE_DATA","MSU_MAP_RESUME_CALL_HANDLING","MSU_MAP_SAI","MSU_MAP_SEND_END_SIGNAL","MSU_MAP_SEND_GROUP_CALL_END_SIGNAL","MSU_MAP_SEND_GROUP_CALL_INFO","MSU_MAP_SEND_IMSI","MSU_MAP_SEND_PARAMETERS","MSU_MAP_SET_REPORTING_STATE","MSU_MAP_SI","MSU_MAP_SIWFS_SIGNALLING_MODIFY","MSU_MAP_SRI","MSU_MAP_SRISM","MSU_MAP_SRI_FOR_GPRS","MSU_MAP_SRI_FOR_LCS","MSU_MAP_SS_INVOCATIONNOTIFICATION","MSU_MAP_STATUS_REPORT","MSU_MAP_SUBSCRIBER_LOCATION_REPORT","MSU_MAP_TRACE_SUBSCRIBER_ACTIVITY","MSU_MAP_UL","MSU_MAP_UL_GPRS","MSU_MAP_UNSTRUCTURED_SS_NOTIFY","MSU_MAP_UNSTRUCTURED_SS_REQUEST","MSU_MAP_UPDATE_VCSG_LOCATION","MSU_RADIUS_DISCONNECT_REQUEST","MSU_S1AP_INITIAL_UE_MESSAGE","MSU_S1AP_PAGING","MSU_S1AP_S1SETUP_REQ","MSU_SIP_200OK","MSU_SIP_BYE","MSU_SIP_COMET","MSU_SIP_INFO","MSU_SIP_INVITE","MSU_SIP_MESSAGE","MSU_SIP_OPTIONS","MSU_SIP_REGISTER","MSU_SIP_SUBSCRIBE","MSU_X2AP_CELL_ACTIVATION_REQ","MSU_X2AP_ENB_CONFIGURATION_UPDATE","MSU_X2AP_ERROR_INDICATION","MSU_X2AP_HANDOVER_REQ","MSU_X2AP_LOAD_INFORMATION","MSU_X2AP_MESSAGE_TRANSFER","MSU_X2AP_MOBILITY_CHANGE_REQ","MSU_X2AP_PRIVATE_MESSAGE","MSU_X2AP_RESET_REQ","MSU_X2AP_RESOURCE_STATUS_REQ","MSU_X2AP_RETRIEVE_UE_CONTEXT_REQ","MSU_X2AP_UE_CONTEXT_RELEASE","MSU_X2AP_X2SETUP_REQ","MSU_X2AP_X2_RELEASE","MSU_X2AP_X2_REMOVAL_REQ","NETWORK_BACKHAUL","NETWORK_EUTRAN","NETWORK_GERAN","NETWORK_IPRAN","NETWORK_UTRAN","OS_SOLARIS","P1SEC_PTA","P1SEC_PTA_DIAMETER","P1SEC_PTA_GTP","P1SEC_PTA_IAX","P1SEC_PTA_IMS","P1SEC_PTA_LTE","P1SEC_PTA_SIP","P1SEC_PTA_SS7","P1SEC_PTF","P1SEC_PTF_DIAMETER","P1SEC_PTF_GTP","P1SEC_PTM","P1SEC_PTM_DC_PATTERN","P1SEC_PTM_DC_THRESHOLD","P1SEC_PTM_DIAMETER","P1SEC_PTM_GTP","P1SEC_PTM_LTE","P1SEC_PTM_OAM","P1SEC_PTM_SS7","PLATFORM_DX200","PRODUCT_ACISION_HLR","PRODUCT_ACISION_SMSC","PRODUCT_ACME_NETNET","PRODUCT_ADVA_FSP","PRODUCT_ADVENTNET_HLR","PRODUCT_ADVENTNET_NMS","PRODUCT_ALCATEL_BSC","PRODUCT_ALLEGRO_ROMPAGER","PRODUCT_ALLOT_NETENFORCER","PRODUCT_ALLOT_SIGMA","PRODUCT_ALU","PRODUCT_ALU_AAA","PRODUCT_ALU_AGCF","PRODUCT_ALU_BSC","PRODUCT_ALU_BTS","PRODUCT_ALU_CPAM","PRODUCT_ALU_EMS","PRODUCT_ALU_ESS","PRODUCT_ALU_HLR","PRODUCT_ALU_ISAM","PRODUCT_ALU_MME","PRODUCT_ALU_MOTIVE_AAA","PRODUCT_ALU_MPR","PRODUCT_ALU_OMC","PRODUCT_ALU_OMNIPCX","PRODUCT_ALU_OMNISWITCH","PRODUCT_ALU_PCSCF","PRODUCT_ALU_SDM","PRODUCT_ALU_SGSN","PRODUCT_ALU_SR","PRODUCT_ALU_SRMG","PRODUCT_ALU_UCN","PRODUCT_ALU_XRS","PRODUCT_ANRITSU_NETCLAW","PRODUCT_APERTIO_HLR","PRODUCT_ASTERIX_PBX","PRODUCT_ASTIUM_PBX","PRODUCT_AVAYA_S8000","PRODUCT_AVAYA_VPN","PRODUCT_BARRACUDA","PRODUCT_BARRACUDA_ADC","PRODUCT_BLUECOAT_PROXYSG","PRODUCT_BROADCOM_CPE","PRODUCT_BROADSOFT_BROADWORK","PRODUCT_BROADSOFT_EMS","PRODUCT_CERAGON_FIBERAIR","PRODUCT_CIENA_CN4200","PRODUCT_CISCO_ACS","PRODUCT_CISCO_ASR","PRODUCT_CISCO_BAMS","PRODUCT_CISCO_C7200","PRODUCT_CISCO_EPC","PRODUCT_CISCO_IMC","PRODUCT_CISCO_IOS","PRODUCT_CISCO_ITP","PRODUCT_CISCO_MGX","PRODUCT_CISCO_MSE","PRODUCT_CISCO_PGW2200","PRODUCT_CISCO_PRIME","PRODUCT_CISCO_ROUTER","PRODUCT_CISCO_SRP","PRODUCT_CISCO_WIRELESS_LAN_CONTROLLER","PRODUCT_COMVERSE_CCS","PRODUCT_COMVERSE_CMS","PRODUCT_COMVERSE_INSIGHT","PRODUCT_COMVERSE_IVR","PRODUCT_EATON_SC200","PRODUCT_ECT_RTB","PRODUCT_EMC_NETWORKER","PRODUCT_ERICSSON_AUC","PRODUCT_ERICSSON_AXE","PRODUCT_ERICSSON_BSC","PRODUCT_ERICSSON_BSIM","PRODUCT_ERICSSON_BTS","PRODUCT_ERICSSON_COM","PRODUCT_ERICSSON_CPE","PRODUCT_ERICSSON_CPP","PRODUCT_ERICSSON_CRS","PRODUCT_ERICSSON_CS","PRODUCT_ERICSSON_EMA","PRODUCT_ERICSSON_EPG","PRODUCT_ERICSSON_FREESET","PRODUCT_ERICSSON_GMLC","PRODUCT_ERICSSON_HLR","PRODUCT_ERICSSON_HSS","PRODUCT_ERICSSON_IOS","PRODUCT_ERICSSON_JAMBALA","PRODUCT_ERICSSON_MGC","PRODUCT_ERICSSON_MINILINK","PRODUCT_ERICSSON_MME","PRODUCT_ERICSSON_MSC","PRODUCT_ERICSSON_NMS","PRODUCT_ERICSSON_OCS","PRODUCT_ERICSSON_OSS","PRODUCT_ERICSSON_PABX","PRODUCT_ERICSSON_PGW","PRODUCT_ERICSSON_RBS","PRODUCT_ERICSSON_REDBACK","PRODUCT_ERICSSON_RX8000","PRODUCT_ERICSSON_SAPC","PRODUCT_ERICSSON_SDR","PRODUCT_ERICSSON_SGSN","PRODUCT_ERICSSON_SMPC","PRODUCT_ERICSSON_SSR","PRODUCT_ERICSSON_STP","PRODUCT_ERICSSON_TSP","PRODUCT_ERICSSON_VPN","PRODUCT_EXTREMEXOS_FIREWALL","PRODUCT_EXTREME_NETWORKS_EXTREMEWARE","PRODUCT_F5_BIGIP","PRODUCT_F5_TRAFFIX","PRODUCT_FLASH_NETWORKS","PRODUCT_FORTINET_FORTIGATE","PRODUCT_FUJITSU_IRMC_S4","PRODUCT_FUJITSU_SERVER_VIEW","PRODUCT_GENBAND_QUANTIX_QFLEX","PRODUCT_GENBAND_SOFTSWITCH","PRODUCT_HITACHI_ER5000","PRODUCT_HP_ILO","PRODUCT_HP_OCMP","PRODUCT_HP_OPENCALL","PRODUCT_HUAWEI_AIRBRIDGE","PRODUCT_HUAWEI_AR","PRODUCT_HUAWEI_B932","PRODUCT_HUAWEI_BSC","PRODUCT_HUAWEI_BTS","PRODUCT_HUAWEI_CGP","PRODUCT_HUAWEI_CPE","PRODUCT_HUAWEI_CX600","PRODUCT_HUAWEI_DBS","PRODUCT_HUAWEI_DES","PRODUCT_HUAWEI_DSLAM","PRODUCT_HUAWEI_E226","PRODUCT_HUAWEI_ENODEB","PRODUCT_HUAWEI_FUSION","PRODUCT_HUAWEI_GENEX","PRODUCT_HUAWEI_GGSN","PRODUCT_HUAWEI_HES","PRODUCT_HUAWEI_HLR","PRODUCT_HUAWEI_HSS","PRODUCT_HUAWEI_IMAP","PRODUCT_HUAWEI_LMT","PRODUCT_HUAWEI_M2000","PRODUCT_HUAWEI_MA53000","PRODUCT_HUAWEI_MME","PRODUCT_HUAWEI_MSOFTX3000","PRODUCT_HUAWEI_MT880R","PRODUCT_HUAWEI_N2000","PRODUCT_HUAWEI_NE","PRODUCT_HUAWEI_NE40","PRODUCT_HUAWEI_NGHLR","PRODUCT_HUAWEI_NMS","PRODUCT_HUAWEI_OAM","PRODUCT_HUAWEI_OCEANSPACE","PRODUCT_HUAWEI_OCEANSTOR","PRODUCT_HUAWEI_OMU","PRODUCT_HUAWEI_ONT","PRODUCT_HUAWEI_PDSN","PRODUCT_HUAWEI_QUIDWAY","PRODUCT_HUAWEI_RBT","PRODUCT_HUAWEI_RNC","PRODUCT_HUAWEI_S2000","PRODUCT_HUAWEI_S3000","PRODUCT_HUAWEI_S3700","PRODUCT_HUAWEI_S5000","PRODUCT_HUAWEI_S7000","PRODUCT_HUAWEI_S9303","PRODUCT_HUAWEI_SBC","PRODUCT_HUAWEI_SE","PRODUCT_HUAWEI_SECOSPACE","PRODUCT_HUAWEI_SECOWAY","PRODUCT_HUAWEI_SG","PRODUCT_HUAWEI_SGSN","PRODUCT_HUAWEI_SINGLECLOUD","PRODUCT_HUAWEI_SMARTAX","PRODUCT_HUAWEI_SNMP","PRODUCT_HUAWEI_SOFTX3000","PRODUCT_HUAWEI_SVN","PRODUCT_HUAWEI_U2000","PRODUCT_HUAWEI_UGW","PRODUCT_HUAWEI_UMG","PRODUCT_HUAWEI_URP","PRODUCT_HUAWEI_USN","PRODUCT_HUAWEI_UTPS","PRODUCT_HUAWEI_VSM","PRODUCT_HUAWEI_WASN","PRODUCT_IBM_AIX","PRODUCT_IBM_IMM","PRODUCT_IBM_QRADAR","PRODUCT_INFINERA_ATN","PRODUCT_INFOBLOX_DDI","PRODUCT_INFOBLOX_NMS","PRODUCT_INTEROP_MMSC","PRODUCT_INVIGO_RCS","PRODUCT_JBOSS_KEYCLOAK","PRODUCT_JUNIPER","PRODUCT_JUNIPER_JUNOS","PRODUCT_JUNIPER_NSM","PRODUCT_JUNIPER_SCREENOS","PRODUCT_JUNIPER_SRX","PRODUCT_MAHINDRA_COMVIVA","PRODUCT_MATRACOM_MC6500","PRODUCT_MIKROTIK_ROUTER","PRODUCT_MIRANTIS_MOS","PRODUCT_MOTOROLA_HLR","PRODUCT_MUNITY","PRODUCT_NEC_MX4340","PRODUCT_NEC_PASOLINK","PRODUCT_NERA_EVOLUTION","PRODUCT_NOKIA_AAA","PRODUCT_NOKIA_ALU_ALCATEL_LUCENT_PCSCF","PRODUCT_NOKIA_ALU_ALCATEL_LUCENT_SBC","PRODUCT_NOKIA_BTS","PRODUCT_NOKIA_CSCF","PRODUCT_NOKIA_DX200","PRODUCT_NOKIA_FLEXIBTS","PRODUCT_NOKIA_FLEXINS","PRODUCT_NOKIA_HSS","PRODUCT_NOKIA_ICSCF","PRODUCT_NOKIA_IPA2800","PRODUCT_NOKIA_NETACT","PRODUCT_NOKIA_NTHLR","PRODUCT_NOKIA_OMS","PRODUCT_NOKIA_ONENDS","PRODUCT_NOKIA_ONE_NDS","PRODUCT_NOKIA_OPENTAS","PRODUCT_NOKIA_OPEN_BGW","PRODUCT_NOKIA_PCSCF","PRODUCT_NOKIA_SGSN","PRODUCT_NOKIA_SURPASS","PRODUCT_NOKIA_TRAFFICA","PRODUCT_NOKIA_UGW","PRODUCT_NOKIA_VANTAGE_COMMANDER","PRODUCT_NOKIA_ePDG","PRODUCT_NORTEL_MERIDIAN","PRODUCT_NORTEL_MIPCD","PRODUCT_NORTEL_NORSTAR","PRODUCT_NORTEL_OAM","PRODUCT_NORTEL_WNMS","PRODUCT_NOVELL_NETIQ","PRODUCT_NSN_BSC","PRODUCT_NSN_BTS","PRODUCT_NSN_DX200","PRODUCT_NSN_FLEXIBSC","PRODUCT_NSN_FLEXIBTS","PRODUCT_NSN_FTP","PRODUCT_NSN_GGSN","PRODUCT_NSN_HLR","PRODUCT_NSN_IPA2800","PRODUCT_NSN_LIG","PRODUCT_NSN_MERCURY","PRODUCT_NSN_MGW","PRODUCT_NSN_NED","PRODUCT_NSN_NETACT","PRODUCT_NSN_NTHLR","PRODUCT_NSN_OAM","PRODUCT_NSN_OMC","PRODUCT_NSN_OMS","PRODUCT_NSN_ONEHLR","PRODUCT_NSN_ONENDS","PRODUCT_NSN_RNC","PRODUCT_NSN_SGSN","PRODUCT_NSN_SURPASS","PRODUCT_NSN_TRAFFICA","PRODUCT_OPENET_PM","PRODUCT_ORACLE_DSR","PRODUCT_PAESSLER_PRTG","PRODUCT_POLYCOM_HDX","PRODUCT_POLYSTAR_ROAMTRACKER","PRODUCT_RADISYS_MPX","PRODUCT_REDKNEE_UNIFIED","PRODUCT_RIBBON_SONUS_GSX9000","PRODUCT_SAGEMCOM_FAST","PRODUCT_SAMSUNG_PBX","PRODUCT_SAMSUNG_SLS","PRODUCT_SANDVINE_SDE","PRODUCT_SIEMENS_HLR","PRODUCT_SIEMENS_INUM","PRODUCT_SIEMENS_STP","PRODUCT_SIEMENS_SURPASS","PRODUCT_SIEMENS_iNUM","PRODUCT_SONUS_SBC","PRODUCT_SPLUNK_ENTERPRISE","PRODUCT_STARENT_ST","PRODUCT_SYMANTEC_SCSP","PRODUCT_TEKELEC_DSC","PRODUCT_TEKELEC_DSR","PRODUCT_TEKELEC_SS7","PRODUCT_TEKELEC_STP","PRODUCT_TEKTRONIX_SPECTRA","PRODUCT_TELCO_SWITCH","PRODUCT_TELESIS_CPE","PRODUCT_UBIQUISYS_ZONEGATE","PRODUCT_UBIQUITI_AIROS","PRODUCT_ULTICOM_SIGNALWARE","PRODUCT_ULTICOM_SS7_GW","PRODUCT_ULTIMACO_HSM","PRODUCT_UTIMACO_LIMS","PRODUCT_VERINT_CONTROLSWITCH","PRODUCT_ZEEP_GINESS","PRODUCT_ZHONE_MALC","PRODUCT_ZHONE_PARADYNE","PRODUCT_ZTE_ACS","PRODUCT_ZTE_UMS","PRODUCT_ZTE_ZXA","PRODUCT_ZTE_ZXCSM","PRODUCT_ZTE_ZXDSL","PRODUCT_ZTE_ZXG10","PRODUCT_ZTE_ZXMP","PRODUCT_ZTE_ZXONE","PRODUCT_ZTE_ZXR","PRODUCT_ZTE_ZXUN","PRODUCT_ZTE_ZXV","PRODUCT_ZYXEL_IES","PRODUCT_ZYXEL_USG","PROTOCOL_MATRIX","PROTO_A10","PROTO_A11","PROTO_BGP","PROTO_BSSAP","PROTO_BSSMAP","PROTO_CAMEL","PROTO_CAP","PROTO_CORBA","PROTO_DIAMETER","PROTO_DNS","PROTO_DTAP","PROTO_ETHERNET","PROTO_FINGER","PROTO_FTP","PROTO_GAN","PROTO_GTP","PROTO_GTPC","PROTO_GTPP","PROTO_GTPU","PROTO_H248","PROTO_H323","PROTO_HTTP","PROTO_HTTPS","PROTO_IAX","PROTO_ICMP","PROTO_IKE","PROTO_IMAP","PROTO_IMM","PROTO_INAP","PROTO_IP","PROTO_IPSEC","PROTO_IPv6","PROTO_ISAKMP","PROTO_ISUP","PROTO_LAPDM","PROTO_LDAP","PROTO_LMT","PROTO_M3UA","PROTO_MAP","PROTO_MAPv1","PROTO_MEGACO","PROTO_MML","PROTO_MYSQL","PROTO_NAS","PROTO_NETBIOS","PROTO_NETCONF","PROTO_NTP","PROTO_OAM","PROTO_OPENFLOW","PROTO_PCP","PROTO_PDCP","PROTO_POSTGRESQL","PROTO_PPP","PROTO_PRA","PROTO_PROPRIETARY_NOKIA_NWI3","PROTO_PTP","PROTO_RACCH","PROTO_RADIUS","PROTO_RANAP","PROTO_RDS","PROTO_RTCP","PROTO_RTP","PROTO_S1AP","PROTO_SACCH","PROTO_SCCP","PROTO_SCTP","PROTO_SDP","PROTO_SERIAL","PROTO_SFTP","PROTO_SIGTRAN","PROTO_SIP","PROTO_SKINNY","PROTO_SMB","PROTO_SMPP","PROTO_SMS","PROTO_SMTP","PROTO_SNMP","PROTO_SNMPv2","PROTO_SNMPv3","PROTO_SS7","PROTO_SSH","PROTO_SSL","PROTO_TACACS","PROTO_TCAP","PROTO_TCH","PROTO_TCP","PROTO_TELNET","PROTO_TFTP","PROTO_TL1","PROTO_TLS","PROTO_TSAP","PROTO_UCP","PROTO_UCP_EMI","PROTO_UDP","PROTO_UMA","PROTO_USSD","PROTO_VNC","PROTO_X2AP","REF_DIAMETER_CAT0","REF_DIAMETER_CAT1","REF_DIAMETER_CAT2","REF_DIAMETER_CAT3","REF_DIAMETER_CAT_SMS","REF_GTP_CAT0","REF_GTP_CAT1","REF_GTP_CAT2","REF_GTP_CAT3","REF_SS7_CAT0","REF_SS7_CAT1","REF_SS7_CAT2","REF_SS7_CAT3","REF_SS7_CAT3_PLUS","REF_SS7_CAT_SMS","RISK_FRAUD","RISK_INFRASTRUCTURE_COMPROMISE","RISK_INFRASTRUCTURE_DOS","RISK_INFRASTRUCTURE_INFO_LEAK","RISK_INTERCEPTION","RISK_REVENUE_LOSS","RISK_SUBSCRIBER_COMPROMISE","RISK_SUBSCRIBER_GEOLOCATION","RISK_SUBSCRIBER_INTERCEPTION","RISK_SUBSCRIBER_LEAK","RISK_SUBSCRIBER_NUISANCE","RISK_SUBSCRIBER_TARGETED_DOS","SECURITY_SUPPLY_CHAIN","SNMP_COMMUNITY_CONV","SNMP_COMMUNITY_public","SS7_FILTERING","SUBCOMPONENT_DB","TCP_PORT_10023","TCP_PORT_16611","TCP_PORT_22","TCP_PORT_23","TCP_PORT_443","TCP_PORT_6000","TCP_PORT_9021","TCP_PORT_9880","TECHNO_2G","TECHNO_3G","TECHNO_5G","TECHNO_ADSL","TECHNO_CDMA","TECHNO_FTTH","TECHNO_GPRS","TECHNO_GSM","TECHNO_GSMR","TECHNO_IMS","TECHNO_IP","TECHNO_IoT","TECHNO_LTE","TECHNO_LTE-M","TECHNO_MPLS","TECHNO_NB-IoT","TECHNO_NFV","TECHNO_RCSe","TECHNO_SDN","TECHNO_UMTS","TECHNO_VOIP","TECHNO_VoLTE","TECHNO_VoWIFI","TECHNO_WCDMA","TECH_IMPACT_ABUSE_SUBSCRIBER_DATA","TECH_IMPACT_ACTIVATE_SUPPLEMENTARY_SERVICE","TECH_IMPACT_CALL_INTERCEPTION","TECH_IMPACT_CDR_ABUSE","TECH_IMPACT_CDR_BYPASS","TECH_IMPACT_CIPHER_KI","TECH_IMPACT_DELETE_SUBSCRIBER_DATA","TECH_IMPACT_FILTERING_ABUSE","TECH_IMPACT_FILTERING_BYPASS","TECH_IMPACT_ID_SPOOFING","TECH_IMPACT_INCREASED_ACCESS","TECH_IMPACT_INSERT_SUBSCRIBER_DATA","TECH_IMPACT_LEAK_CELLID","TECH_IMPACT_LEAK_DIAMETER_HOST","TECH_IMPACT_LEAK_GT","TECH_IMPACT_LEAK_IMEI","TECH_IMPACT_LEAK_IMSI","TECH_IMPACT_LEAK_IP","TECH_IMPACT_LEAK_MSC_GT","TECH_IMPACT_LEAK_MSISDN","TECH_IMPACT_LEAK_SS","TECH_IMPACT_LEAK_SUPLEMENTARY_SERVICE","TECH_IMPACT_LEAK_VENDOR","TECH_IMPACT_MAY_LEAK_CELLID","TECH_IMPACT_SMS_INTERCEPTION","TECH_IMPACT_SPAM","TECH_MOBILE_DATA","TECH_PS","UDP_PORT_2944","UDP_PORT_2945","UPDATE","VENDOR_ACISION","VENDOR_ACME_PACKET","VENDOR_ADVA","VENDOR_ADVENTNET","VENDOR_AIRVANA","VENDOR_ALCATEL","VENDOR_ALCATEL_LUCENT","VENDOR_ALLEGRO","VENDOR_ALLOT","VENDOR_ANRITSU","VENDOR_APERTIO","VENDOR_ASTIUM","VENDOR_AVAYA","VENDOR_BARRACUDA","VENDOR_BFX","VENDOR_BLUECOAT","VENDOR_BROADCOM","VENDOR_BROADSOFT","VENDOR_CERAGON","VENDOR_CIENA","VENDOR_CISCO","VENDOR_COMVERSE","VENDOR_EATON","VENDOR_ECT","VENDOR_EMC","VENDOR_ERICSSON","VENDOR_EXTREME","VENDOR_EXTREME_NETWORKS","VENDOR_F5","VENDOR_FLASH_NETWORKS","VENDOR_FORTINET","VENDOR_FUJITSU","VENDOR_GENBAND","VENDOR_GENBAND_NORTEL","VENDOR_GINESS","VENDOR_HITACHI","VENDOR_HP","VENDOR_HUAWEI","VENDOR_IBM","VENDOR_INFINERA","VENDOR_INFOBLOX","VENDOR_INTEROP","VENDOR_INVIGO","VENDOR_ISPADMIN","VENDOR_JBOSS","VENDOR_JUNIPER","VENDOR_MAHINDRA","VENDOR_MATRACOM","VENDOR_MIKROTIK","VENDOR_MIRANTIS","VENDOR_MOTOROLA","VENDOR_MUTINY","VENDOR_NANOTEQ","VENDOR_NEC","VENDOR_NERA","VENDOR_NOKIA","VENDOR_NOKIA_ALU_ALCATEL_LUCENT","VENDOR_NORTEL","VENDOR_NOVELL","VENDOR_NSN","VENDOR_OPENET","VENDOR_OPENSSH","VENDOR_ORACLE","VENDOR_ORACLE_TEKELEC","VENDOR_PAESSLER","VENDOR_POLYCOM","VENDOR_POLYSTAR","VENDOR_RADISYS","VENDOR_REDKNEE","VENDOR_RED_HAT","VENDOR_RIBBON_SONUS","VENDOR_SAGEMCOM","VENDOR_SAMSUNG","VENDOR_SANDVINE","VENDOR_SIEMENS","VENDOR_SONUS","VENDOR_SPLUNK","VENDOR_STARENT","VENDOR_SYMANTEC","VENDOR_TEKELEC","VENDOR_TEKTRONIX","VENDOR_TELCO","VENDOR_TELESIS","VENDOR_UBIQUISYS","VENDOR_UBIQUITI","VENDOR_ULTICOM","VENDOR_UTIMACO","VENDOR_VERINT","VENDOR_WINDOWS","VENDOR_ZEEP","VENDOR_ZHONE","VENDOR_ZTE","VENDOR_ZYXEL","VULN_ANDROID","VULN_ARCHITECTURE","VULN_AUTHENTICATION","VULN_BACKDOOR","VULN_BEST_PRACTICE","VULN_BEST_PRACTICE_VIOLATION","VULN_CONFIG_GENERIC","VULN_CPE","VULN_DEFAULT","VULN_DISCLOSURE","VULN_DOS","VULN_DOS_FEATURE_ABUSE","VULN_DOS_FLOOD","VULN_DOS_LOGIC_CRASH","VULN_EXPLOIT","VULN_FILTERING","VULN_FORMAT_STRING","VULN_FP","VULN_FRAUD","VULN_FUZZING","VULN_GENERIC","VULN_GENERIC_NE","VULN_HARDCODED","VULN_HSS","VULN_IMPLEMENTATION","VULN_INTERCEPT","VULN_LEGACY","VULN_MEMORY_CORRUPTION","VULN_MISCONFIGURATION","VULN_NE","VULN_NE_GENERIC","VULN_NONSTANDARD_BEHAVIOR","VULN_OAM","VULN_PHYSICAL","VULN_PROTOCOL","VULN_RELATED_495","VULN_SCAN","VULN_SCREENING","VULN_SPOOFING","VULN_STATIC_ANALYSIS","VULN_TRACKING","VULN_UNDOCUMENTED_BEHAVIOR","VULN_XSS","qd"]; 
+  function split( val ) {
+    return val.split( /\s+/ );
+  }
+  function extractLast( term ) {
+    return split( term ).pop();
+  }
+
+  jQuery( "#application_tags")
+    .bind( "keydown", function( event ) {
+      if ( event.keyCode === jQuery.ui.keyCode.TAB &&
+          jQuery( this ).data( "ui-autocomplete" ).menu.active ) {
+        event.preventDefault();
+      }
+    })
+    .autocomplete({
+      minLength: 0,
+      source: function( request, response ) {
+        // delegate back to autocomplete, but extract the last term
+        response( jQuery.ui.autocomplete.filter(
+        availableTags, extractLast( request.term ) ) );
+      },
+      focus: function() {
+        // prevent value inserted on focus
+        return false;
+      },
+      select: function( event, ui ) {
+        var terms = split( this.value );
+        // remove the current input
+        terms.pop();
+        // add the selected item
+        terms.push( ui.item.value );
+        // add placeholder to get the comma-and-space at the end
+        terms.push( "" );
+        this.value = terms.join( " " );
+        return false;
+      }
+    });
+</script>
+
+<script>
+(function() {
+  var Dom = YAHOO.util.Dom,
+  Event = YAHOO.util.Event;
+
+  var initTopMenu = function() {
+    /*
+    Instantiate a MenuBar:  The first argument passed to the
+    constructor is the id of the element in the page
+    representing the MenuBar; the second is an object literal
+    of configuration properties.
+    */
+    var oMenuBar = new YAHOO.widget.MenuBar("productsandservices", {
+      autosubmenudisplay: true,
+      hidedelay: 200,
+      showdelay: 0,
+      lazyload: true,
+      // effect: {
+        //     effect: YAHOO.widget.ContainerEffect.FADE,
+        //     duration: 0.10
+        // }
+    });
+
+    /*
+    Define an array of object literals, each containing
+    the data necessary to create a submenu.
+    */
+    var aSubmenuData = [
+    {
+      id: "home",
+      itemdata: [
+        { text: "Dashboard", url: "/dashboard" },
+        { text: "Appliances", url: "/appliances" },
+        { text: "Interconnections", url: "/interconnections" },
+          { text: 'SS7 Proxy', url: "/sigtran/proxy" },
+          { text: 'Diameter Proxy', url: "/diameter/proxy" },
+          { text: 'GTP Proxy', url: "/gtp/proxy" }
+      ]
+    },
+
+    {
+        id: 'pta',
+        itemdata: [
+           { text: "Run Discovery", url: "/ispc_assets/search_map" },
+           { text: "Run SS7 Audit", url: "/sigtran/pta/tasks/new" },
+           { text: "Run SS7 PoC Scan", url: "/sigtran/pta/tasks/poc_scan" },
+               { text: "Run SS7 SMS interception (p1sec_auditor)", url: "/sigtran/pta/tasks/sms_interception" },
+           { text: "Run Diameter Audit", url: "/diameter/pta/tasks/new" },
+               { text: "Run Web CLI (p1sec_auditor)", url: "/webcli/tasks/new" }
+        ]
+    },
+    {
+        id: 'ptf',
+        itemdata: [
+            { text: "Run SS7 Fuzzer", url: "/sigtran/ptf/tasks/new" },
+            { text: "Run Diameter Fuzzer", url: "/diameter/ptf/tasks/new" },
+            { text: "Run GTP Fuzzer", url: "/gtp/ptf/tasks/new" },
+            { text: "Run X2AP Fuzzer", url: "/x2ap/ptf/tasks/new" },
+            { text: "Run Proxy Fuzzer", url: "/sigtran/ptf/tasks/proxy" },
+        ]
+    },
+    {
+        id: 'fwa',
+        itemdata: [
+            { text: 'List Simulated Equipments', url: "/simulated_equipments" },
+            { text: 'List Audits Profile', url: "/sigtran/fwa/fwa_configs" },
+            { text: 'Run SS7 Firewall Scenarios', url: "/sigtran/fwa/tasks/ss7_firewall_auditor_scenarios" },
+            { text: 'Run SS7 Firewall Full Audit', url: "/sigtran/fwa/tasks/ss7_firewall_auditor_full" },
+            { text: 'Run SS7 Firewall Advanced Audit', url: "/sigtran/fwa/tasks/ss7_firewall_auditor_advanced" }
+        ]
+    },
+
+    {
+      id: "tasks",
+      itemdata: [
+        { text: "List all tasks", url: "/tasks" },
+        { text: "List running tasks", url: "/tasks?filterby=running" },
+        { text: "List paused tasks", url: "/tasks?filterby=paused" },
+        { text: "List finished tasks", url: "/tasks?filterby=finished" },
+      ]
+    },
+
+    {
+      id: "reports",
+      itemdata: [
+      { text: "List reports", url: "/reports" }
+      ]
+    },
+
+    {
+      id: "vkb",
+      itemdata: [
+      { text: "VKB Overview", url: "/vulns/overview"},
+      { text: "VKB Maps", url: "/vulns/maps" },
+      { text: "VKB Vulnerability List", url: "/vulns" },
+      ]
+    },
+    {
+      id: "support",
+      itemdata: [
+            { text: "Network configurations", url: "/pta_tools/net_configuration" },
+            { text: "Network tools", url: "/pta_tools/net_tools" },
+        { text: "Send invitation", url: "/invitations/new" },
+        { text: "Change password", url: "/passwords/change" },
+        { text: "Last Logins", url: "/lastlogins" },
+        { text: "License Agreement", url: "/license_accepts/read_eula" },
+        { text: "Logout", url: "/logout" }
+      ]
+    },
+      {
+        id: "admin",
+        itemdata: [
+            { text: "Access mgmt", url: "/access_management"},
+            { text: "Users list", url: "/users"},
+            { text: "Users last logins", url: "/lastlogins?id=all" },
+            { text: "Export URL tracker", url: "/export_usertracker"},
+            { text: "Live network trace", url: "/otp/index" },
+            { text: "Configure", url: "/pta_configurations/index" },
+            { text: "Create account", url: "/signup"}
+        ]
+      }
+    ];
+
+    /*
+    Subscribe to the "beforerender" event, adding a submenu
+    to each of the items in the MenuBar instance.
+    */
+    oMenuBar.subscribe("beforeRender", function () {
+      if (this.getRoot() == this) {
+        this.getItem(0).cfg.setProperty("submenu", aSubmenuData[0]);
+        this.getItem(1).cfg.setProperty("submenu", aSubmenuData[1]);
+        this.getItem(2).cfg.setProperty("submenu", aSubmenuData[2]);
+        this.getItem(3).cfg.setProperty("submenu", aSubmenuData[3]);
+        this.getItem(4).cfg.setProperty("submenu", aSubmenuData[4]);
+        this.getItem(5).cfg.setProperty("submenu", aSubmenuData[5]);
+        this.getItem(6).cfg.setProperty("submenu", aSubmenuData[6]);
+        this.getItem(7).cfg.setProperty("submenu", aSubmenuData[7]);
+        this.getItem(8).cfg.setProperty("submenu", aSubmenuData[8]);
+      }
+    });
+
+    /*
+    Call the "render" method with no arguments since the
+    markup for this MenuBar instance is already exists in
+    the page.
+    */
+    oMenuBar.render();
+  };
+
+  Event.onDOMReady(function() {
+    var layout = new YAHOO.widget.Layout({
+      units: [
+      { position: 'top', height: 80, body: 'top1', scroll: null, zIndex: 2 },
+          { position: 'right', header: 'Help', width: 250, resize: true, footer: 'Help', collapse: true, body: 'right1', animate: true, gutter: '5', scroll: true },
+      { position: 'bottom', height: 30, body: 'bottom1' },
+            { position: 'left', header: 'Access', width: 250, resize: true, footer: 'Access', collapse: true, body: 'left1', animate: true, gutter: '5', scroll: null, zIndex: 1 },
+      { position: 'center', body: 'center1', scroll: true, gutter: '5 0' } // use gutter: '5 0' when having left and right layout panels, better display
+      // { position: 'center', scroll: true, body: 'center1', gutter: '5' } // use gutter: '5 0' when having left and right layout panels, better display
+      ]
+    });
+
+    layout.on('render', function() {
+      YAHOO.util.Event.onContentReady("productsandservices", initTopMenu);
+      // YAHOO.util.Event.onContentReady("productsandservices2", initLeftMenu);
+    });
+
+    layout.on('render', function() {
+
+      // define helper function
+      instantCollapse = function(panelName) {
+        var p = layout.getUnitByPosition(panelName);
+        p.set('animate', false);
+        p.collapse();
+        p.set('animate', true);
+      };
+
+      // define helper function
+      setCookiePanel = function(cookieName, panelName) {
+        var h = layout.getUnitByPosition(panelName);
+        h.addListener("beforeCollapse", function() {
+          YAHOO.util.Cookie.remove(cookieName);
+          YAHOO.util.Cookie.set(cookieName, "true");
+        } );
+        h.addListener("beforeExpand", function() {
+          YAHOO.util.Cookie.remove(cookieName);
+          YAHOO.util.Cookie.set(cookieName, "false");
+        } );
+      };
+
+      setCookiePanel("hide_help_panel", "right");
+      setCookiePanel("hide_access_panel", "left");
+
+      // default is to hide left panel and show right panel
+      var hide_access_cookie = YAHOO.util.Cookie.get("hide_access_panel");
+      if (!hide_access_cookie || (hide_access_cookie && hide_access_cookie === "true")) {
+        instantCollapse('left');
+      }
+      var hide_help_cookie = YAHOO.util.Cookie.get("hide_help_panel");
+      if (hide_help_cookie && hide_help_cookie === "true") {
+        instantCollapse('right');
+      }
+    });
+
+    layout.render();
+    // layout.getUnitByPosition('right').toggle();
+  });
+})();
+</script>
+
+</body>
+</html>

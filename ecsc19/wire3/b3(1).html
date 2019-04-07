@@ -1,0 +1,57 @@
+ostname and port control the address the server will bind to. Both arguments
+       are optional in listen mode. If hostname is omitted, it defaults to listening on all available
+       addresses over IPv4 and IPv6. If port is omitted, it defaults to 31337.
+
+PROTOCOL OPTIONS
+       -4 (IPv4 only)
+           Force the use of IPv4 only.
+
+       -6 (IPv6 only)
+           Force the use of IPv6 only.
+
+       -U, --unixsock (Use Unix domain sockets)
+           Use Unix domain sockets rather than network sockets. This option may be used on its own for
+           stream sockets, or combined with --udp for datagram sockets. A description of -U mode is in
+           the section called “UNIX DOMAIN SOCKETS”.
+
+       -u, --udp (Use UDP)
+           Use UDP for the connection (the default is TCP).
+
+       --sctp (Use SCTP)
+           Use SCTP for the connection (the default is TCP). SCTP support is implemented in
+           TCP-compatible mode.
+
+CONNECT MODE OPTIONS
+       -g hop1[,hop2,...] (Loose source routing)
+           Sets hops for IPv4 loose source routing. You can use -g once with a comma-separated list of
+           hops, use -g multiple times with single hops to build the list, or combine the two. Hops can
+           be given as IP addresses or hostnames.
+
+       -G ptr (Set source routing pointer)
+           Sets the IPv4 source route “pointer” for use with -g. The argument must be a multiple of 4
+           and no more than 28. Not all operating systems support setting this pointer to anything
+           other than four.
+
+       -p port, --source-port port (Specify source port)
+           Set the port number for Ncat to bind to.
+
+       -s host, --source host (Specify source address)
+           Set the address for Ncat to bind to.
+
+LISTEN MODE OPTIONS
+       See the section called “ACCESS CONTROL OPTIONS” for information on limiting the hosts that may
+       connect to the listening Ncat process.
+
+       -l, --listen (Listen for connections)
+           Listen for connections rather than connecting to a remote machine
+
+       -m numconns, --max-conns numconns (Specify maximum number of connections)
+           The maximum number of simultaneous connections accepted by an Ncat instance. 100 is the
+           default (60 on Windows).
+
+       -k, --keep-open (Accept multiple connections)
+           Normally a listening server accepts only one connection and then quits when the connection
+           is closed. This option makes it accept multiple simultaneous connections and wait for more
+           connections after they have all been closed. It must be combined with --listen. In this mode
+           there is no way for Ncat to know when its network input is finished, so it will keep running
+           until interrupted. This also means that it will

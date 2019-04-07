@@ -1,0 +1,65 @@
+ons. This makes it possible to script Telnet
+           sessions with Ncat.
+
+       --version (Display version)
+           Displays the Ncat version number and exits.
+
+UNIX DOMAIN SOCKETS
+       The -U option (same as --unixsock) causes Ncat to use Unix domain sockets rather than network
+       sockets. Unix domain sockets exist as an entry in the filesystem. You must give the name of a
+       socket to connect to or to listen on. For example, to make a connection,
+
+       ncat -U ~/unixsock
+
+       To listen on a socket:
+
+       ncat -l -U ~/unixsock
+
+       Listen mode will create the socket if it doesn't exist. The socket will continue to exist after
+       the program ends.
+
+       Both stream and datagram domain sockets are supported. Use -U on its own for stream sockets, or
+       combine it with --udp for datagram sockets. Datagram sockets require a source socket to connect
+       from. By default, a source socket with a random filename will be created as needed, and deleted
+       when the program ends. Use the --source with a path to use a source socket with a specific name.
+
+EXAMPLES
+       Connect to example.org on TCP port 8080.
+           ncat example.org 8080
+
+       Listen for connections on TCP port 8080.
+           ncat -l 8080
+
+       Redirect TCP port 8080 on the local machine to host on port 80.
+           ncat --sh-exec "ncat example.org 80" -l 8080 --keep-open
+
+       Bind to TCP port 8081 and attach /bin/bash for the world to access freely.
+           ncat --exec "/bin/bash" -l 8081 --keep-open
+
+       Bind a shell to TCP port 8081, limit access to hosts on a local network, and limit the maximum
+       number of simultaneous connections to 3.
+           ncat --exec "/bin/bash" --max-conns 3 --allow 192.168.0.0/24 -l 8081 --keep-open
+
+       Connect to smtphost:25 through a SOCKS4 server on port 1080.
+           ncat --proxy socks4host --proxy-type socks4 --proxy-auth joe smtphost 25
+
+       Connect to smtphost:25 through a SOCKS5 server on port 1080.
+           ncat --proxy socks5host --proxy-type socks5 --proxy-auth joe:secret smtphost 25
+
+       Create an HTTP proxy server on localhost port 8888.
+           ncat -l --proxy-type http localhost 8888
+
+       Send a file over TCP port 9899 from host2 (client) to host1 (server).
+           HOST1$ ncat -l 9899 > outputfile
+
+           HOST2$ ncat HOST1 9899 < inputfile
+
+       Transfer in the other direction, turning Ncat into a “one file” server.
+           HOST1$ ncat -l 9899 < inputfile
+
+           HOST2$ ncat HOST1 9899 > outputfile
+
+EXIT CODE
+       The exit code reflects whether a connection was made and completed successfully. 0 means there
+       was no error. 1 means there was a network error of some kind, for example “Connection refused”
+       or “Connection reset�

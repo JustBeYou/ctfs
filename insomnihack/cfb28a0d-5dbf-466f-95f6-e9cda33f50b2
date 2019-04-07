@@ -1,0 +1,1 @@
+curl -Ns https://curlpipebash.teaser.insomnihack.ch/print-flag.sh | bash

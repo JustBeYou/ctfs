@@ -1,0 +1,57 @@
+ly on the command line.
+
+TIMING OPTIONS
+       These options accept a time parameter. This is specified in seconds by default, though you can
+       append ms, s, m, or h to the value to specify milliseconds, seconds, minutes, or hours.
+
+       -d time, --delay time (Specify line delay)
+           Set the delay interval for lines sent. This effectively limits the number of lines that Ncat
+           will send in the specified period. This may be useful for low-bandwidth sites, or have other
+           uses such as coping with annoying iptables --limit options.
+
+       -i time, --idle-timeout time (Specify idle timeout)
+           Set a fixed timeout for idle connections. If the idle timeout is reached, the connection is
+           terminated.
+
+       -w time, --wait time (Specify connect timeout)
+           Set a fixed timeout for connection attempts.
+
+OUTPUT OPTIONS
+       -o file, --output file (Save session data)
+           Dump session data to a file
+
+       -x file, --hex-dump file (Save session data in hex)
+           Dump session data in hex to a file.
+
+       --append-output (Append output)
+           Issue Ncat with --append-ouput along with -o and/or -x and it will append the resulted
+           output rather than truncating the specified output files.
+
+       -v, --verbose (Be verbose)
+           Issue Ncat with -v and it will be verbose and display all kinds of useful connection based
+           information. Use more than once (-vv, -vvv...) for greater verbosity.
+
+MISC OPTIONS
+       -C, --crlf (Use CRLF as EOL)
+           This option tells Ncat to convert LF line endings to CRLF when taking input from standard
+           input.  This is useful for talking to some stringent servers directly from a terminal in one
+           of the many common plain-text protocols that use CRLF for end-of-line.
+
+       -h, --help (Help screen)
+           Displays a short help screen with common options and parameters, and then exits.
+
+       --recv-only (Only receive data)
+           If this option is passed, Ncat will only receive data and will not try to send anything.
+
+       --send-only (Only send data)
+           If this option is passed, then Ncat will only send data and will ignore anything received.
+           This option also causes Ncat to close the network connection and terminate after EOF is
+           received on standard input.
+
+       --no-shutdown (Do not shutdown into half-duplex mode)
+           If this option is passed, Ncat will not invoke shutdown on a socket aftering seeing EOF on
+           stdin. This is provided for backward-compatibility with OpenBSD netcat, which exhibits this
+           behavior when executed with its '-d' option.
+
+       -t, --telnet (Answer Telnet negotiations)
+           Handle DO/DONT WILL/WONT Telnet negotiati

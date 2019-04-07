@@ -1,0 +1,49 @@
+ never close its output stream, so any
+           program reading from Ncat and looking for end-of-file will also hang.
+
+       --broker (Connection brokering)
+           Allow multiple parties to connect to a centralised Ncat server and communicate with each
+           other. Ncat can broker communication between systems that are behind a NAT or otherwise
+           unable to directly connect. This option is used in conjunction with --listen, which causes
+           the --listen port to have broker mode enabled.
+
+       --chat (Ad-hoc “chat server”)
+           The --chat option enables chat mode, intended for the exchange of text between several
+           users. In chat mode, connection brokering is turned on. Ncat prefixes each message received
+           with an ID before relaying it to the other connections. The ID is unique for each connected
+           client. This helps distinguish who sent what. Additionally, non-printing characters such as
+           control characters are escaped to keep them from doing damage to a terminal.
+
+SSL OPTIONS
+       --ssl (Use SSL)
+           In connect mode, this option transparently negotiates an SSL session with an SSL server to
+           securely encrypt the connection. This is particularly handy for talking to SSL enabled HTTP
+           servers, etc.
+
+           In server mode, this option listens for incoming SSL connections, rather than plain
+           untunneled traffic.
+
+           In UDP connect mode, this option enables Datagram TLS (DTLS). This is not supported in
+           server mode.
+
+       --ssl-verify (Verify server certificates)
+           In client mode, --ssl-verify is like --ssl except that it also requires verification of the
+           server certificate. Ncat comes with a default set of trusted certificates in the file
+           ca-bundle.crt.  Some operating systems provide a default list of trusted certificates; these
+           will also be used if available. Use --ssl-trustfile to give a custom list. Use -v one or
+           more times to get details about verification failures.  Ncat does not check for revoked
+           certificates.
+
+           This option has no effect in server mode.
+
+       --ssl-cert certfile.pem (Specify SSL certificate)
+           This option gives the location of a PEM-encoded certificate files used to authenticate the
+           server (in listen mode) or the client (in connect mode). Use it in combination with
+           --ssl-key.
+
+       --ssl-key keyfile.pem (Specify SSL private key)
+           This option gives the location of the PEM-encoded private key file that goes with the
+           certificate named with --ssl-cert.
+
+       --ssl-trustfile cert.pem (List trusted certificates)
+           This option sets a list of certificates that are trus

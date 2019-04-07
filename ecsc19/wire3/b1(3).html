@@ -1,0 +1,46 @@
+NCAT(1)                                   Ncat Reference Guide                                  NCAT(1)
+
+NAME
+       ncat - Concatenate and redirect sockets
+
+SYNOPSIS
+       ncat [OPTIONS...] [hostname] [port]
+
+DESCRIPTION
+       Ncat is a feature-packed networking utility which reads and writes data across networks from the
+       command line. Ncat was written for the Nmap Project and is the culmination of the currently
+       splintered family of Netcat incarnations. It is designed to be a reliable back-end tool to
+       instantly provide network connectivity to other applications and users. Ncat will not only work
+       with IPv4 and IPv6 but provides the user with a virtually limitless number of potential uses.
+
+       Among Ncat's vast number of features there is the ability to chain Ncats together; redirection
+       of TCP, UDP, and SCTP ports to other sites; SSL support; and proxy connections via SOCKS4,
+       SOCKS5 or HTTP proxies (with optional proxy authentication as well). Some general principles
+       apply to most applications and thus give you the capability of instantly adding networking
+       support to software that would normally never support it.
+
+OPTIONS SUMMARY
+           Ncat 7.70 ( https://nmap.org/ncat )
+           Usage: ncat [options] [hostname] [port]
+
+           Options taking a time assume seconds. Append 'ms' for milliseconds,
+           's' for seconds, 'm' for minutes, or 'h' for hours (e.g. 500ms).
+             -4                         Use IPv4 only
+             -6                         Use IPv6 only
+             -U, --unixsock             Use Unix domain sockets only
+             -C, --crlf                 Use CRLF for EOL sequence
+             -c, --sh-exec <command>    Executes the given command via /bin/sh
+             -e, --exec <command>       Executes the given command
+                 --lua-exec <filename>  Executes the given Lua script
+             -g hop1[,hop2,...]         Loose source routing hop points (8 max)
+             -G <n>                     Loose source routing hop pointer (4, 8, 12, ...)
+             -m, --max-conns <n>        Maximum <n> simultaneous connections
+             -h, --help                 Display this help screen
+             -d, --delay <time>         Wait between read/writes
+             -o, --output <filename>    Dump session data to a file
+             -x, --hex-dump <filename>  Dump session data as hex to a file
+             -i, --idle-timeout <time>  Idle read/write timeout
+             -p, --source-port port     Specify source port to use
+             -s, --source addr          Specify source address to use (doesn't affect -l)
+             -l, --listen               Bind and listen for incoming connections
+             -k, --keep-open            Accept multiple connec

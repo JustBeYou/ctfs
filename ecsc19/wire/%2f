@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <title>Cyber Security Research Center from Romania</title>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/style-art.css"/>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/css/jquery.fancybox-1.3.4.css"/>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/css/jplayer_skin.css"/>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/fonts/fonts.css"/>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/shortcodes/shc-style.css"/>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/style.css"/>
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/css/ie7.css" />
+    <![endif]-->
+    <link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ccsir.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css'  href='http://ccsir.org/wp-includes/css/dist/block-library/style.min.css?ver=5.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://ccsir.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='http://ccsir.org/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='flare-css'  href='http://ccsir.org/wp-content/plugins/flare/css/flare.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='flare-oswald-font-css'  href='http://fonts.googleapis.com/css?family=Oswald%3A700%3Alatin&#038;text=1234567890MK.&#038;ver=1.2.7' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript' src='http://ccsir.org/wp-content/themes/simpler/js/simpler-tweets.js?ver=5.0.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":null};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ccsir.org/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.4'></script>
+<link rel='https://api.w.org/' href='http://ccsir.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ccsir.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ccsir.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.4" />
+<style type="text/css">#english h1 a {
+font-family: 'CoconLight';
+font-size: 28px;
+color: #6E6E6E !important;
+}
+#romanian h1 a {
+font-family: 'CoconLight';
+font-size: 20px;
+color: #6E6E6E !important;
+} 
+
+</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		
+        
+            <link rel="stylesheet" href="http://ccsir.org/wp-content/themes/simpler/themes/variation.css"/>
+    
+<link rel="alternate" type="application/rss+xml" title="Cyber Security Research Center from Romania RSS Feed" href="http://feeds.feedburner.com/feed/" />
+
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/modernizr.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/jquery.fancybox-1.3.4.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/jQuery.jPlayer.2.1.0/jquery.jplayer.min.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/nivo-slider/jquery.nivo.slider.js"></script>
+<!--     <script src="http://ccsir.org/wp-content/themes/simpler/js/nivo-slider/jquery.nivo.slider.pack.js"></script> -->
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/jquery.boxfit.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/jquery.isotope.min.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/jquery.jcarousel.min.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/slides.min.jquery.js"></script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/batchImageLoad.js"></script>
+
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/ddsmoothmenu.js"></script>
+
+    <!--[if lt IE 9]>       <script>'ArticleAsideAudioCanvasDetailsFigureFooterHeaderHgroupMarkMenuMeterNavOutputProgressSectionTimeVideo'.replace(/.[a-z]+/g,function(n){document.createElement(n)})</script>
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/innershiv.js"></script>
+    <![endif]-->
+    <script src="http://ccsir.org/wp-content/themes/simpler/js/script.js"></script>
+
+    
+    <script type="text/javascript">
+        jQuery(document).ready(  function() {
+            jQuery('#smoothmenu1').show('slow');
+            ddsmoothmenu.init({
+                mainmenuid: "smoothmenu1", //menu DIV id
+                orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+                classname: 'ddsmoothmenu', //class added to menu's outer DIV
+                //customtheme: ["#1c5a80", "#18374a"],
+                contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+            })
+        });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44645491-1', 'ccsir.org');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="//load.sumome.com/" data-sumo-site-id="5900ba6a6e3287ab1df83e4bcee1094b72ec22e7225245fd4ada1875cf1dff78" async="async"></script>
+</head>
+
+<body class="home blog">
+    <div id="header">
+        <div id="header-wrapper" class="header">
+            <div class="right_header">
+                <div class="followus">
+    <p>Follow Us</p>
+        <a href="http://www.facebook.com/ccsirorg" class="facebook" target="blank"><span>Facebook</span></a>    <a href="http://www.linkedin.com/company/cyber-security-research-center-from-romania" class="linked" target="blank"><span>LinkedIn</span></a>    </div>
+
+            </div>
+
+            <div class="logo">
+                                    <a href="http://ccsir.org/"><img height="50" src="http://ccsir.org/wp-content/uploads/2014/03/ccsir-mare.png" alt="logo" /></a> <span>Cyber Security Research Center from Romania</span>
+                            </div>
+
+            <div id="nav">
+                <div id="smoothmenu1" class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-21"><a href="http://ccsir.org"><i class="fa fa-home"></i> Home</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19"><a href="http://ccsir.org/blog/"><i class="fa fa-bolt"></i> Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-51"><a href="http://ccsir.org/category/english/">English</a>
+	<ul class="sub-menu">
+		<li id="menu-item-52" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52"><a href="http://ccsir.org/category/english/news/">News</a></li>
+		<li id="menu-item-54" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54"><a href="http://ccsir.org/category/english/tutorials/">Tutorials</a></li>
+		<li id="menu-item-55" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55"><a href="http://ccsir.org/category/english/vulnerabilities-and-exploits/">Vulnerabilities &#038; Exploits</a></li>
+		<li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="http://ccsir.org/category/english/press-releases/">Press Releases</a></li>
+	</ul>
+</li>
+	<li id="menu-item-56" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-56"><a href="http://ccsir.org/category/romanian/">Romanian</a>
+	<ul class="sub-menu">
+		<li id="menu-item-58" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-58"><a href="http://ccsir.org/category/romanian/stiri/">Știri</a></li>
+		<li id="menu-item-59" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59"><a href="http://ccsir.org/category/romanian/tutoriale/">Tutoriale</a></li>
+		<li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60"><a href="http://ccsir.org/category/romanian/vulnerabiliti-si-exploituri/">Vulnerabilități &#038; Exploituri</a></li>
+		<li id="menu-item-57" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-57"><a href="http://ccsir.org/category/romanian/comunicate-de-presa/">Comunicate de presă</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18"><a href="http://ccsir.org/about-us/"><i class="fa fa-question-circle"></i> About us</a>
+<ul class="sub-menu">
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://ccsir.org/parteners/">Parteners</a></li>
+	<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://ccsir.org/become-a-member/">Become a member</a></li>
+	<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="http://ccsir.org/media/">Media</a></li>
+	<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://ccsir.org/support/">Support</a></li>
+</ul>
+</li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://ccsir.org/projects/"><i class="fa fa-users"></i> Projects</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://ccsir.org/contact/"><i class="fa fa-envelope"></i> Contact</a></li>
+</ul></div>                <div class="search_div">
+    <form id="search-form" action="http://ccsir.org/" method="get">
+        <input id="search" type="text" name="s" value="" placeholder="Search..." class="search_input"/>
+        <input type="submit" class="submit_btn" value="">
+        <input type="hidden" name="post_type" value="post" />
+    </form>
+</div>            </div>
+
+        </div>
+    </div>
+    <div id="wrap">
+            <section id="primary">
+        <section id="content" role="main">
+            
+<div class="slider">
+<div style="max-width: 530px;" class="ml-slider-3-7-2 metaslider metaslider-responsive metaslider-113 ml-slider">
+    
+    <div id="metaslider_container_113">
+        <ul id='metaslider_113' class='rslides'>
+            <li><a href="http://ccsir.org/hello-world/" target="_self"><img src="http://ccsir.org/wp-content/uploads/2013/10/welcome-530x300.jpg" height="300" width="530" alt="Hello World!" class="slider-113 slide-90" title="Hello World!" /><div class="caption-wrap"><div class="caption">Hello World!</div></div></a></li>
+        </ul>
+        
+    </div>
+</div></div>
+<div class="last3">
+<p style="margin-top:-10px;"> </p>                                                 <article id="post-341" class="post-341 post type-post status-publish format-standard has-post-thumbnail hentry category-others">
+                           <div class="single-container">
+                                                                 <a title="Save the date for #DefCamp2018" href="http://ccsir.org/save-the-date-for-defcamp2018/"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2018/07/Facebook-Page-Cover-Register-80.jpg&w=200&h=98&zc=1" />
+				<header>
+                                <div class="entry-top">
+                                       Save the date for #DefCamp2018                                </div>
+                        </header>
+	
+				</a>
+                                <span class="author">By Florina Dumitrache</span> 
+                                                        </div>
+                                        </article><!-- #post-341 -->
+		<div class="clr"></div>
+
+                                                 <article id="post-335" class="post-335 post type-post status-publish format-standard has-post-thumbnail hentry category-english category-news category-press-releases">
+                           <div class="single-container">
+                                                                 <a title="DefCamp 2016 promises an edition to remember" href="http://ccsir.org/defcamp-2016-promises-an-edition-to-remember/"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2016/08/12247924_828925530538564_7289913414704506238_o-1.jpg&w=200&h=98&zc=1" />
+				<header>
+                                <div class="entry-top">
+                                       DefCamp 2016 promises an edition to remember                                </div>
+                        </header>
+	
+				</a>
+                                <span class="author">By CCSIR</span> 
+                                                        </div>
+                                        </article><!-- #post-335 -->
+		<div class="clr"></div>
+
+                                                 <article id="post-326" class="post-326 post type-post status-publish format-standard has-post-thumbnail hentry category-english category-news">
+                           <div class="single-container">
+                                                                 <a title="DefCamp 2015 &#8211; the sixth edition come to an end" href="http://ccsir.org/defcamp-2015-the-sixth-edition-came-to-an-end/"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2015/12/defcamp-2015-conference.jpg&w=200&h=98&zc=1" />
+				<header>
+                                <div class="entry-top">
+                                       DefCamp 2015 &#8211; the sixth edition come to an end                                </div>
+                        </header>
+	
+				</a>
+                                <span class="author">By CCSIR</span> 
+                                                        </div>
+                                        </article><!-- #post-326 -->
+		<div class="clr"></div>
+
+                                
+</div>
+<div class="clr"></div>
+        <article>
+            <div class="entry-content home-text-box">
+                                <h1><strong>Hey ! I am <span>CCSIR</span> an NGO that dabbles with </strong> <small>Research, Development, Pentesting and Education in Information Security</small></h1>
+                <p>We conduct research on topics related to cyber security that help in the development of new security solutions and services, we can help you  with our experience in black, white & grey box pentest and we organise trainings, seminars, workshops and security conferences.</p>
+            </div>
+        </article>
+<section id="main" class="type-blog">
+        <section id="english" role="main" style="width:650px !important; float:left;">
+                <h4><i class="fa fa-share"></i> Last Articles</h4>
+		<div class="seprator"></div>
+		                                                                                                <article id="post-304" class="post-304 post type-post status-publish format-standard has-post-thumbnail hentry category-english category-news">
+        		<header>
+                		<div class="entry-top">
+                        		<h1><a href="http://ccsir.org/defensive-cyber-operations-engineer-dcoe-training-in-romania/" rel="bookmark">Defensive Cyber Operations Engineer (DCOE) Training in Romania</a></h1>
+                		</div>
+        		</header>
+     			   <div class="single-container">
+       				         			<a title="Defensive Cyber Operations Engineer (DCOE) Training in Romania" href="http://ccsir.org/defensive-cyber-operations-engineer-dcoe-training-in-romania/"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2015/08/guess_johnson_romania.jpg&amp;w=638&amp;h=235&amp;zc=1" alt=""/></a>
+        			        			<div class="post-preview">Develop your cyberspace operations skills for the deployment of DCO, NETOPS, and OCO. In this course, you will acquire the skills for the planning, executing, and integrating defensive cyberspace operations (DCO) into organizational missions and DCO requirements. The course builds on the planning skills learned in the Introduction to Cyber Warfare and Operations Design (ICWOD) [&hellip;]</div>
+        		</div>
+    			        		<div class="read_more_btn"><a href="http://ccsir.org/defensive-cyber-operations-engineer-dcoe-training-in-romania/"><i class="fa fa-comment"></i> Read More</a></div>
+		</article><!-- #post-304 -->
+
+			<div class="seprator"></div>
+
+		                                <article id="post-280" class="post-280 post type-post status-publish format-standard has-post-thumbnail hentry category-english category-news">
+        		<header>
+                		<div class="entry-top">
+                        		<h1><a href="http://ccsir.org/introduction-to-cyber-warfare-and-operations-design-training-in-romania/" rel="bookmark">Introduction to Cyber Warfare and Operations Design Training in Romania</a></h1>
+                		</div>
+        		</header>
+     			   <div class="single-container">
+       				         			<a title="Introduction to Cyber Warfare and Operations Design Training in Romania" href="http://ccsir.org/introduction-to-cyber-warfare-and-operations-design-training-in-romania/"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2015/08/romania_icwod.jpg&amp;w=638&amp;h=235&amp;zc=1" alt=""/></a>
+        			        			<div class="post-preview">Learn the core set of skills needed for practical and dynamic cyber defense and set the foundation to become a CSFI-DCOE. This course provides a basic understanding of full-spectrum cyberspace operations, the complexities of the cyberspace environment, as well as planning, organizing, and integrating cyberspace operations. The course will consist of presentations and exercises that [&hellip;]</div>
+        		</div>
+    			        		<div class="read_more_btn"><a href="http://ccsir.org/introduction-to-cyber-warfare-and-operations-design-training-in-romania/"><i class="fa fa-comment"></i> Read More</a></div>
+		</article><!-- #post-280 -->
+
+			<div class="seprator"></div>
+
+		                                <article id="post-264" class="post-264 post type-post status-publish format-standard has-post-thumbnail hentry category-english category-news category-vulnerabilities-and-exploits">
+        		<header>
+                		<div class="entry-top">
+                        		<h1><a href="http://ccsir.org/test-your-website-for-bashsmash-cve-2014-6271-online/" rel="bookmark">Test your website for BashSmash  (CVE-2014-6271) online</a></h1>
+                		</div>
+        		</header>
+     			   <div class="single-container">
+       				         			<a title="Test your website for BashSmash  (CVE-2014-6271) online" href="http://ccsir.org/test-your-website-for-bashsmash-cve-2014-6271-online/"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/09/Selection_205.png&amp;w=638&amp;h=235&amp;zc=1" alt=""/></a>
+        			        			<div class="post-preview">A Critical remotely exploitable vulnerability has been discovered in the widely used Linux and Unix command-line shell, known as Bash, aka the GNU Bourne Again Shell, leaving countless websites, servers, PCs, OS X Macs, various home routers, and many more open to the cyber criminals. Earlier today (September 24th 2014), Stephane Chazelas publicly disclosed the [&hellip;]</div>
+        		</div>
+    			        		<div class="read_more_btn"><a href="http://ccsir.org/test-your-website-for-bashsmash-cve-2014-6271-online/"><i class="fa fa-comment"></i> Read More</a></div>
+		</article><!-- #post-264 -->
+
+			<div class="seprator"></div>
+
+		                        </section><!-- #content -->
+        <section id="romanian" role="main" style="width:300px !important; float:right;">
+                <h4><i class="fa fa-share"></i> We Are Good At</h4>
+		<div class="seprator"></div>
+		<p style="margin-top:-25px;"> </p>
+		<div id="four_col_home_1">
+        <div class="onefour_colum ">
+        <div class="colume_tital"><h3><span>01</span>Research</h3></div>
+        <p>We conduct research on topics related to cyber security such as web and software security, network and communication security, malware, botnets, offensive and defensive capabilities. </p>
+    </div>
+        <div class="onefour_colum ">
+        <div class="colume_tital"><h3><span>02</span>Development</h3></div>
+        <p>Besides the security experience, our members are highly experienced developers and we combine our research work with the development of new security solutions and services, we build exploits and patches. </p>
+    </div>
+        <div class="onefour_colum ">
+        <div class="colume_tital"><h3><span>03</span>Pentesting</h3></div>
+        <p>Our members have deeply experience in black, white & grey box pentest and  we can conduct code reviews and other security assessments.   </p>
+    </div>
+        <div class="onefour_colum last_d">
+        <div class="colume_tital"><h3><span>04</span>Education</h3></div>
+        <p>One of the key targets is promoting the good way of creating secured software. We organise trainings, seminars, workshops, local and international conferences, interact with mass-media and we publish security related articles.   </p>
+    </div>
+    </div>
+        </section><!-- #content -->
+        <div class="clr"></div>
+</section><!-- #primary -->
+<div class="about_home_1">
+    <div class="lft_abt_hm">
+        <div class="sec_tital"><h2>About us</h2></div>
+        <p>Cyber Security Research Center from Romania(CCSIR) is a Non-Governmental Organization with the soul purpose of promoting, supporting, implementation and coordination of security research in the information security field in Romania, as well as international actions with short, medium and long term partnerships in the information security arena.</p>
+        <div class="more_abt"><a href="/about-us">More About Us</a></div>    </div>
+    <div class="rgt_abt_hm"><img alt="" src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/03/cyber-security.jpg&amp;w=296&amp;h=126&amp;zc=1"/></div></div><div class="separator"></div>
+<div class="box box-featured-clients featureclient">
+
+    <div class="text_fe">Our Friends</div>
+    <div class="gallery">
+
+        <ul id="fc-carousel" class="jcarousel-skin-tango">
+                        <!--             <li><img src="" alt="KPMG" /></li> -->
+                <li><a target="_blank" href="http://www.kpmg.com/ro"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/kpmg-logo.jpg&amp;w=&amp;h=50&amp;zc=1" alt=""/></a></li>
+                        <!--             <li><img src="" alt="OWASP Romania" /></li> -->
+                <li><a target="_blank" href="https://www.owasp.org/index.php/Romania"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/OWASP-Romania.jpg&amp;w=&amp;h=50&amp;zc=1" alt=""/></a></li>
+                        <!--             <li><img src="" alt="DCOI - Cyber Conference" /></li> -->
+                <li><a target="_blank" href="http://dcoi.org.il"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/dcoi.org_.il_.png&amp;w=&amp;h=50&amp;zc=1" alt=""/></a></li>
+                        <!--             <li><img src="" alt="SafeTech Innovations" /></li> -->
+                <li><a target="_blank" href="http://www.safetech.ro"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/safetech.png&amp;w=&amp;h=50&amp;zc=1" alt=""/></a></li>
+                        <!--             <li><img src="" alt="BitDefender" /></li> -->
+                <li><a target="_blank" href="http://bitdefender.ro"><img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/bit.png&amp;w=&amp;h=50&amp;zc=1" alt=""/></a></li>
+                    </ul>
+
+    </div>
+    <script type="text/javascript" src="http://ccsir.org/wp-content/themes/simpler/js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript">
+
+    jQuery(document).ready(function() {
+        jQuery('#fc-carousel').jcarousel({
+            wrap: 'circular'
+        });
+    });
+
+    </script>
+
+</div>
+
+<div class="separator"></div>
+<section id="recent-projects">
+    <section>
+        <h2>Recent Projects</h2>
+                    <p>Our work is created by highly motivated members from the organisation that believes in a world that is secure and private. Our public projects solve different problems from the INFOSEC area mainly. Some of these projects see the light of day, some may not or are simple laboratory experiments.</p>
+                <div id="controls-wrapper">
+            <div id="mycarousel-prev"></div>
+            <div id="mycarousel-next"></div>
+        </div>
+    </section>
+    <ul id="rp-carousel" class="jcarousel-skin-tango2" style="z-index:1; position:relative;">
+                <li>
+            <h3><a href="http://ccsir.org/portfolio/sparks-computer-security-conferences/" title="Sparks &#8211; computer security conferences">Sparks &#8211; computer security conferences</a></h3>
+            <a href="http://ccsir.org/portfolio/sparks-computer-security-conferences/" title="Sparks &#8211; computer security conferences">
+            <img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/sparks-romanian-security-conference.png&amp;w=217&amp;h=140&amp;zc=1" alt=""/></a>
+            <div class="excerpt">Launched in the spring of 2014, on 19th of February, Sparks are a series of computer security conferences dedicated to both hobbyists and professionals &hellip; <a href="http://ccsir.org/portfolio/sparks-computer-security-conferences/">more</a></div>
+        </li>
+                <li>
+            <h3><a href="http://ccsir.org/portfolio/127-0-def-camp-local-security-conferences/" title="127.0.Def.Camp &#8211; Local Security Conferences">127.0.Def.Camp &#8211; Local Security Conferences</a></h3>
+            <a href="http://ccsir.org/portfolio/127-0-def-camp-local-security-conferences/" title="127.0.Def.Camp &#8211; Local Security Conferences">
+            <img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/03/127.0.def_.camp-conferinta-securitate.png&amp;w=217&amp;h=140&amp;zc=1" alt=""/></a>
+            <div class="excerpt">127.0.Def.Camp initiative is part of the International INFOSEC &#038; hacking conference &#8211; DefCamp. This event is getting the information and &hellip; <a href="http://ccsir.org/portfolio/127-0-def-camp-local-security-conferences/">more</a></div>
+        </li>
+                <li>
+            <h3><a href="http://ccsir.org/portfolio/defcamp/" title="DefCamp &#8211; International INFOSEC &#038; Hacking Conference">DefCamp &#8211; International INFOSEC &#038; Hacking Conference</a></h3>
+            <a href="http://ccsir.org/portfolio/defcamp/" title="DefCamp &#8211; International INFOSEC &#038; Hacking Conference">
+            <img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/defcamp-security-conference.jpg&amp;w=217&amp;h=140&amp;zc=1" alt=""/></a>
+            <div class="excerpt">DefCamp is one of the most important conferences on hacking &#038; information security in South-East Europe, bringing hands-on talks about latest research &hellip; <a href="http://ccsir.org/portfolio/defcamp/">more</a></div>
+        </li>
+                <li>
+            <h3><a href="http://ccsir.org/portfolio/worldit-info-romanian-it-community/" title="WORLDIT.info &#8211; Romanian IT Community">WORLDIT.info &#8211; Romanian IT Community</a></h3>
+            <a href="http://ccsir.org/portfolio/worldit-info-romanian-it-community/" title="WORLDIT.info &#8211; Romanian IT Community">
+            <img src="http://ccsir.org/wp-content/themes/simpler/slider_manager/tim.php?src=http://ccsir.org/wp-content/uploads/2014/02/worldit.info-it-community.png&amp;w=217&amp;h=140&amp;zc=1" alt=""/></a>
+            <div class="excerpt">Launched in the summer of 2009, on 29th of June, worldit.info has embraced the vision of creating an efficient communication virtual enviroment and &hellip; <a href="http://ccsir.org/portfolio/worldit-info-romanian-it-community/">more</a></div>
+        </li>
+            </ul>
+
+    
+</section>
+        </section><!-- #content -->
+    </section><!-- #primary -->
+
+    </div>
+    <div id="footer">
+        <!-- SIDEBAR FOOTER -->
+<section id="first">
+                </section>
+
+<div class="main_footer">
+    <div class="midd_footer">
+                                                                    </div>
+</div>
+
+<div class="copyright">
+    <div class="main_copyright">
+        <p>Copyright &copy; 2013-2014 Cyber Security Research Center from Romania - CCSIR. All Rights Reserved.</p>
+        <div id="footer-menu" class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-39"><a href="http://ccsir.org">Home</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://ccsir.org/blog/">Blog</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="http://ccsir.org/about-us/">About us</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://ccsir.org/parteners/">Parteners</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://ccsir.org/contact/">Contact us</a></li>
+<li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278"><a href="https://bit-sentinel.com">Bit Sentinel</a></li>
+</ul></div>    </div>
+</div>
+<!-- SIDEBAR FOOTER END -->
+    </div>
+    <div id="cookie-law-info-bar"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.<a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Accept</a> <a href="http://ccsir.org" id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  >Read More</a></span></div><div id="cookie-law-info-again"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div>		
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"showagain_tab":true,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+				});
+			});
+			//]]>
+		</script>
+		
+		<link rel='stylesheet' id='metaslider-responsive-slider-css'  href='http://ccsir.org/wp-content/plugins/ml-slider/assets/sliders/responsiveslides/responsiveslides.css?ver=3.7.2' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-public-css'  href='http://ccsir.org/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.7.2' type='text/css' media='all' property='stylesheet' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/ccsir.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ccsir.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='http://ccsir.org/wp-includes/js/wp-embed.min.js?ver=5.0.4'></script>
+<script type='text/javascript' src='http://ccsir.org/wp-content/plugins/ml-slider/assets/sliders/responsiveslides/responsiveslides.min.js?ver=3.7.2'></script>
+<script type='text/javascript'>
+var metaslider_113 = function($) {
+            $('#metaslider_113').responsiveSlides({ 
+                timeout:3000,
+                pager:false,
+                nav:true,
+                pause:true,
+                speed:600,
+                prevText:"&lt;",
+                nextText:"&gt;",
+                auto:true
+            });
+        };
+        var timer_metaslider_113 = function() {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_113, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_113, 1) : metaslider_113(window.jQuery);
+        };
+        timer_metaslider_113();
+</script>
+    </body>
+</html>
+<!-- You are getting closer to me, but you need to make some more research regarding several tools that are public around the web. Please, KISS! 
+btw: 10.13.37.32
+--!>

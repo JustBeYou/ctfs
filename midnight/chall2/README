@@ -1,0 +1,7 @@
+HFS-OS
+./run debug (gdb stub) or ./run
+
+How to debug with IDA
+In IDA > Debugger > Attach > Remote debugger (host:1234) > (Debug options > Set specific options, UNCHECK 'software breakpoints at eip+1', CHECK 'use CS:IP in real mode')  > OK  
+When attached, Debugger > Manual memory regions > Insert > CHECK 16bit segment > OK  
+In the IDA-View, press G, 0x7c00 is where the bootloader starts. Set a BP > F9

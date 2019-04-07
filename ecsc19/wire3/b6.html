@@ -1,0 +1,49 @@
+e
+           application and responses sent back to the remote client over the socket, thus making your
+           command-line application interactive over a socket. Combined with --keep-open, Ncat will
+           handle multiple simultaneous connections to your specified port/application like inetd. Ncat
+           will only accept a maximum, definable, number of simultaneous connections controlled by the
+           -m option. By default this is set to 100 (60 on Windows).
+
+       -c command, --sh-exec command (Execute command via sh)
+           Same as -e, except it tries to execute the command via /bin/sh. This means you don't have to
+           specify the full path for the command, and shell facilities like environment variables are
+           available.
+
+       --lua-exec file (Execute a .lua script)
+           Runs the specified file as a Lua script after a connection has been established, using a
+           built-in interpreter. Both the script's standard input and the standard output are
+           redirected to the connection data streams.
+
+       All exec options add the following variables to the child's environment:
+
+       NCAT_REMOTE_ADDR, NCAT_REMOTE_PORT
+           The IP address and port number of the remote host. In connect mode, it's the target's
+           address; in listen mode, it's the client's address.
+
+       NCAT_LOCAL_ADDR, NCAT_LOCAL_PORT
+           The IP address and port number of the local end of the connection.
+
+       NCAT_PROTO
+           The protocol in use: one of TCP, UDP, and SCTP.
+
+ACCESS CONTROL OPTIONS
+       --allow host[,host,...] (Allow connections)
+           The list of hosts specified will be the only hosts allowed to connect to the Ncat process.
+           All other connection attempts will be disconnected. In case of a conflict between --allow
+           and --deny, --allow takes precedence. Host specifications follow the same syntax used by
+           Nmap.
+
+       --allowfile file (Allow connections from file)
+           This has the same functionality as --allow, except that the allowed hosts are provided in a
+           new-line delimited allow file, rather than directly on the command line.
+
+       --deny host[,host,...] (Deny connections)
+           Issue Ncat with a list of hosts that will not be allowed to connect to the listening Ncat
+           process. Specified hosts will have their session silently terminated if they try to connect.
+           In case of a conflict between --allow and --deny, --allow takes precedence. Host
+           specifications follow the same syntax used by Nmap.
+
+       --denyfile file (Deny connections from file)
+           This is the same functionality as --deny, except that excluded hosts are provided in a
+           new-line delimited deny file, rather than direct
