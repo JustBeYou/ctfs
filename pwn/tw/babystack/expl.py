@@ -193,4 +193,4 @@ def exploit():
     io.interactive()
 
 exploit()
-
+# FLAG{Its_juS7_a_st4ck0v3rfl0w}
