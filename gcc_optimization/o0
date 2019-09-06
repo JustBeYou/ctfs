@@ -1,0 +1,87 @@
+.text:0000000000000829 ; int __cdecl add(int a, int b)
+.text:0000000000000829                 public add
+.text:0000000000000829 add             proc near               ; CODE XREF: main+62↓p
+.text:0000000000000829
+.text:0000000000000829 b               = dword ptr -18h
+.text:0000000000000829 a               = dword ptr -14h
+.text:0000000000000829 var_8           = qword ptr -8
+.text:0000000000000829
+.text:0000000000000829 ; __unwind {
+.text:0000000000000829                 push    rbp
+.text:000000000000082A                 mov     rbp, rsp
+.text:000000000000082D                 sub     rsp, 20h
+.text:0000000000000831                 mov     [rbp+a], edi
+.text:0000000000000834                 mov     [rbp+b], esi
+.text:0000000000000837                 mov     rax, fs:28h
+.text:0000000000000840                 mov     [rbp+var_8], rax
+.text:0000000000000844                 xor     eax, eax
+.text:0000000000000846                 lea     rdi, s          ; "An addition will be executed"
+.text:000000000000084D                 call    _puts
+.text:0000000000000852                 mov     edx, [rbp+a]
+.text:0000000000000855                 mov     eax, [rbp+b]
+.text:0000000000000858                 add     eax, edx
+.text:000000000000085A                 mov     esi, eax
+.text:000000000000085C                 lea     rdi, format     ; "Here it is: %d, I also returned the res"...
+.text:0000000000000863                 mov     eax, 0
+.text:0000000000000868                 call    _printf
+.text:000000000000086D                 mov     edx, [rbp+a]
+.text:0000000000000870                 mov     eax, [rbp+b]
+.text:0000000000000873                 add     eax, edx
+.text:0000000000000875                 mov     rcx, [rbp+var_8]
+.text:0000000000000879                 xor     rcx, fs:28h
+.text:0000000000000882                 jz      short locret_889
+.text:0000000000000884                 call    ___stack_chk_fail
+.text:0000000000000889 ; ---------------------------------------------------------------------------
+.text:0000000000000889
+.text:0000000000000889 locret_889:                             ; CODE XREF: add+59↑j
+.text:0000000000000889                 leave
+.text:000000000000088A                 retn
+.text:000000000000088A ; } // starts at 829
+.text:000000000000088B ; int __cdecl main(int argc, const char **argv, const char **envp)
+.text:000000000000088B                 public main
+.text:000000000000088B main            proc near               ; DATA XREF: _start+1D↑o
+.text:000000000000088B
+.text:000000000000088B c               = dword ptr -54h
+.text:000000000000088B name            = byte ptr -50h
+.text:000000000000088B var_8           = qword ptr -8
+.text:000000000000088B
+.text:000000000000088B ; __unwind {
+.text:000000000000088B                 push    rbp
+.text:000000000000088C                 mov     rbp, rsp
+.text:000000000000088F                 sub     rsp, 60h
+.text:0000000000000893                 mov     rax, fs:28h
+.text:000000000000089C                 mov     [rbp+var_8], rax
+.text:00000000000008A0                 xor     eax, eax
+.text:00000000000008A2                 lea     rdi, aWhatIsYourName ; "What is your name? "
+.text:00000000000008A9                 mov     eax, 0
+.text:00000000000008AE                 call    _printf
+.text:00000000000008B3                 lea     rax, [rbp+name]
+.text:00000000000008B7                 mov     rsi, rax
+.text:00000000000008BA                 lea     rdi, aS         ; "%s"
+.text:00000000000008C1                 mov     eax, 0
+.text:00000000000008C6                 call    ___isoc99_scanf
+.text:00000000000008CB                 lea     rax, [rbp+name]
+.text:00000000000008CF                 mov     rsi, rax
+.text:00000000000008D2                 lea     rdi, aHelloS    ; "Hello, %s!\n"
+.text:00000000000008D9                 mov     eax, 0
+.text:00000000000008DE                 call    _printf
+.text:00000000000008E3                 mov     esi, 6          ; b
+.text:00000000000008E8                 mov     edi, 5          ; a
+.text:00000000000008ED                 call    add
+.text:00000000000008F2                 mov     [rbp+c], eax
+.text:00000000000008F5                 mov     eax, [rbp+c]
+.text:00000000000008F8                 mov     esi, eax
+.text:00000000000008FA                 lea     rdi, aIsItStillOkD ; "Is it still ok? %d\n"
+.text:0000000000000901                 mov     eax, 0
+.text:0000000000000906                 call    _printf
+.text:000000000000090B                 mov     eax, 0
+.text:0000000000000910                 mov     rdx, [rbp+var_8]
+.text:0000000000000914                 xor     rdx, fs:28h
+.text:000000000000091D                 jz      short locret_924
+.text:000000000000091F                 call    ___stack_chk_fail
+.text:0000000000000924 ; ---------------------------------------------------------------------------
+.text:0000000000000924
+.text:0000000000000924 locret_924:                             ; CODE XREF: main+92↑j
+.text:0000000000000924                 leave
+.text:0000000000000925                 retn
+.text:0000000000000925 ; } // starts at 88B

@@ -1,0 +1,188 @@
+
+sm     1936 Fri Nov 30 00:00:00 EET 1979 AndroidManifest.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm   288744 Fri Nov 30 00:00:00 EET 1979 classes.dex
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm    14104 Fri Nov 30 00:00:00 EET 1979 lib/arm64-v8a/libnative-lib.so
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm    18044 Fri Nov 30 00:00:00 EET 1979 lib/armeabi-v7a/libnative-lib.so
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm    13788 Fri Nov 30 00:00:00 EET 1979 lib/x86/libnative-lib.so
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm    14376 Fri Nov 30 00:00:00 EET 1979 lib/x86_64/libnative-lib.so
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm      752 Fri Nov 30 00:00:00 EET 1979 res/drawable-v24/$ic_launcher_foreground__0.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     1696 Fri Nov 30 00:00:00 EET 1979 res/drawable-v24/ic_launcher_foreground.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     5696 Fri Nov 30 00:00:00 EET 1979 res/drawable/ic_launcher_background.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     1716 Fri Nov 30 00:00:00 EET 1979 res/layout/activity_main.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm      448 Fri Nov 30 00:00:00 EET 1979 res/mipmap-anydpi-v26/ic_launcher.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm      448 Fri Nov 30 00:00:00 EET 1979 res/mipmap-anydpi-v26/ic_launcher_round.xml
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     2963 Fri Nov 30 00:00:00 EET 1979 res/mipmap-hdpi-v4/ic_launcher.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     4905 Fri Nov 30 00:00:00 EET 1979 res/mipmap-hdpi-v4/ic_launcher_round.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     2060 Fri Nov 30 00:00:00 EET 1979 res/mipmap-mdpi-v4/ic_launcher.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     2783 Fri Nov 30 00:00:00 EET 1979 res/mipmap-mdpi-v4/ic_launcher_round.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     4490 Fri Nov 30 00:00:00 EET 1979 res/mipmap-xhdpi-v4/ic_launcher.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     6895 Fri Nov 30 00:00:00 EET 1979 res/mipmap-xhdpi-v4/ic_launcher_round.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     6387 Fri Nov 30 00:00:00 EET 1979 res/mipmap-xxhdpi-v4/ic_launcher.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm    10413 Fri Nov 30 00:00:00 EET 1979 res/mipmap-xxhdpi-v4/ic_launcher_round.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     8939 Fri Nov 30 00:00:00 EET 1979 res/mipmap-xxxhdpi-v4/ic_launcher.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm    15132 Fri Nov 30 00:00:00 EET 1979 res/mipmap-xxxhdpi-v4/ic_launcher_round.png
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+sm     8956 Fri Nov 30 00:00:00 EET 1979 resources.arsc
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+       2591 Fri Nov 30 00:00:00 EET 1979 META-INF/MYKEY.SF
+       1169 Fri Nov 30 00:00:00 EET 1979 META-INF/MYKEY.RSA
+s      2519 Fri Nov 30 00:00:00 EET 1979 META-INF/MANIFEST.MF
+
+      >>> Signer
+      X.509, CN=OOO, O=OOO, C=US
+      [certificate is valid from 4/24/19, 12:27 PM to 9/9/46, 12:27 PM]
+      [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
+
+
+  s = signature was verified 
+  m = entry is listed in manifest
+  k = at least one certificate was found in keystore
+
+- Signed by "CN=OOO, O=OOO, C=US"
+    Digest algorithm: SHA-256
+    Signature algorithm: SHA256withRSA, 2048-bit key
+
+jar verified.
+
+Warning: 
+This jar contains entries whose certificate chain is invalid. Reason: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+This jar contains entries whose signer certificate is self-signed.
+This jar contains signatures that do not include a timestamp. Without a timestamp, users may not be able to validate this jar after any of the signer certificates expire (as early as 2046-09-09).
+
+The signer certificate will expire on 2046-09-09.

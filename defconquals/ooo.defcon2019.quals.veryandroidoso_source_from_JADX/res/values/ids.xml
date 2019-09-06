@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="button">false</item>
+    <item type="id" name="editText">false</item>
+    <item type="id" name="editText3">false</item>
+</resources>
