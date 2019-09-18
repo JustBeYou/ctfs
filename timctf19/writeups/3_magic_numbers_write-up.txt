@@ -1,0 +1,8 @@
+This challenge was more maths than cryptography, we had to use Euler's Theorem and the Chinese Remainder Theorem in the following way:
+
+1. calculate X = 2019^2019 modulo phi(p3^4) since we know that x^(phi(a)-1) = 1 modulo a, and therefore, a^(k*phi(a)+n) = 1 modulo a
+2. calculate the Y = inverse of X modulo phi(p3^4) now, X*Y = 1 modulo phi(p3^4)
+3. calculate T3 = pow(t3,Y,p3**4), now T3 = t mod p3^4
+4. calculate Z = inverse of 2019 modulo phi(p2^4)
+5, calculate T2 = pow(t2,Z,p2**4), now T2 = t mod p2^4
+now we can apply the chinese remainder theorem on the pairs: (t1,p1^4), (T2,p2^4), (T3,p3^4) and get the flag.
