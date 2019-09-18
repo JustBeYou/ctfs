@@ -1,0 +1,4 @@
+this challenge was quite interesting, the binary was encrypted with AES and it was being decrypted at runtime, so we had to open the executable in x64dbg and bypass the debugger check that was
+WAY TO SIMPLE in my opinion, and then look at the decrypted code:
+what it was doing is it was asking for an input, hashing with md5 each character and then comparing it with a hadrcoded value. so just copy the hashes and paste them in something like
+crackstation and get the flag.

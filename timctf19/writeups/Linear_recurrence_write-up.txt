@@ -1,0 +1,94 @@
+this was an interesting but fairly trivial computer programming task based on the fact that we can go from a vector (ai,ai-1,ai-2...ai-k) to (ai+1,ai,ai-1...ai-k+1) using matrix multiplication
+so we can go and note the initial vector (ak,ak-1,ak-2...a1) with X and the matrix that moves to the next stage with A
+so we can get to the desired solution by doing X*A^N = B, now we have to calculate A^N, this can be done using logarithmic time exponentiation, and therefore the total time complexity is:
+O(log(N)*K^3)
+
+Here's the code:
+import socket
+
+# START FUNCTIONS PART
+def read_buffer():
+	global buff, pos
+	buff = s.recv(1024)
+	pos = 0				
+	
+def read_line():
+	global buff, pos
+	o = ''
+	while buff[pos] != '\n':
+		o += buff[pos]
+		pos += 1
+		if pos == len(buff):
+			read_buffer()
+	pos += 1
+	if pos == len(buff):
+		read_buffer()
+	return o
+	
+def read_full_buff():
+	global buff, pos
+	o = ''
+	while pos<len(buff):
+		o += buff[pos]
+		pos += 1
+	pos += 1
+	return o
+	
+def send_int(x):
+	s.sendall(str(x)+' ')
+	
+def send_new_line():
+	s.sendall('\n')
+
+def solve_brute(v):
+	d={}
+	for i in range(2**len(v)):
+		sum = 0
+		s = []
+		for j in range(len(v)):
+			if((2**j) & i != 0):
+				sum+=v[j]
+				s.append(v[j])
+		if(sum<=X):
+			d[sum] = s
+	return d
+
+# END FUNCTIONS PART
+	
+#START SOLUTION PART
+
+#start connection
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(('89.38.208.143', 22021))
+
+#initialize buffer
+buff = ''
+pos = 0
+read_buffer()
+
+print read_line()
+for i in range(10):
+	print read_line()
+	X = int(read_line())
+	print X
+	
+	v = map(int,read_full_buff().split())
+	n = len(v)
+	
+	d1 = solve_brute(v[:n/2])
+	d2 = solve_brute(v[n/2:])
+	
+	for a in d1:
+		if(X-a in d2):
+			ans = d1[a]+d2[X-a]
+			send_int(len(ans))
+			send_new_line()
+			for a in ans:
+				send_int(a)
+			break
+	read_buffer()
+	print read_line()
+while True:
+	print read_line()
+
+#END SOLUTION PART
