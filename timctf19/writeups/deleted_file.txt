@@ -1,0 +1,3 @@
+I opened the .img file using Autopsy;
+After some searching through the directories I found a deleted png;I  recovered and then opened it on my machine -> there we have TIMCTF's logo with the flag above  it
+flag{I_s33_the_uns33n}
