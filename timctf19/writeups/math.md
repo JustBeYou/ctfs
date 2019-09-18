@@ -1,0 +1,1 @@
+Open the binary in IDA Pro or any decompiler/dissasembler. You will find that the taken input from the user is xor'ed with some hardcoded key and it is encoded using base64 standard. The result is compared to some hardcoded value. We simply need to do this steps in reverse order and we get the flag.

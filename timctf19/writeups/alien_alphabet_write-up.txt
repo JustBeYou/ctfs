@@ -1,0 +1,5 @@
+This challenge was a simple substitution cipher challenge, the difficulty was that we didn't get a text that we could copy paste to https://quipqiup.com,
+instead we had to write a script, or to solve the challenge by hand. I chose the latter, but i made my work way easier: after i translated the first two rows, i then hoped for the best and
+jumped straight to the last row which i supposed was the flag, and it worked, the quipquip cryptosolver is way better than doing frequency analysis by hand.
+
+Here's the flag for the challenge: timctf{temphis_is_awesome}

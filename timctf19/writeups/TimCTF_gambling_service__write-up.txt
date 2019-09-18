@@ -1,0 +1,3 @@
+In this chall, we we're given a netcat to a *gambling service*, where we needed to guess what the next number will be. I went ahead and guessed that the PRNG used time as a seed.
+So I opened two conexions at the same and it worked, they had the same seed, so i just found from one terminal which was the number i had to guess and pasted it in the second terminal.
+Here's the flag: TIMCTF{Now_You_c4N_ch3at_aT_pacanele}

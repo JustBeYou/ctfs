@@ -1,0 +1,8 @@
+Not so empty website
+--------------------
+
+
+View the source of the page: ... the flag is commented.
+
+Flag: TIMCTF{D0_not_b3_superfic1al}
+

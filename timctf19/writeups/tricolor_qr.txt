@@ -1,0 +1,56 @@
+Tricolor QR
+-----------
+
+I remeber seeing this challenge somewhere else, however, I could not find a writeup during the CTF.
+The main idea is to replace every color with black or white and see if the qr code is valid. 
+I used the following python script:
+
+from PIL import Image
+import numpy as np
+import qrtools
+import itertools
+from pyzbar.pyzbar import decode
+
+colors = []
+
+# get colors
+img = Image.open("tri-color.png")
+clrs = img.getcolors(256)
+for c in clrs:
+    colors.append(c[1])
+
+# replace colors
+replace_with = [(0, 0, 0), (255, 255, 255)]
+
+
+def replace(img, c1, c2):
+    im = img.convert('RGBA')
+    data = np.array(im)
+    red, green, blue, alpha = data.T
+    replace_areas = (red == c1[0]) & (blue == c1[1]) & (green == c1[2])
+    data[..., :-1][replace_areas.T] =  c2
+    im2 = Image.fromarray(data)
+    return im2
+
+
+for i in itertools.product(replace_with, repeat=len(colors)):
+    img_new = img
+    for j in range(len(i)):
+        c1 = colors[j]
+        c2 = i[j]
+        img_new = replace(img_new, c1, c2)
+    data = decode(img_new)
+    if len(data) == 0:
+        continue
+    print(data)
+
+The program outputs 3 pieces of text:
+
+yakuhito@furry-catstation:~/ctf/timctfquals2019/tricolor_qr$ python solve.py 
+[Decoded(data=b'******************TIMCTF{******************', type='QRCODE', rect=Rect(left=10, top=10, width=328, height=328), polygon=[Point(x=10, y=10), Point(x=10, y=338), Point(x=338, y=338), Point(x=338, y=10)])]
+[Decoded(data=b'*****************Th1s_is_A*****************', type='QRCODE', rect=Rect(left=10, top=10, width=328, height=328), polygon=[Point(x=10, y=10), Point(x=10, y=338), Point(x=338, y=338), Point(x=338, y=10)])]
+[Decoded(data=b'******************_4_part_******************', type='QRCODE', rect=Rect(left=10, top=10, width=328, height=328), polygon=[Point(x=10, y=10), Point(x=10, y=338), Point(x=338, y=338), Point(x=338, y=10)])]
+
+I just guessed the fourth part (flag})
+
+Flag: TIMCTF{Th1s_is_A_4_part_flag}

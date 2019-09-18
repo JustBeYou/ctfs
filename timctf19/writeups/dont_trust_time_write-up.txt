@@ -1,0 +1,24 @@
+So for this challenge we we're given the source code for an encryption mechanism called time_crypt.cpp and the encrypted flag called enc_flag.txt.
+When we look at the code we can see that the encryption key is based on the current time, nothing randomized: key = sha1(time).
+so with this in mind we can write some code do *go back in time* second by second and try decrypting with that time. 
+Here's the code for this task:
+
+from Crypto.Cipher import AES
+from Crypto.Util.number import long_to_bytes
+from time import time
+from hashlib import sha1
+import struct
+
+start = int(time()) & 0xffffffff
+ct = open('enc_flag.txt','rb').read()
+while start:
+	aes = AES.new(sha1(''.join(list(reversed(hex(start)[2:].strip('L').decode('hex'))))).digest()[:16], AES.MODE_CBC, '\x00'*16)
+	pt = aes.decrypt(ct)
+	
+	if "TIMCTF{" in pt:
+		print pt
+		break
+		
+	start -= 1
+
+Here's the flag: TIMCTF{D0_not_truST_ChRONos1234}

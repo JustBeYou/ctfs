@@ -1,0 +1,11 @@
+Baby Crypto
+-----------
+
+Enc text:
+Otil bw amm gwc uilm qb! Emtkwum bw bpm ewvlmznct ewztl wn kzgxbwozixpg! Pmzm qa gwcz zmeizl: BQUKBN{Rctqca_Kimaiz_e0ctl_j3_xzwcl}
+
+Decrypt Caesar cipher, key=8:
+
+Glad to see you made it! Welcome to the wonderful world of cryptography! Here is your reward: TIMCTF{Julius_Caesar_w0uld_b3_proud}
+
+Flag: TIMCTF{Julius_Caesar_w0uld_b3_proud}

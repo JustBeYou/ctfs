@@ -1,0 +1,6 @@
+This chall was again a blind one, this time we had to do some basic cryptanalis, I supposed that guessing byte by byte was the right way to go, so i tried different inputs for the first byte.
+Then i observed that if the two plaintext differ by one the ciphertext difference differed by 8, and if they differed by 32 the ciphertexts differed by just 1. so this was probably
+a left cyclic rotation of the bytes by 3 and then some operation based on the previous bytes, because it didn't work for the second byte without the first one known.
+P.S. : this challenge can be solved in 9 queries if you use my logic.
+
+Here's the flag: TIMCTF{Y0u_really_make_A_diff3rence}
