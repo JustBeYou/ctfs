@@ -1,0 +1,37 @@
+Proof of work
+-------------
+
+The possibility of getting a hash with 7 ending 0s (assuming an equal distribution) is:
+
+1 to 16 ^ 7 = 1 to (2 ^ 4) ^ 7 = 1 to 2 ^ 28
+
+We can use the following python script to bruteforce the value:
+
+import itertools
+import string
+import hashlib 
+
+alphabet = string.ascii_letters + "0123456789"
+
+print(alphabet)
+
+for i in itertools.product(alphabet, repeat=10):
+        h = hashlib.sha256()
+        i = ''.join(i)
+        #print(i)
+        h.update(i.encode())
+        if h.hexdigest().endswith('0' * 7):
+                print(i)
+                break
+
+The program finds the following string:
+
+aaaaaHHXpo
+
+The service accepts this string:
+
+Prove you are not a bot! Tell me a string whose SHA256 has the last 7 digits (3.5 bytes) 0: aaaaaHHXpo
+Your string generated: 393f82285c19a2656fcd031d44443aa8b6e5347a9780c7984b6e6048f0000000
+Nice work! Your flag is: TIMCTF{9e13449f334ded947431aa5001c2e9ab429ab5ddf880f416fe352a96eb2af122}
+
+Flag: TIMCTF{9e13449f334ded947431aa5001c2e9ab429ab5ddf880f416fe352a96eb2af122}
