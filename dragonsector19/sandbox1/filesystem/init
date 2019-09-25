@@ -1,0 +1,12 @@
+#!/bin/sh
+
+stty raw -echo
+
+mount -t devtmpfs devtmpfs /dev
+mount -t proc none /proc
+
+echo "PWN PWN PWN"
+
+setsid cttyhack /main
+
+poweroff -d 1 -n -f
