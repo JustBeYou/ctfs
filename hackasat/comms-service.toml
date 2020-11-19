@@ -1,0 +1,36 @@
+[command]
+cmd_port = 47873
+apid = 43521
+
+
+[payload]
+ip = "127.0.0.1"
+port = 47874
+wakeup_interval = 100
+poll_interval = 100
+apid = 43522
+
+[flag]
+ip = "127.0.0.2"
+port = 47875
+apid = 43523
+wakeup_interval = 2
+poll_interval = 2
+auth_key = "AAAABBBB"
+
+
+[telemetry]
+ip = "127.0.0.3"
+port = 47876
+
+apid = 43524
+wakeup_interval = 100
+poll_interval = 100
+
+
+[housekeeping]
+
+wakeup_interval = 100
+poll_interval = 100
+apid = 43525
+

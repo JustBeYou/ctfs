@@ -1,0 +1,30 @@
+FROM ubuntu:19.04
+
+RUN apt update -y
+RUN apt-get install -y software-properties-common
+RUN apt-add-repository universe
+RUN apt-get update -y
+RUN apt install -y apt-utils gdb gdbserver vim
+RUN apt install -y python3 python3-pip tmux wget
+RUN python3 -m pip install pwn
+RUN apt install -y git
+RUN apt install -y build-essential
+RUN python3 -m pip install keystone-engine ropper
+RUN apt install -y locales && locale-gen en_US.UTF-8
+
+RUN useradd -m littlewho
+USER littlewho
+
+RUN wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
+RUN git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && \
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
+RUN sed -i 's/set background=dark/set background=light/g' /home/littlewho/.vim_runtime/vimrcs/extended.vim
+ADD .tmux.conf /home/littlewho
+
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8    
+
+COPY ./pwn_baby_fmt /home/littlewho
+
+CMD ["/bin/bash"]

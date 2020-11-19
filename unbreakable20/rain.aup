@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="rain_data" version="1.3.0" audacityversion="2.3.3" sel0="24.4007003530" sel1="24.4017478671" selLow="5818.1821289062" selHigh="5818.1821289062" vpos="0" h="24.3973621214" zoom="86872.3425692695" rate="8000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="rain" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1750770">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f831.au" len="262144" min="-1.0" max="0.999969" rms="0.226148"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1faef.au" len="262144" min="-1.0" max="0.999969" rms="0.226571"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="eff1ff0c.au" len="262144" min="-1.0" max="0.999969" rms="0.256146"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="eff1fe8a.au" len="262144" min="-1.0" max="0.999969" rms="0.243023"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="eff1f4bb.au" len="262144" min="-1.0" max="0.999969" rms="0.23758"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="eff1fab3.au" len="262144" min="-1.0" max="0.999969" rms="0.226588"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="eff1f4ec.au" len="177906" min="-1.0" max="0.999969" rms="0.226235"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

