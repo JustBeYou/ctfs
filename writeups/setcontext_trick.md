@@ -34,7 +34,7 @@ Instead of writing an actual challenge to exploit, we'll focus on implementing t
 
 `setcontext` is a function from libc used to switch (user-level) contexts between threads. You can read more about it on its [man page](https://linux.die.net/man/2/setcontext). The most interesting thing about it is that a context contains a complete copy of machine's registers including **RSP**, so by calling `setcontext` with a well-crafted structure, we can pivot the stack to an arbitrary location.
 
-We have to dig inside `struct ucontext` so we'll know which filed controls the stack pointer.
+We have to dig inside `struct ucontext` so we'll know which field controls the stack pointer.
 
 ```c
 typedef struct ucontext {
