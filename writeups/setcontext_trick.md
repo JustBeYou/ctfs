@@ -7,6 +7,8 @@ Usually in CTF challenges we have at our disposal a so named _one gadget_ or _ma
 
 To overcome the situation we can try to pivot the stack to a different location (usually the heap) leveraging a classic ROP chain attack. We'll use `setcontext` to conduct our attack.
 
+PoC source code [here](https://github.com/JustBeYou/ctfs/blob/master/writeups/setcontext_trick.c).
+
 ## Preconditions
 
 - GNU/Linux environment with glibc
@@ -217,6 +219,8 @@ $cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000
 ─────────────────── threads ────
 [#0] Id 1, Name: "setcontext_tric", stopped 0x0 in ?? (), reason: SIGSEGV
 ```
+
+Complete source code of PoC [here](https://github.com/JustBeYou/ctfs/blob/master/writeups/setcontext_trick.c).
 
 ## Conclusions
 
