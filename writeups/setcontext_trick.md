@@ -46,7 +46,7 @@ typedef struct ucontext {
 } ucontext_t;
 ```
 
-`mcontext_t uc_mcontext` ([source](https://code.woboq.org/userspace/glibc/sysdeps/unix/sysv/linux/x86/sys/ucontext.h.html#ucontext_t)) field stores the machine state which contains the saved registers.
+`mcontext_t uc_mcontext` ([source](https://code.woboq.org/userspace/glibc/sysdeps/unix/sysv/linux/x86/sys/ucontext.h.html#133)) field stores the machine state which contains the saved registers.
 
 ```c
 typedef struct
